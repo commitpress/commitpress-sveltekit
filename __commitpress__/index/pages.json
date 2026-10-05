@@ -3,21 +3,21 @@
   "entries": [
     {
       "path": "about",
-      "sha": "6fa5b25a77dd1480a522c0fd2606cf71d989be2c",
+      "sha": "e061fdf0b2cba83c958e8e63c5c7603ace2fe47f",
       "schema": "page",
       "status": "published",
       "published_at": 0,
       "last_edited": 0,
-      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "checksum": "33b1191ef51dc47cde995a5793d0e298ee29c31d",
       "drift": 0
     },
     {
       "path": "collection",
-      "sha": "8ee14843461f3b6acdcf81c6c5a4b8dc9a1079fd",
-      "schema": "page",
+      "sha": "e59ddd5c2603ed1d7998944904f0edc5bd87ab4f",
+      "schema": "collection",
       "status": "published",
       "last_edited": 1791200000000,
-      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "checksum": "ac37883fb98c39d77fd585b6c6b26c0f93b113dc",
       "drift": 0
     },
     {
@@ -32,38 +32,38 @@
     },
     {
       "path": "images",
-      "sha": "26f3dcf113d371e26856250e56c1e4d448a1a233",
-      "schema": "page",
+      "sha": "2b0dce565f52f4bc33d107cc396f91ede385cded",
+      "schema": "gallery",
       "status": "published",
       "last_edited": 1791200000000,
-      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "checksum": "ce40b73feeabf9ca16f64d1809f4559be821a99d",
       "drift": 0
     },
     {
       "path": "index",
-      "sha": "408706dbabddb48ff84dc9f1405022c1da245cfa",
-      "schema": "page",
+      "sha": "4daa5f98486a5b962cf4980955ae20eb1a95cbf0",
+      "schema": "home",
       "status": "published",
       "last_edited": 1791200000000,
-      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "checksum": "1255013250de3888aa93a168bff5ae23022c06dd",
       "drift": 0
     },
     {
       "path": "pages",
-      "sha": "21d771183d236d279c0f7f7eabafe20fb3274af0",
+      "sha": "0a158bae8b13869614921fb24843379d6c016934",
       "schema": "page",
       "status": "published",
       "last_edited": 1791200000000,
-      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "checksum": "33b1191ef51dc47cde995a5793d0e298ee29c31d",
       "drift": 0
     },
     {
       "path": "pages/a-quiet-corner",
-      "sha": "e04191148d5b5b9062f18e91c191b12e6d0fffa6",
+      "sha": "7f11c1790535b7a618bb3f2f78774091cfd8f782",
       "schema": "page",
       "status": "published",
       "last_edited": 1791200000000,
-      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "checksum": "33b1191ef51dc47cde995a5793d0e298ee29c31d",
       "drift": 0
     }
   ]

@@ -11,7 +11,8 @@
   "alt": "Sunlight falling through a green forest",
   "folder": "showcase",
   "folders": [
-    "showcase"
+    "showcase",
+    "showcase/gallery"
   ],
   "variants": [
     {

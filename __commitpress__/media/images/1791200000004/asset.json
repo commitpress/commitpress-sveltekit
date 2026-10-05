@@ -11,7 +11,8 @@
   "alt": "A light-filled interior with warm natural materials",
   "folder": "showcase",
   "folders": [
-    "showcase"
+    "showcase",
+    "showcase/gallery"
   ],
   "variants": [
     {

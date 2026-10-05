@@ -4,7 +4,7 @@
   import ImageGallery from './ImageGallery.svelte';
   import Blocks from '$lib/blocks/Blocks.svelte';
   import { richtext } from '@commitpress/sdk-node/richtext';
-  import { sectionMarker } from '@commitpress/sdk-node/preview';
+  import { sectionAttributes } from '$lib/preview/markers';
   import type { NotesContent, SiteContent } from '../../commitpress.generated';
   import { pageSchema, pageSection, type WebsitePageContent } from '$lib/content/page-types';
   import type { ImageAsset } from '$lib/media/assets';
@@ -20,7 +20,7 @@
   const openingLink = $derived(home ? section?.link : section?.next_page);
 </script>
 {#if section}
-  <svelte:element this={marked ? 'commitpress-section' : 'section'} {...marked ? sectionMarker(layout, section.eyebrow || section.title || '') : {}}>
+  <section {...marked ? sectionAttributes(layout, section.eyebrow || section.title || '') : {}}>
     <div class="wrap opening" class:home>
       <div class="opening-copy">
         {#if section.eyebrow}<p class="kicker"><span class="dot"></span>{section.eyebrow}</p>{/if}
@@ -36,29 +36,29 @@
         </figure>
       {/if}
     </div>
-  </svelte:element>
+  </section>
 {/if}
 {#if home && navigation?.items?.length}
-  <section class="wrap example-navigation" {...marked ? sectionMarker('navigation', navigation.heading ?? '') : {}}>
+  <section class="wrap example-navigation" {...marked ? sectionAttributes('navigation', navigation.heading ?? '') : {}}>
     {#if navigation.heading}<p class="kicker">{navigation.heading}</p>{/if}
     <div class="example-links">
       {#each navigation.items as item, i (i)}
-        {#if item.link?.href}<a href={item.link.href} target={item.link.target} {...marked ? sectionMarker(`navigation.items[${i}]`, item.title ?? '') : {}}>{#if item.number}<span>{item.number}</span>{/if}{#if item.title}<h2>{item.title}</h2>{/if}{#if item.summary}<p>{item.summary}</p>{/if}<span class="example-arrow" aria-hidden="true">↗</span></a>{/if}
+        {#if item.link?.href}<a href={item.link.href} target={item.link.target} {...marked ? sectionAttributes(`navigation.items[${i}]`, item.title ?? '') : {}}>{#if item.number}<span>{item.number}</span>{/if}{#if item.title}<h2>{item.title}</h2>{/if}{#if item.summary}<p>{item.summary}</p>{/if}<span class="example-arrow" aria-hidden="true">↗</span></a>{/if}
       {/each}
     </div>
   </section>
 {/if}
 {#if (home && highlights) || layout === 'collection'}
-  <section class="wrap collection-section" {...marked ? sectionMarker('highlights', highlights?.title ?? '') : {}}>
+  <section class="wrap collection-section" {...marked ? sectionAttributes('highlights', highlights?.title ?? '') : {}}>
     {#if highlights?.eyebrow || highlights?.title || highlights?.link?.href}<div class="section-heading"><div>{#if highlights.eyebrow}<p class="kicker">{highlights.eyebrow}</p>{/if}{#if highlights.title}<h2>{highlights.title}</h2>{/if}</div>{#if highlights.link?.href}<a class="text-link" href={highlights.link.href} target={highlights.link.target}>{highlights.link.label} <span aria-hidden="true">↗</span></a>{/if}</div>{/if}
     <CollectionCards {cards} {media} />
   </section>
 {:else if layout === 'gallery'}
   <section class="wrap gallery-section"><ImageGallery ids={galleryIds} {media} labels={site.ui} /></section>
 {:else if layout === 'page' && section?.body}
-  <section class="wrap reading-section" {...marked ? sectionMarker('page.body', section.body_label ?? '') : {}}>{#if section.body_label}<p class="kicker">{section.body_label}</p>{/if}<div class="prose">{@html richtext(section.body)}</div></section>
+  <section class="wrap reading-section" {...marked ? sectionAttributes('page.body', section.body_label ?? '') : {}}>{#if section.body_label}<p class="kicker">{section.body_label}</p>{/if}<div class="prose">{@html richtext(section.body)}</div></section>
 {/if}
 {#if home && languageNote}
-  <section class="wrap locale-note" {...marked ? sectionMarker('language_note', languageNote.title ?? '') : {}}>{#if languageNote.symbol}<span class="locale-symbol">{languageNote.symbol}</span>{/if}<div>{#if languageNote.eyebrow}<p class="kicker">{languageNote.eyebrow}</p>{/if}{#if languageNote.title}<h2>{languageNote.title}</h2>{/if}{#if languageNote.body}<p>{languageNote.body}</p>{/if}</div>{#if languageNote.link?.href}<a class="text-link" href={languageNote.link.href} target={languageNote.link.target}>{languageNote.link.label} <span aria-hidden="true">↗</span></a>{/if}</section>
+  <section class="wrap locale-note" {...marked ? sectionAttributes('language_note', languageNote.title ?? '') : {}}>{#if languageNote.symbol}<span class="locale-symbol">{languageNote.symbol}</span>{/if}<div>{#if languageNote.eyebrow}<p class="kicker">{languageNote.eyebrow}</p>{/if}{#if languageNote.title}<h2>{languageNote.title}</h2>{/if}{#if languageNote.body}<p>{languageNote.body}</p>{/if}</div>{#if languageNote.link?.href}<a class="text-link" href={languageNote.link.href} target={languageNote.link.target}>{languageNote.link.label} <span aria-hidden="true">↗</span></a>{/if}</section>
 {/if}
 {#if blocks?.length}<Blocks {blocks} {marked} />{/if}

@@ -7,7 +7,7 @@
   "content": {
     "gallery": {
       "title": "Gallery",
-      "tagline": "Your images will appear here.",
+      "summary": "Your images will appear here.",
       "gallery": ""
     },
     "seo": {

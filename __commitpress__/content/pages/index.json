@@ -1,13 +1,15 @@
 {
   "v": 2,
-  "schema": "page",
+  "schema": "home",
   "slug": "index",
   "status": "published",
   "last_edited": 1791200000000,
   "content": {
-    "blocks": [],
-    "showcase": {
-      "layout": "home",
+    "seo": {
+      "title": "Made with Commitpress. | Commitpress",
+      "description": "Pages, pictures, and a few good ideas. Take a look around - everything here starts with editable content."
+    },
+    "home": {
       "eyebrow": "A working example",
       "title": "Made with Commitpress.",
       "summary": "Pages, pictures, and a few good ideas. Take a look around - everything here starts with editable content.",
@@ -17,60 +19,7 @@
         "renditions": {
           "mobile": "portrait"
         }
-      },
-      "body": {
-        "type": "doc",
-        "content": [
-          {
-            "type": "heading",
-            "attrs": {
-              "level": 2
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Something to build on."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "text",
-                "text": "This page is an example, ready to become something of your own. The content lives in your repository, and the design belongs to your site."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "text",
-                "text": "The navigation and footer are shared globals. The text and imagery here belong to this page. Change one without having to change the other."
-              }
-            ]
-          },
-          {
-            "type": "blockquote",
-            "content": [
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "There is always something else to notice."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       }
-    },
-    "seo": {
-      "title": "Made with Commitpress. | Commitpress",
-      "description": "Pages, pictures, and a few good ideas. Take a look around - everything here starts with editable content."
     }
   },
   "locales": {
@@ -79,63 +28,14 @@
       "status": "published",
       "last_edited": 1791200000000,
       "content": {
-        "showcase": {
-          "eyebrow": "Ett levande exempel",
-          "title": "Byggt med Commitpress.",
-          "summary": "Sidor, bilder och några goda idéer. Se dig omkring - allt här börjar med redigerbart innehåll.",
-          "body": {
-            "type": "doc",
-            "content": [
-              {
-                "type": "heading",
-                "attrs": {
-                  "level": 2
-                },
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Något att bygga vidare på."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Den här sidan är ett exempel, redo att bli något eget. Innehållet finns i ditt repository och designen hör till din webbplats."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Navigering och sidfot är gemensamma globala värden. Texten och bilderna här hör till just den här sidan."
-                  }
-                ]
-              },
-              {
-                "type": "blockquote",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "There is always something else to notice."
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        },
         "seo": {
           "title": "Byggt med Commitpress. | Commitpress",
           "description": "Sidor, bilder och några goda idéer. Se dig omkring - allt här börjar med redigerbart innehåll."
+        },
+        "home": {
+          "eyebrow": "Ett levande exempel",
+          "title": "Byggt med Commitpress.",
+          "summary": "Sidor, bilder och några goda idéer. Se dig omkring - allt här börjar med redigerbart innehåll."
         }
       }
     }

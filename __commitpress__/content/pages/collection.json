@@ -1,76 +1,18 @@
 {
   "v": 2,
-  "schema": "page",
+  "schema": "collection",
   "slug": "collection",
   "status": "published",
   "last_edited": 1791200000000,
   "content": {
-    "blocks": [],
-    "showcase": {
-      "layout": "collection",
-      "eyebrow": "The collection",
-      "title": "Things worth keeping.",
-      "summary": "A growing collection of places, observations, and small discoveries. Each entry has a page of its own.",
-      "cover": {
-        "src": "1791200000003",
-        "mobile": "1791200000003",
-        "renditions": {
-          "mobile": "portrait"
-        }
-      },
-      "body": {
-        "type": "doc",
-        "content": [
-          {
-            "type": "heading",
-            "attrs": {
-              "level": 2
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Something to build on."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "text",
-                "text": "This page is an example, ready to become something of your own. The content lives in your repository, and the design belongs to your site."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "text",
-                "text": "The navigation and footer are shared globals. The text and imagery here belong to this page. Change one without having to change the other."
-              }
-            ]
-          },
-          {
-            "type": "blockquote",
-            "content": [
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "There is always something else to notice."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
     "seo": {
       "title": "Things worth keeping. | Commitpress",
       "description": "A growing collection of places, observations, and small discoveries. Each entry has a page of its own."
+    },
+    "collection": {
+      "eyebrow": "The collection",
+      "title": "Things worth keeping.",
+      "summary": "A growing collection of places, observations, and small discoveries. Each entry has a page of its own."
     }
   },
   "locales": {
@@ -79,63 +21,14 @@
       "status": "published",
       "last_edited": 1791200000000,
       "content": {
-        "showcase": {
-          "eyebrow": "Samlingen",
-          "title": "Saker värda att spara.",
-          "summary": "En växande samling platser, iakttagelser och små upptäckter. Varje inlägg har en egen sida.",
-          "body": {
-            "type": "doc",
-            "content": [
-              {
-                "type": "heading",
-                "attrs": {
-                  "level": 2
-                },
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Något att bygga vidare på."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Den här sidan är ett exempel, redo att bli något eget. Innehållet finns i ditt repository och designen hör till din webbplats."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Navigering och sidfot är gemensamma globala värden. Texten och bilderna här hör till just den här sidan."
-                  }
-                ]
-              },
-              {
-                "type": "blockquote",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "There is always something else to notice."
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        },
         "seo": {
           "title": "Saker värda att spara. | Commitpress",
           "description": "En växande samling platser, iakttagelser och små upptäckter. Varje inlägg har en egen sida."
+        },
+        "collection": {
+          "eyebrow": "Samlingen",
+          "title": "Saker värda att spara.",
+          "summary": "En växande samling platser, iakttagelser och små upptäckter. Varje inlägg har en egen sida."
         }
       }
     }

@@ -1,72 +1,18 @@
 {
   "v": 2,
-  "schema": "page",
+  "schema": "gallery",
   "slug": "images",
   "status": "published",
   "last_edited": 1791200000000,
   "content": {
-    "blocks": [],
-    "showcase": {
-      "layout": "images",
+    "seo": {
+      "title": "A change of scenery. | Commitpress",
+      "description": "A few photographs, a few different shapes. Open an image and take a closer look."
+    },
+    "gallery": {
       "eyebrow": "The image library",
       "title": "A change of scenery.",
       "summary": "A few photographs, a few different shapes. Open an image and take a closer look.",
-      "cover": {
-        "src": "1791200000002",
-        "mobile": "1791200000002",
-        "renditions": {
-          "mobile": "portrait"
-        }
-      },
-      "body": {
-        "type": "doc",
-        "content": [
-          {
-            "type": "heading",
-            "attrs": {
-              "level": 2
-            },
-            "content": [
-              {
-                "type": "text",
-                "text": "Something to build on."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "text",
-                "text": "This page is an example, ready to become something of your own. The content lives in your repository, and the design belongs to your site."
-              }
-            ]
-          },
-          {
-            "type": "paragraph",
-            "content": [
-              {
-                "type": "text",
-                "text": "The navigation and footer are shared globals. The text and imagery here belong to this page. Change one without having to change the other."
-              }
-            ]
-          },
-          {
-            "type": "blockquote",
-            "content": [
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "There is always something else to notice."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
       "gallery": {
         "folder": "showcase",
         "order": [
@@ -76,10 +22,6 @@
           "1791200000002"
         ]
       }
-    },
-    "seo": {
-      "title": "A change of scenery. | Commitpress",
-      "description": "A few photographs, a few different shapes. Open an image and take a closer look."
     }
   },
   "locales": {
@@ -88,63 +30,14 @@
       "status": "published",
       "last_edited": 1791200000000,
       "content": {
-        "showcase": {
-          "eyebrow": "Bildbiblioteket",
-          "title": "Lite miljöombyte.",
-          "summary": "Några fotografier i olika format. Öppna en bild och titta närmare.",
-          "body": {
-            "type": "doc",
-            "content": [
-              {
-                "type": "heading",
-                "attrs": {
-                  "level": 2
-                },
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Något att bygga vidare på."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Den här sidan är ett exempel, redo att bli något eget. Innehållet finns i ditt repository och designen hör till din webbplats."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "Navigering och sidfot är gemensamma globala värden. Texten och bilderna här hör till just den här sidan."
-                  }
-                ]
-              },
-              {
-                "type": "blockquote",
-                "content": [
-                  {
-                    "type": "paragraph",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "There is always something else to notice."
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        },
         "seo": {
           "title": "Lite miljöombyte. | Commitpress",
           "description": "Några fotografier i olika format. Öppna en bild och titta närmare."
+        },
+        "gallery": {
+          "eyebrow": "Bildbiblioteket",
+          "title": "Lite miljöombyte.",
+          "summary": "Några fotografier i olika format. Öppna en bild och titta närmare."
         }
       }
     }

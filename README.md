@@ -55,7 +55,18 @@ Preview targets support pages, collection entries, and the site global, includin
 
 English lives in each record's base `content`; Swedish overlays live in `locales.sv.content`, with independently translated slugs and publication states. The SDK resolves the requested locale without silently falling back to another language. The language switcher follows the equivalent page or entry.
 
-The page schema keeps reusable blocks alongside a layout group. The /pages example demonstrates independently editable and reorderable sections; collection entries use structured rich text.
+Choose a page schema when creating a page in the CMS:
+
+| Schema | Fields and behavior |
+| --- | --- |
+| Home | Introduction and cover, followed by example links and collection highlights. |
+| Page | Introduction, optional cover, rich text, next-page link, and reusable Intro, FAQ, and Call to action blocks. |
+| Collection | Introduction followed by published Notes entries. |
+| Gallery | Introduction and an ordered image folder with a full-screen viewer. |
+
+Each schema has its own field group (`home`, `page`, `collection`, or `gallery`). The renderer and live preview use that group to identify the layout; there is no layout dropdown. Existing examples and their Swedish translations use the corresponding schema. The `notes` collection remains separate and uses structured rich text.
+
+The site global contains the site name, tagline, and desktop/mobile navigation. Add business-specific fields and integrations only when your site needs them.
 
 Run `pnpm cms:generate` after changing schemas. The production build regenerates the types automatically.
 

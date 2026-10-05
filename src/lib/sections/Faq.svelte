@@ -14,8 +14,8 @@
 
 			<div class="col-span-12 lg:col-span-7 lg:col-start-6">
 				<div class="border-t border-line">
-					<!-- Keyed by position: a key must not be a value the editor can type. See `Contact`. -->
-					{#each block.items as item, i (i)}
+					<!-- Keyed by position: a key must not be a value the editor can type. Content can change while a row stays open. -->
+					{#each block.items ?? [] as item, i (i)}
 						<details class="border-b border-line">
 							<summary class="flex items-center justify-between gap-6 py-7 text-[18px]">
 								{item.question}

@@ -6,8 +6,11 @@
   "last_edited": 1791200000000,
   "content": {
     "blocks": [],
-    "showcase": {
-      "layout": "page",
+    "seo": {
+      "title": "A quiet corner. | Commitpress",
+      "description": "A smaller page, tucked one level deeper. Same site, same shared details, a different place to land."
+    },
+    "page": {
       "eyebrow": "A nested page",
       "title": "A quiet corner.",
       "summary": "A smaller page, tucked one level deeper. Same site, same shared details, a different place to land.",
@@ -72,10 +75,6 @@
         "href": "/pages",
         "label": "Back to example pages"
       }
-    },
-    "seo": {
-      "title": "A quiet corner. | Commitpress",
-      "description": "A smaller page, tucked one level deeper. Same site, same shared details, a different place to land."
     }
   },
   "locales": {
@@ -84,7 +83,11 @@
       "status": "published",
       "last_edited": 1791200000000,
       "content": {
-        "showcase": {
+        "seo": {
+          "title": "En lugn vrå. | Commitpress",
+          "description": "En mindre sida, en nivå längre ner. Samma webbplats och gemensamma detaljer, en ny plats att landa på."
+        },
+        "page": {
           "eyebrow": "En undersida",
           "title": "En lugn vrå.",
           "summary": "En mindre sida, en nivå längre ner. Samma webbplats och gemensamma detaljer, en ny plats att landa på.",
@@ -142,10 +145,6 @@
             "href": "/sv/sidor",
             "label": "Till exempelsidorna"
           }
-        },
-        "seo": {
-          "title": "En lugn vrå. | Commitpress",
-          "description": "En mindre sida, en nivå längre ner. Samma webbplats och gemensamma detaljer, en ny plats att landa på."
         }
       }
     }

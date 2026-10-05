@@ -1,7 +1,7 @@
 /**
  * The site global as the editor is holding it right now, for the preview frame only.
  *
- * The chrome this record fills — header, footer, mobile bar — is rendered by the *root layout*,
+ * The chrome this record fills — header and footer — is rendered by the *root layout*,
  * above every page. So the preview route cannot pass live values down to it the ordinary way: the
  * values arrive in a page component, and the components that need them are its ancestors. This is
  * that one wire, and it exists for exactly that reason.
@@ -37,7 +37,6 @@ function normalise(content: SiteContent): SiteContent {
 	return {
 		...content,
 		details: content?.details ?? ({} as SiteContent['details']),
-		opening_hours: content?.opening_hours ?? [],
 		nav: content?.nav ?? [],
 		mobile_nav: content?.mobile_nav ?? []
 	};

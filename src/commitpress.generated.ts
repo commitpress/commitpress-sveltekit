@@ -6,138 +6,11 @@ import { resolve } from 'path'
 
 const __root = resolve(process.cwd(), "")
 
-export type HeroBlock = {
-  "slides": Array<{
-    "line": string
-    "alt": string
-    "image"?: string | { src: string; "mobile"?: string; renditions?: { "src"?: string; "mobile"?: string } }
-  }>
-}
-export type PageHeaderBlock = {
-  "eyebrow": string
-  "heading": string
-  "lead"?: string
-  "alt": string
-  "image"?: string | { src: string; renditions?: { "src"?: string } }
-  "buttons"?: Array<{
-    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
-  }>
-}
 export type IntroBlock = {
   "eyebrow": string
   "statement": string
   "body": string
   "link": { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
-}
-export type ServicesBlock = {
-  "eyebrow": string
-  "heading": string
-  "note": string
-  "items": Array<{
-    "title": string
-    "body": string
-    "href": { href: string; label?: string }
-    "alt": string
-    "image"?: string | { src: string; renditions?: { "src"?: string } }
-  }>
-}
-export type StepsBlock = {
-  "eyebrow": string
-  "heading": string
-  "note": string
-  "items": Array<{
-    "title": string
-    "body": string
-  }>
-}
-export type PackagesBlock = {
-  "eyebrow": string
-  "heading": string
-  "note": string
-  "items": Array<{
-    "name": string
-    "price": string
-    "body": string
-    "includes": Array<{
-      "item": string
-    }>
-    "link": { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
-  }>
-}
-export type GalleryBlock = {
-  "eyebrow": string
-  "heading": string
-  "items": Array<{
-    "alt": string
-    "image"?: string | { src: string; renditions?: { "src"?: string } }
-    "span": "wide" | "tall"
-    "link": { href: string; label?: string }
-    "title"?: string
-    "tagline"?: string
-  }>
-}
-export type GalleryGridBlock = {
-  "eyebrow": string
-  "heading": string
-  "note"?: string
-  "gallery"?: string | { folder: string; order?: string[]; options?: Record<string, "upright" | "landscape"> }
-}
-export type PhotoGridBlock = {
-  "eyebrow": string
-  "heading": string
-  "note"?: string
-  "gallery"?: boolean
-  "items": Array<{
-    "image"?: string | { src: string; renditions?: { "src"?: string } }
-    "orientation": "upright" | "landscape"
-  }>
-}
-export type IdPhotoBlock = {
-  "eyebrow": string
-  "heading": string
-  "body": string
-  "points": Array<{
-    "point": string
-  }>
-  "hours_heading": string
-  "buttons"?: Array<{
-    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
-  }>
-}
-export type BookingBlock = {
-  "eyebrow": string
-  "heading": string
-  "body": string
-  "open_days"?: Array<{
-    "date": string
-    "from": string
-    "to": string
-  }>
-  "closed_days"?: Array<{
-    "date": string
-    "note"?: string
-  }>
-  "slot_minutes": string
-  "lead_time_hours": string
-  "horizon_days": string
-  "id_types"?: Array<{
-    "label": string
-  }>
-  "cta_label": string
-  "submit_label": string
-  "footnote"?: string
-  "empty_note": string
-  "confirm_heading": string
-  "confirm_body": string
-}
-export type AboutBlock = {
-  "eyebrow": string
-  "statement": string
-  "paragraphs": Array<{
-    "paragraph": string
-  }>
-  "alt": string
-  "image"?: string
 }
 export type FaqBlock = {
   "eyebrow": string
@@ -146,16 +19,6 @@ export type FaqBlock = {
     "question": string
     "answer": string
   }>
-}
-export type ContactBlock = {
-  "eyebrow": string
-  "heading": string
-  "body": string
-  "enquiry_types": Array<{
-    "label": string
-  }>
-  "submit_label": string
-  "footnote"?: string
 }
 export type CtaBlock = {
   "eyebrow": string
@@ -191,19 +54,7 @@ export interface SiteContent {
   "details": {
     "name": string
     "tagline": string
-    "phone": string
-    "phone_href": string
-    "email": string
-    "street": string
-    "postal": string
-    "instagram"?: string
-    "facebook"?: string
   }
-  "opening_hours": Array<{
-    "days": string
-    "hours": string
-    "closed"?: boolean
-  }>
   "nav": Array<{
     "href": { href: string; label?: string }
   }>
@@ -211,11 +62,47 @@ export interface SiteContent {
     "href": { href: string; label?: string }
   }>
 }
-export interface GalleryContent {
-  "gallery"?: {
+export interface CollectionContent {
+  "collection": {
+    "eyebrow"?: string
+    "title": string
+    "summary"?: string
+  }
+  "seo"?: {
     "title"?: string
-    "tagline"?: string
-    "gallery"?: string | { folder: string; order?: string[]; options?: Record<string, "upright" | "landscape"> }
+    "description"?: string
+    "social_image"?: string | { src: string; renditions?: { "src"?: string } }
+    "social_title"?: string
+    "social_description"?: string
+    "og_type"?: "website" | "article"
+    "no_index"?: boolean
+    "exclude_from_sitemap"?: boolean
+  }
+}
+export interface GalleryContent {
+  "gallery": {
+    "eyebrow"?: string
+    "title": string
+    "summary"?: string
+    "gallery"?: string | { folder: string; order?: string[] }
+  }
+  "seo"?: {
+    "title"?: string
+    "description"?: string
+    "social_image"?: string | { src: string; renditions?: { "src"?: string } }
+    "social_title"?: string
+    "social_description"?: string
+    "og_type"?: "website" | "article"
+    "no_index"?: boolean
+    "exclude_from_sitemap"?: boolean
+  }
+}
+export interface HomeContent {
+  "home": {
+    "eyebrow"?: string
+    "title": string
+    "summary"?: string
+    "cover"?: string | { src: string; "mobile"?: string; renditions?: { "src"?: string; "mobile"?: string }; alt?: { "src"?: string; "mobile"?: string } }
   }
   "seo"?: {
     "title"?: string
@@ -229,33 +116,19 @@ export interface GalleryContent {
   }
 }
 export interface PageContent {
-  "blocks": Array<
-    | { "hero": HeroBlock }
-    | { "page_header": PageHeaderBlock }
-    | { "intro": IntroBlock }
-    | { "services": ServicesBlock }
-    | { "steps": StepsBlock }
-    | { "packages": PackagesBlock }
-    | { "gallery": GalleryBlock }
-    | { "gallery_grid": GalleryGridBlock }
-    | { "photo_grid": PhotoGridBlock }
-    | { "id_photo": IdPhotoBlock }
-    | { "booking": BookingBlock }
-    | { "about": AboutBlock }
-    | { "faq": FaqBlock }
-    | { "contact": ContactBlock }
-    | { "cta": CtaBlock }
-  >
-  "showcase"?: {
-    "layout"?: "home" | "page" | "collection" | "images"
+  "page": {
     "eyebrow"?: string
-    "title"?: string
+    "title": string
     "summary"?: string
     "cover"?: string | { src: string; "mobile"?: string; renditions?: { "src"?: string; "mobile"?: string }; alt?: { "src"?: string; "mobile"?: string } }
     "body"?: RichtextDoc
-    "gallery"?: string | { folder: string; order?: string[] }
     "next_page"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
   }
+  "blocks"?: Array<
+    | { "intro": IntroBlock }
+    | { "faq": FaqBlock }
+    | { "cta": CtaBlock }
+  >
   "seo"?: {
     "title"?: string
     "description"?: string
@@ -276,10 +149,10 @@ export type ContentMap = {
   "content/collections/notes/room-to-breathe": NotesContent
   "content/globals/site": SiteContent
   "content/pages/about": PageContent
-  "content/pages/collection": PageContent
+  "content/pages/collection": CollectionContent
   "content/pages/gallery": GalleryContent
-  "content/pages/images": PageContent
-  "content/pages/index": PageContent
+  "content/pages/images": GalleryContent
+  "content/pages/index": HomeContent
   "content/pages/pages/a-quiet-corner": PageContent
   "content/pages/pages": PageContent
 }
@@ -287,7 +160,9 @@ export type ContentMap = {
 export type AnyContentFile =
   | (ContentFile<NotesContent> & { schema: "notes" })
   | (ContentFile<SiteContent> & { schema: "site" })
+  | (ContentFile<CollectionContent> & { schema: "collection" })
   | (ContentFile<GalleryContent> & { schema: "gallery" })
+  | (ContentFile<HomeContent> & { schema: "home" })
   | (ContentFile<PageContent> & { schema: "page" })
   | (ContentFile<RedirectContent> & { schema: "redirect" })
 

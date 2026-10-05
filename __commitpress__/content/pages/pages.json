@@ -39,8 +39,11 @@
         }
       }
     ],
-    "showcase": {
-      "layout": "page",
+    "seo": {
+      "title": "Room for a different layout. | Commitpress",
+      "description": "A page can be a short introduction, a long read, or a place to bring things together. Start here, then follow a route a little further."
+    },
+    "page": {
       "eyebrow": "Pages & routing",
       "title": "Room for a different layout.",
       "summary": "A page can be a short introduction, a long read, or a place to bring things together. Start here, then follow a route a little further.",
@@ -105,10 +108,6 @@
         "href": "/pages/a-quiet-corner",
         "label": "Follow a nested route"
       }
-    },
-    "seo": {
-      "title": "Room for a different layout. | Commitpress",
-      "description": "A page can be a short introduction, a long read, or a place to bring things together. Start here, then follow a route a little further."
     }
   },
   "locales": {
@@ -117,7 +116,45 @@
       "status": "published",
       "last_edited": 1791200000000,
       "content": {
-        "showcase": {
+        "seo": {
+          "title": "Plats för en annan layout. | Commitpress",
+          "description": "En sida kan vara en kort introduktion, en längre text eller en plats där allt möts. Börja här och följ sedan en sökväg lite längre."
+        },
+        "blocks": [
+          {
+            "intro": {
+              "eyebrow": "Återanvändbara sektioner",
+              "statement": "Ordna delarna på ditt sätt.",
+              "body": "Den här sektionen är ett block. Frågorna nedan är ett annat. De kan redigeras, flyttas eller stängas av utan att ändra resten av sidan.",
+              "link": {
+                "type": "internal",
+                "href": "/sv/samling",
+                "label": "Utforska samlingen"
+              }
+            }
+          },
+          {
+            "faq": {
+              "eyebrow": "Några svar",
+              "heading": "Vad kan du ändra?",
+              "items": [
+                {
+                  "question": "Kan jag flytta sektionerna?",
+                  "answer": "Ja. Sektionerna är separata block i sidans innehåll. Flytta dem i Commitpress för att ändra sidan."
+                },
+                {
+                  "question": "Kan jag redigera menyn och sidfoten?",
+                  "answer": "Ja. De kommer från globala värden, gemensamma för alla sidor och översatta till varje språk."
+                },
+                {
+                  "question": "Kan jag förhandsvisa ett utkast?",
+                  "answer": "Ja. Samlingen innehåller ett utkast. Det döljs på den offentliga webbplatsen men visas i förhandsvisningen."
+                }
+              ]
+            }
+          }
+        ],
+        "page": {
           "eyebrow": "Sidor och sökvägar",
           "title": "Plats för en annan layout.",
           "summary": "En sida kan vara en kort introduktion, en längre text eller en plats där allt möts. Börja här och följ sedan en sökväg lite längre.",
@@ -175,45 +212,7 @@
             "href": "/sv/sidor/en-lugn-vra",
             "label": "Följ en undersida"
           }
-        },
-        "seo": {
-          "title": "Plats för en annan layout. | Commitpress",
-          "description": "En sida kan vara en kort introduktion, en längre text eller en plats där allt möts. Börja här och följ sedan en sökväg lite längre."
-        },
-        "blocks": [
-          {
-            "intro": {
-              "eyebrow": "Återanvändbara sektioner",
-              "statement": "Ordna delarna på ditt sätt.",
-              "body": "Den här sektionen är ett block. Frågorna nedan är ett annat. De kan redigeras, flyttas eller stängas av utan att ändra resten av sidan.",
-              "link": {
-                "type": "internal",
-                "href": "/sv/samling",
-                "label": "Utforska samlingen"
-              }
-            }
-          },
-          {
-            "faq": {
-              "eyebrow": "Några svar",
-              "heading": "Vad kan du ändra?",
-              "items": [
-                {
-                  "question": "Kan jag flytta sektionerna?",
-                  "answer": "Ja. Sektionerna är separata block i sidans innehåll. Flytta dem i Commitpress för att ändra sidan."
-                },
-                {
-                  "question": "Kan jag redigera menyn och sidfoten?",
-                  "answer": "Ja. De kommer från globala värden, gemensamma för alla sidor och översatta till varje språk."
-                },
-                {
-                  "question": "Kan jag förhandsvisa ett utkast?",
-                  "answer": "Ja. Samlingen innehåller ett utkast. Det döljs på den offentliga webbplatsen men visas i förhandsvisningen."
-                }
-              ]
-            }
-          }
-        ]
+        }
       }
     }
   }

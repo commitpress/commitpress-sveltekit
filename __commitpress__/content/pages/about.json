@@ -11,23 +11,6 @@
     },
     "blocks": [
       {
-        "page_header": {
-          "eyebrow": "About the starter",
-          "heading": "A starting point, with space to grow.",
-          "lead": "This example shows how a few reusable sections can become a complete page. Everything here is ready to be replaced with your own content.",
-          "alt": "",
-          "buttons": [
-            {
-              "link": {
-                "type": "internal",
-                "href": "/",
-                "label": "Back to home"
-              }
-            }
-          ]
-        }
-      },
-      {
         "faq": {
           "eyebrow": "Good to know",
           "heading": "A few simple answers.",
@@ -64,6 +47,16 @@
           ]
         }
       }
-    ]
+    ],
+    "page": {
+      "eyebrow": "About the starter",
+      "title": "A starting point, with space to grow.",
+      "summary": "This example shows how a few reusable sections can become a complete page. Everything here is ready to be replaced with your own content.",
+      "next_page": {
+        "type": "internal",
+        "href": "/",
+        "label": "Back to home"
+      }
+    }
   }
 }

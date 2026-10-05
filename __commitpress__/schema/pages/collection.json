@@ -1,14 +1,14 @@
 {
   "$schema": "https://commitpress.com/app/schema/schema/v1",
-  "icon": "gallery",
+  "icon": "page",
   "blocks": {
     "components": [
       {
-        "uuid": "e36eddcd-b520-428a-b9d7-e4b006c26485",
-        "name": "gallery",
-        "label": "Gallery",
+        "uuid": "60503658-331f-44a0-8658-5b3ec2c1f946",
+        "name": "collection",
+        "label": "Collection",
         "type": "group",
-        "description": "An introduction and an ordered folder of images from the media library.",
+        "description": "An introduction to the published entries in the Notes collection.",
         "required": true,
         "collapsed": false,
         "min": 0,
@@ -17,7 +17,7 @@
         "multiple": false,
         "controls": [
           {
-            "uuid": "e457f2b6-97b9-40a1-90f0-a3806e3c6583",
+            "uuid": "860df670-e007-4863-b1ea-dc91731f1237",
             "name": "eyebrow",
             "label": "Eyebrow",
             "type": "input",
@@ -29,7 +29,7 @@
             "placeholder": ""
           },
           {
-            "uuid": "c2c87780-f9cb-4b3b-83b8-f2e46dccc6bb",
+            "uuid": "ab0010da-5cfe-44d2-a296-2481ef27f5ac",
             "name": "title",
             "label": "Title",
             "type": "input",
@@ -41,7 +41,7 @@
             "placeholder": ""
           },
           {
-            "uuid": "177031e9-dfcb-4e25-959d-3dda4c64920d",
+            "uuid": "ae955bb3-6910-495a-9c8c-d47050fc3a03",
             "name": "summary",
             "label": "Summary",
             "type": "textarea",
@@ -51,17 +51,6 @@
             "rows": 4,
             "resize": true,
             "placeholder": ""
-          },
-          {
-            "uuid": "3b4a20f7-3920-4e33-8e70-4af1cac02cd1",
-            "name": "gallery",
-            "label": "Gallery",
-            "type": "gallery",
-            "description": "",
-            "required": false,
-            "rootFolder": "showcase",
-            "escapeRootFolder": true,
-            "options": []
           }
         ]
       }

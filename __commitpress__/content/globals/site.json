@@ -7,14 +7,8 @@
   "content": {
     "details": {
       "name": "Commitpress",
-      "tagline": "A few pages. A lot to explore.",
-      "phone": "",
-      "phone_href": "",
-      "email": "",
-      "street": "",
-      "postal": ""
+      "tagline": "A few pages. A lot to explore."
     },
-    "opening_hours": [],
     "nav": [
       {
         "href": {

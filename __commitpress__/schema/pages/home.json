@@ -1,14 +1,14 @@
 {
   "$schema": "https://commitpress.com/app/schema/schema/v1",
-  "icon": "gallery",
+  "icon": "page",
   "blocks": {
     "components": [
       {
-        "uuid": "e36eddcd-b520-428a-b9d7-e4b006c26485",
-        "name": "gallery",
-        "label": "Gallery",
+        "uuid": "a34e4d75-e687-4fe7-94f6-a5ac7ddae7eb",
+        "name": "home",
+        "label": "Home",
         "type": "group",
-        "description": "An introduction and an ordered folder of images from the media library.",
+        "description": "The homepage introduction. Collection highlights and example links appear below it.",
         "required": true,
         "collapsed": false,
         "min": 0,
@@ -17,7 +17,7 @@
         "multiple": false,
         "controls": [
           {
-            "uuid": "e457f2b6-97b9-40a1-90f0-a3806e3c6583",
+            "uuid": "c7e2bb58-cc83-4a5e-8e19-132ff6da1437",
             "name": "eyebrow",
             "label": "Eyebrow",
             "type": "input",
@@ -29,7 +29,7 @@
             "placeholder": ""
           },
           {
-            "uuid": "c2c87780-f9cb-4b3b-83b8-f2e46dccc6bb",
+            "uuid": "cc30ee68-5471-4917-a725-1b89d5045582",
             "name": "title",
             "label": "Title",
             "type": "input",
@@ -41,7 +41,7 @@
             "placeholder": ""
           },
           {
-            "uuid": "177031e9-dfcb-4e25-959d-3dda4c64920d",
+            "uuid": "8880a960-f897-4cd9-8ead-647671f76749",
             "name": "summary",
             "label": "Summary",
             "type": "textarea",
@@ -53,15 +53,29 @@
             "placeholder": ""
           },
           {
-            "uuid": "3b4a20f7-3920-4e33-8e70-4af1cac02cd1",
-            "name": "gallery",
-            "label": "Gallery",
-            "type": "gallery",
+            "uuid": "052295df-7741-433d-9868-dc0d36eeee31",
+            "name": "cover",
+            "label": "Cover",
+            "type": "image",
             "description": "",
             "required": false,
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ],
+            "multiple": false,
             "rootFolder": "showcase",
             "escapeRootFolder": true,
-            "options": []
+            "renditions": true,
+            "alt": true,
+            "sizes": [],
+            "breakpoints": [
+              {
+                "name": "mobile",
+                "label": "Mobile"
+              }
+            ]
           }
         ]
       }

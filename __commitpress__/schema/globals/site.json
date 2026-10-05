@@ -7,7 +7,7 @@
         "uuid": "a6896307-d435-4aa9-be70-d9dff21ad733",
         "type": "group",
         "name": "details",
-        "label": "Details",
+        "label": "Site identity",
         "description": "",
         "required": true,
         "collapsed": false,
@@ -38,128 +38,6 @@
             "rows": 3,
             "resize": true,
             "localized": true
-          },
-          {
-            "uuid": "a09ecdba-289d-4b84-a2c7-ebb306782982",
-            "name": "phone",
-            "label": "Phone",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "43d89d88-cd36-4154-95da-3a186ed54f75",
-            "name": "phone_href",
-            "label": "Phone href",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "86ae0efa-db19-4c1d-8dd7-821f2ceee0e0",
-            "name": "email",
-            "label": "Email",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "eeaf1e8a-31b6-4dce-8d30-846914d5ad2f",
-            "name": "street",
-            "label": "Street",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "d38075c1-83d9-42a9-b45c-89b15a3c80f4",
-            "name": "postal",
-            "label": "Postal",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "76dd1cdb-7b7a-4fc5-9d46-8d687d51c7c6",
-            "name": "instagram",
-            "label": "Instagram",
-            "description": "",
-            "required": false,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "1f1eb39b-c2e1-490b-b781-3e860fab70d1",
-            "name": "facebook",
-            "label": "Facebook",
-            "description": "",
-            "required": false,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          }
-        ],
-        "presentation": ""
-      },
-      {
-        "uuid": "afffa552-ebd8-4c3d-9e5b-a847ad54ed91",
-        "type": "group",
-        "name": "opening_hours",
-        "label": "Opening hours",
-        "description": "",
-        "required": true,
-        "collapsed": false,
-        "min": 0,
-        "max": 0,
-        "multiple": true,
-        "controls": [
-          {
-            "uuid": "66efa12c-a0c5-46ba-badc-0c13add373a1",
-            "name": "days",
-            "label": "Days",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "47644d5c-ef57-45c9-a7f4-b5f71464777b",
-            "name": "hours",
-            "label": "Hours",
-            "description": "",
-            "required": true,
-            "type": "input",
-            "valueType": "string",
-            "pattern": "",
-            "placeholder": ""
-          },
-          {
-            "uuid": "c598c4bd-b131-4594-9381-9876d17ea16f",
-            "name": "closed",
-            "label": "Closed",
-            "description": "",
-            "required": false,
-            "type": "boolean"
           }
         ],
         "presentation": ""
@@ -168,7 +46,7 @@
         "uuid": "e99698e1-d093-4ea0-97e1-610e5f3edf03",
         "type": "group",
         "name": "nav",
-        "label": "Nav",
+        "label": "Navigation",
         "description": "",
         "required": true,
         "collapsed": false,
@@ -193,7 +71,7 @@
         "uuid": "9aa7aff1-ce71-4800-a640-aa6dc2936473",
         "type": "group",
         "name": "mobile_nav",
-        "label": "Mobile nav",
+        "label": "Mobile navigation",
         "description": "",
         "required": true,
         "collapsed": false,

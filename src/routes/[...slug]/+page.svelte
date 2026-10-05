@@ -1,10 +1,12 @@
 <script lang="ts">
   import ShowcasePage from '$lib/showcase/ShowcasePage.svelte';
   import StoryPage from '$lib/showcase/StoryPage.svelte';
+  import { pageSection } from '$lib/content/page-types';
   import type {PageData} from './$types';
   let {data}:{data:PageData}=$props();
-  const title=$derived(data.entry?.story?.title || data.page?.showcase?.title || data.page?.seo?.title || 'Commitpress');
-  const description=$derived(data.entry?.story?.summary || data.page?.showcase?.summary || '');
+  const section=$derived(data.page ? pageSection(data.page) : undefined);
+  const title=$derived(data.entry?.story?.title || section?.title || data.page?.seo?.title || 'Commitpress');
+  const description=$derived(data.entry?.story?.summary || section?.summary || '');
 </script>
 <svelte:head>
   <title>{title} | Commitpress</title><meta name="description" content={description} />

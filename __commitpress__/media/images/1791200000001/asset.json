@@ -7,7 +7,7 @@
   "height": 1067,
   "bytes": 392753,
   "uploaded_at": 1791200000000,
-  "updated_at": 1791227734250,
+  "updated_at": 1791227823154,
   "alt": "A small wooden cabin beside a still mountain lake",
   "folder": "showcase",
   "folders": [
@@ -34,20 +34,6 @@
       "width": 1600,
       "height": 1067,
       "bytes": 411414
-    },
-    {
-      "name": "cp-grid",
-      "path": "1791200000001/cp-grid.webp",
-      "width": 960,
-      "height": 640,
-      "bytes": 92586
-    },
-    {
-      "name": "cp-full",
-      "path": "1791200000001/cp-full.webp",
-      "width": 1600,
-      "height": 1067,
-      "bytes": 362013
     },
     {
       "name": "cp-thumb",

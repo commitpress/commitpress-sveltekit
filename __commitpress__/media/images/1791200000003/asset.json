@@ -7,7 +7,7 @@
   "height": 2399,
   "bytes": 866687,
   "uploaded_at": 1791200000000,
-  "updated_at": 1791227734253,
+  "updated_at": 1791227823156,
   "alt": "Green leaves against a soft pink background",
   "folder": "showcase",
   "folders": [
@@ -34,20 +34,6 @@
       "width": 1600,
       "height": 2399,
       "bytes": 811824
-    },
-    {
-      "name": "cp-grid",
-      "path": "1791200000003/cp-grid.webp",
-      "width": 640,
-      "height": 960,
-      "bytes": 104844
-    },
-    {
-      "name": "cp-full",
-      "path": "1791200000003/cp-full.webp",
-      "width": 1067,
-      "height": 1600,
-      "bytes": 393240
     },
     {
       "name": "cp-thumb",

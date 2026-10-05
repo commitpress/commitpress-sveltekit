@@ -14,7 +14,7 @@
       "height": 1067,
       "bytes": 392753,
       "uploaded_at": 1791200000000,
-      "updated_at": 1791227734250,
+      "updated_at": 1791227823154,
       "alt": "A small wooden cabin beside a still mountain lake",
       "folder": "showcase",
       "folders": [
@@ -43,20 +43,6 @@
           "bytes": 411414
         },
         {
-          "name": "cp-grid",
-          "path": "1791200000001/cp-grid.webp",
-          "width": 960,
-          "height": 640,
-          "bytes": 92586
-        },
-        {
-          "name": "cp-full",
-          "path": "1791200000001/cp-full.webp",
-          "width": 1600,
-          "height": 1067,
-          "bytes": 362013
-        },
-        {
           "name": "cp-thumb",
           "path": "1791200000001/cp-thumb.webp",
           "width": 320,
@@ -82,7 +68,7 @@
       "height": 1066,
       "bytes": 573211,
       "uploaded_at": 1791200000000,
-      "updated_at": 1791227734252,
+      "updated_at": 1791227823155,
       "alt": "Sunlight falling through a green forest",
       "folder": "showcase",
       "folders": [
@@ -111,20 +97,6 @@
           "bytes": 630999
         },
         {
-          "name": "cp-grid",
-          "path": "1791200000002/cp-grid.webp",
-          "width": 960,
-          "height": 640,
-          "bytes": 144012
-        },
-        {
-          "name": "cp-full",
-          "path": "1791200000002/cp-full.webp",
-          "width": 1600,
-          "height": 1066,
-          "bytes": 585513
-        },
-        {
           "name": "cp-thumb",
           "path": "1791200000002/cp-thumb.webp",
           "width": 320,
@@ -150,7 +122,7 @@
       "height": 2399,
       "bytes": 866687,
       "uploaded_at": 1791200000000,
-      "updated_at": 1791227734253,
+      "updated_at": 1791227823156,
       "alt": "Green leaves against a soft pink background",
       "folder": "showcase",
       "folders": [
@@ -179,20 +151,6 @@
           "bytes": 811824
         },
         {
-          "name": "cp-grid",
-          "path": "1791200000003/cp-grid.webp",
-          "width": 640,
-          "height": 960,
-          "bytes": 104844
-        },
-        {
-          "name": "cp-full",
-          "path": "1791200000003/cp-full.webp",
-          "width": 1067,
-          "height": 1600,
-          "bytes": 393240
-        },
-        {
           "name": "cp-thumb",
           "path": "1791200000003/cp-thumb.webp",
           "width": 213,
@@ -218,7 +176,7 @@
       "height": 1067,
       "bytes": 83448,
       "uploaded_at": 1791200000000,
-      "updated_at": 1791227734253,
+      "updated_at": 1791227823156,
       "alt": "A light-filled interior with warm natural materials",
       "folder": "showcase",
       "folders": [
@@ -245,20 +203,6 @@
           "width": 1600,
           "height": 1067,
           "bytes": 36795
-        },
-        {
-          "name": "cp-grid",
-          "path": "1791200000004/cp-grid.webp",
-          "width": 960,
-          "height": 640,
-          "bytes": 7068
-        },
-        {
-          "name": "cp-full",
-          "path": "1791200000004/cp-full.webp",
-          "width": 1600,
-          "height": 1067,
-          "bytes": 33978
         },
         {
           "name": "cp-thumb",

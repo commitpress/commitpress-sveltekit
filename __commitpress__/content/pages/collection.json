@@ -13,6 +13,10 @@
       "eyebrow": "The collection",
       "title": "Things worth keeping.",
       "summary": "A growing collection of places, observations, and small discoveries. Each entry has a page of its own."
+    },
+    "highlights": {
+      "eyebrow": "From the collection",
+      "title": "A few things we kept."
     }
   },
   "locales": {
@@ -29,6 +33,10 @@
           "eyebrow": "Samlingen",
           "title": "Saker värda att spara.",
           "summary": "En växande samling platser, iakttagelser och små upptäckter. Varje inlägg har en egen sida."
+        },
+        "highlights": {
+          "eyebrow": "Från samlingen",
+          "title": "Några saker vi sparat."
         }
       }
     }

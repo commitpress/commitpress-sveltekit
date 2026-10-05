@@ -38,6 +38,7 @@ export interface NotesContent {
     "date"?: string
     "cover"?: string | { src: string; "mobile"?: string; renditions?: { "src"?: string; "mobile"?: string }; alt?: { "src"?: string; "mobile"?: string } }
     "body"?: RichtextDoc
+    "back_link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
   }
   "seo"?: {
     "title"?: string
@@ -54,6 +55,10 @@ export interface SiteContent {
   "details": {
     "name": string
     "tagline": string
+    "home_link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
+    "header_logo"?: string | { src: string; renditions?: { "src"?: string }; alt?: { "src"?: string } }
+    "footer_logo"?: string | { src: string; renditions?: { "src"?: string }; alt?: { "src"?: string } }
+    "favicon"?: string | { src: string; renditions?: { "src"?: string }; alt?: { "src"?: string } }
   }
   "nav": Array<{
     "href": { href: string; label?: string }
@@ -61,12 +66,43 @@ export interface SiteContent {
   "mobile_nav": Array<{
     "href": { href: string; label?: string }
   }>
+  "footer"?: {
+    "copyright"?: string
+    "text"?: string
+  }
+  "languages"?: Array<{
+    "locale"?: string
+    "label"?: string
+    "name"?: string
+    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
+  }>
+  "ui"?: {
+    "skip_link"?: string
+    "menu"?: string
+    "close_menu"?: string
+    "main_navigation"?: string
+    "mobile_navigation"?: string
+    "footer_navigation"?: string
+    "languages"?: string
+    "image_open"?: string
+    "image_viewer"?: string
+    "image_close"?: string
+    "preview_title"?: string
+    "preview_empty"?: string
+    "error_title"?: string
+    "error_message"?: string
+  }
 }
 export interface CollectionContent {
   "collection": {
     "eyebrow"?: string
     "title": string
     "summary"?: string
+  }
+  "highlights"?: {
+    "eyebrow"?: string
+    "title"?: string
+    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
   }
   "seo"?: {
     "title"?: string
@@ -103,6 +139,31 @@ export interface HomeContent {
     "title": string
     "summary"?: string
     "cover"?: string | { src: string; "mobile"?: string; renditions?: { "src"?: string; "mobile"?: string }; alt?: { "src"?: string; "mobile"?: string } }
+    "caption"?: string
+    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
+    "detail_label"?: string
+    "detail_note"?: string
+  }
+  "navigation"?: {
+    "heading"?: string
+    "items"?: Array<{
+      "number"?: string
+      "title"?: string
+      "summary"?: string
+      "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
+    }>
+  }
+  "highlights"?: {
+    "eyebrow"?: string
+    "title"?: string
+    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
+  }
+  "language_note"?: {
+    "symbol"?: string
+    "eyebrow"?: string
+    "title"?: string
+    "body"?: string
+    "link"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
   }
   "seo"?: {
     "title"?: string
@@ -123,6 +184,8 @@ export interface PageContent {
     "cover"?: string | { src: string; "mobile"?: string; renditions?: { "src"?: string; "mobile"?: string }; alt?: { "src"?: string; "mobile"?: string } }
     "body"?: RichtextDoc
     "next_page"?: { type: 'internal' | 'external' | 'data'; href: string; label?: string; target?: '_blank' | '_self' }
+    "caption"?: string
+    "body_label"?: string
   }
   "blocks"?: Array<
     | { "intro": IntroBlock }

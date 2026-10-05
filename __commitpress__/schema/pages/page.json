@@ -119,6 +119,30 @@
             "required": false,
             "localized": true,
             "valueType": "any"
+          },
+          {
+            "uuid": "ec6110eb-e1bf-4cb1-ab20-6beaec7ceb96",
+            "name": "caption",
+            "label": "Cover caption",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "55f3e140-6d39-4a1b-ab57-b81c2dc6134b",
+            "name": "body_label",
+            "label": "Body heading",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
           }
         ]
       },

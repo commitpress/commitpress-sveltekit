@@ -56,7 +56,9 @@
         "type": "internal",
         "href": "/",
         "label": "Back to home"
-      }
+      },
+      "caption": "From the image library",
+      "body_label": "Page content"
     }
   }
 }

@@ -11,6 +11,7 @@
  * the public site ever writes it, so `current` is null there and the layout uses what the server
  * loaded — the live path costs a `??` on a page that is not being previewed.
  */
+import type { PreviewAssetMap } from '@commitpress/sdk/preview';
 import type { SiteContent } from '../../commitpress.generated';
 
 /**
@@ -18,6 +19,7 @@ import type { SiteContent } from '../../commitpress.generated';
  * preview page is left.
  */
 let posted = $state<SiteContent | null>(null);
+let assets = $state<PreviewAssetMap>({});
 
 /**
  * Fill in the shapes the chrome iterates.
@@ -43,6 +45,8 @@ function normalise(content: SiteContent): SiteContent {
 }
 
 export const previewSite = {
+  get assets(): PreviewAssetMap { return assets; },
+  setAssets(next: PreviewAssetMap): void { assets = next; },
 	/** What the chrome should render, or null to leave the server's copy alone. */
 	get current(): SiteContent | null {
 		return posted;
@@ -57,5 +61,6 @@ export const previewSite = {
 	 */
 	clear(): void {
 		posted = null;
+    assets = {};
 	}
 };

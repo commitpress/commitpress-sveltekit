@@ -22,6 +22,6 @@
     <img src={desktop.src} srcset={desktop.srcset} {sizes} width={desktop.width} height={desktop.height} alt={desktop.alt} class={className} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : 'auto'} />
   </picture>
 {:else}
-  <div class="missing-image {className}" aria-label={alt || 'Image not selected'}></div>
+  <div class="missing-image {className}" aria-label={alt || undefined}></div>
 {/if}
 <style>picture { display: contents; } img { display: block; } .missing-image { background: var(--color-line); min-height: 200px; }</style>

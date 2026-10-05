@@ -59,14 +59,16 @@ Choose a page schema when creating a page in the CMS:
 
 | Schema | Fields and behavior |
 | --- | --- |
-| Home | Introduction and cover, followed by example links and collection highlights. |
+| Home | Introduction and cover, featured-page links, collection highlights, and a language note. Each section's copy and links are editable. |
 | Page | Introduction, optional cover, rich text, next-page link, and reusable Intro, FAQ, and Call to action blocks. |
 | Collection | Introduction followed by published Notes entries. |
 | Gallery | Introduction and an ordered image folder with a full-screen viewer. |
 
 Each schema has its own field group (`home`, `page`, `collection`, or `gallery`). The renderer and live preview use that group to identify the layout; there is no layout dropdown. Existing examples and their Swedish translations use the corresponding schema. The `notes` collection remains separate and uses structured rich text.
 
-The site global contains the site name, tagline, and desktop/mobile navigation. Add business-specific fields and integrations only when your site needs them.
+The site global contains the site name, tagline, home link, header/footer logos, browser icon, desktop/mobile navigation, language-switcher labels, footer copy, and interface labels. Logos and the browser icon use the CMS media library. Copyright copy can include `{year}` and `{name}` placeholders.
+
+Visible copy and editorial links come from CMS content, including cover captions, entry back links, gallery controls, and error messages. Clearing an optional field or removing a homepage section removes it from the page; components do not restore hardcoded default copy. Layout, decorative symbols, and formatting remain part of the site design.
 
 Run `pnpm cms:generate` after changing schemas. The production build regenerates the types automatically.
 

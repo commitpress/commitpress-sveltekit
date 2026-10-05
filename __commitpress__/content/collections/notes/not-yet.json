@@ -50,6 +50,11 @@
             ]
           }
         ]
+      },
+      "back_link": {
+        "href": "/collection",
+        "label": "Back to the collection",
+        "type": "internal"
       }
     }
   },
@@ -61,7 +66,12 @@
       "content": {
         "story": {
           "title": "På väg.",
-          "summary": "Ett utkast som inte visas i den offentliga samlingen."
+          "summary": "Ett utkast som inte visas i den offentliga samlingen.",
+          "back_link": {
+            "href": "/sv/samling",
+            "label": "Till samlingen",
+            "type": "internal"
+          }
         }
       }
     }

@@ -53,6 +53,55 @@
             "placeholder": ""
           }
         ]
+      },
+      {
+        "uuid": "7b5d6f4c-9ee8-411c-a07f-3bbea0742f06",
+        "name": "highlights",
+        "label": "Collection highlights",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "b0acf218-f0d4-4da0-8b94-51ec77cf5fce",
+            "name": "eyebrow",
+            "label": "Eyebrow",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "e909ca30-6c2e-407a-ab1d-4ddb5dbcafbe",
+            "name": "title",
+            "label": "Heading",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "286f6202-a166-4918-b764-547397bc0517",
+            "name": "link",
+            "label": "View all link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": true
+          }
+        ]
       }
     ]
   }

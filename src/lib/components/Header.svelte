@@ -2,32 +2,38 @@
   import Logo from './Logo.svelte';
   import { page } from '$app/state';
   import type { SiteContent } from '../../commitpress.generated';
+  import type { ImageAsset } from '$lib/media/assets';
+  import type { PreviewAsset } from '@commitpress/sdk/preview';
   import type { Locale } from '$lib/content/locale';
-  let { site, locale = 'en', alternates = [] }: { site: SiteContent; locale?: Locale; alternates?: { locale: string; href: string }[] } = $props();
+  let { site, locale = 'en', alternates = [], media = {} }: { media?: Record<string,ImageAsset|PreviewAsset>; site: SiteContent; locale?: Locale; alternates?: { locale: string; href: string }[] } = $props();
   let menuOpen = $state(false);
   let menuButton = $state<HTMLButtonElement | null>(null);
   $effect(() => { page.url.pathname; menuOpen = false; });
-  const home = $derived(locale === 'sv' ? '/sv' : '/');
+  const home = $derived(site.details.home_link?.href);
   function close(event: KeyboardEvent) { if (event.key === 'Escape' && menuOpen) { menuOpen = false; menuButton?.focus(); } }
 </script>
 <svelte:window onkeydown={close} />
 <header class="site-header">
   <div class="wrap header-row">
-    <a href={home} aria-label="Commitpress home" class="brand"><Logo class="h-8 w-auto" /></a>
-    <nav aria-label={locale === 'sv' ? 'Huvudmeny' : 'Main navigation'} class="desktop-nav">
+    <a href={home} aria-label={site.details.home_link?.label} class="brand"><Logo image={site.details.header_logo} {media} name={site.details.name} class="h-8 w-auto" /></a>
+    <nav aria-label={site.ui?.main_navigation} class="desktop-nav">
       {#each site.nav as item}
-        <a href={item.href.href} class:current={page.url.pathname === item.href.href}>{item.href.label}</a>
+        <a href={item.href?.href} class:current={page.url.pathname === item.href?.href}>{item.href?.label}</a>
       {/each}
     </nav>
-    <nav class="languages" aria-label={locale === 'sv' ? 'Språk' : 'Language'}>
-      {#each alternates.length ? alternates : [{locale:'en',href:'/'},{locale:'sv',href:'/sv'}] as alternate}
-        <a href={alternate.href} lang={alternate.locale} hreflang={alternate.locale} aria-label={alternate.locale === 'sv' ? 'Svenska' : 'English'} aria-current={alternate.locale === locale ? 'true' : undefined}>{alternate.locale.toUpperCase()}</a>
+    <nav class="languages" aria-label={site.ui?.languages}>
+      {#each site.languages ?? [] as language}
+        {@const alternate = alternates.find(item => item.locale === language.locale)}
+        {@const target = alternate?.href ?? (alternates.length ? undefined : language.link?.href)}
+        {#if target}
+        <a href={target} lang={language.locale} hreflang={language.locale} aria-label={language.name} aria-current={language.locale === locale ? 'true' : undefined}>{language.label}</a>
+        {/if}
       {/each}
     </nav>
-    <button class="menu-button" bind:this={menuButton} aria-expanded={menuOpen} aria-controls="mobile-navigation" onclick={() => menuOpen = !menuOpen}>{menuOpen ? (locale === 'sv' ? 'Stäng' : 'Close') : (locale === 'sv' ? 'Meny' : 'Menu')}</button>
+    <button class="menu-button" bind:this={menuButton} aria-expanded={menuOpen} aria-controls="mobile-navigation" onclick={() => menuOpen = !menuOpen}>{menuOpen ? site.ui?.close_menu : site.ui?.menu}</button>
   </div>
-  <nav id="mobile-navigation" hidden={!menuOpen} aria-label="Mobile navigation" class="mobile-nav wrap">
-    {#each site.mobile_nav as item}<a href={item.href.href} onclick={() => menuOpen = false}>{item.href.label}</a>{/each}
+  <nav id="mobile-navigation" hidden={!menuOpen} aria-label={site.ui?.mobile_navigation} class="mobile-nav wrap">
+    {#each site.mobile_nav as item}<a href={item.href?.href} onclick={() => menuOpen = false}>{item.href?.label}</a>{/each}
   </nav>
 </header>
 <style>

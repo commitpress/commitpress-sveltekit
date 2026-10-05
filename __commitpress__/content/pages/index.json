@@ -19,6 +19,69 @@
         "renditions": {
           "mobile": "portrait"
         }
+      },
+      "caption": "From the image library",
+      "link": {
+        "href": "/collection",
+        "label": "Explore the collection",
+        "type": "internal"
+      },
+      "detail_label": "01 / COMMITPRESS",
+      "detail_note": "Pages · Pictures · Ideas"
+    },
+    "navigation": {
+      "heading": "Take a look around",
+      "items": [
+        {
+          "number": "01",
+          "title": "One page at a time.",
+          "summary": "Different layouts. A shared foundation.",
+          "link": {
+            "href": "/pages",
+            "label": "Pages",
+            "type": "internal"
+          }
+        },
+        {
+          "number": "02",
+          "title": "Pictures with room.",
+          "summary": "From a small crop to the whole picture.",
+          "link": {
+            "href": "/images",
+            "label": "Images",
+            "type": "internal"
+          }
+        },
+        {
+          "number": "03",
+          "title": "Something to collect.",
+          "summary": "A collection. A page for every entry.",
+          "link": {
+            "href": "/collection",
+            "label": "Collection",
+            "type": "internal"
+          }
+        }
+      ]
+    },
+    "highlights": {
+      "eyebrow": "From the collection",
+      "title": "A few things we kept.",
+      "link": {
+        "href": "/collection",
+        "label": "View all",
+        "type": "internal"
+      }
+    },
+    "language_note": {
+      "symbol": "Aa",
+      "eyebrow": "Two languages, one website",
+      "title": "Hello. Hej.",
+      "body": "Switch to Swedish in the navigation. The headlines, content, and routes come along.",
+      "link": {
+        "href": "/sv",
+        "label": "Läs på svenska",
+        "type": "internal"
       }
     }
   },
@@ -35,7 +98,70 @@
         "home": {
           "eyebrow": "Ett levande exempel",
           "title": "Byggt med Commitpress.",
-          "summary": "Sidor, bilder och några goda idéer. Se dig omkring - allt här börjar med redigerbart innehåll."
+          "summary": "Sidor, bilder och några goda idéer. Se dig omkring - allt här börjar med redigerbart innehåll.",
+          "caption": "En bild från biblioteket",
+          "link": {
+            "href": "/sv/samling",
+            "label": "Utforska samlingen",
+            "type": "internal"
+          },
+          "detail_label": "01 / COMMITPRESS",
+          "detail_note": "Sidor · Bilder · Idéer"
+        },
+        "navigation": {
+          "heading": "Ta en titt",
+          "items": [
+            {
+              "number": "01",
+              "title": "En sida i taget.",
+              "summary": "Olika layouter. Samma grund.",
+              "link": {
+                "href": "/sv/sidor",
+                "label": "Sidor",
+                "type": "internal"
+              }
+            },
+            {
+              "number": "02",
+              "title": "Bilder med plats.",
+              "summary": "Från liten bild till helskärm.",
+              "link": {
+                "href": "/sv/bilder",
+                "label": "Bilder",
+                "type": "internal"
+              }
+            },
+            {
+              "number": "03",
+              "title": "Något att samla på.",
+              "summary": "En samling. En sida för varje inlägg.",
+              "link": {
+                "href": "/sv/samling",
+                "label": "Samling",
+                "type": "internal"
+              }
+            }
+          ]
+        },
+        "highlights": {
+          "eyebrow": "Från samlingen",
+          "title": "Några saker vi sparat.",
+          "link": {
+            "href": "/sv/samling",
+            "label": "Visa alla",
+            "type": "internal"
+          }
+        },
+        "language_note": {
+          "symbol": "Aa",
+          "eyebrow": "Två språk, samma webbplats",
+          "title": "Hej. Hello.",
+          "body": "Byt till engelska i menyn. Rubriker, innehåll och sökvägar följer med.",
+          "link": {
+            "href": "/",
+            "label": "Read in English",
+            "type": "internal"
+          }
         }
       }
     }

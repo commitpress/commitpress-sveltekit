@@ -18,7 +18,7 @@
 
     <div class="col-span-12 lg:col-span-4 lg:col-start-9 reveal" use:reveal>
       <p class="text-[17px] max-w-[42ch]">{block.body}</p>
-      <a
+      {#if block.link?.href}<a
         href={block.link.href}
         class="group inline-flex items-center gap-3 mt-6 text-sm text-accent"
       >
@@ -27,7 +27,7 @@
           class="text-ash transition-transform duration-500 group-hover:translate-x-1.5"
           >→</span
         >
-      </a>
+      </a>{/if}
     </div>
   </div>
 </section>

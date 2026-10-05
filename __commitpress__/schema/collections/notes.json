@@ -121,6 +121,16 @@
               "hr": true,
               "link": true
             }
+          },
+          {
+            "uuid": "c21d2b81-cc85-467d-b284-ca172a0002ab",
+            "name": "back_link",
+            "label": "Back link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": true
           }
         ]
       }

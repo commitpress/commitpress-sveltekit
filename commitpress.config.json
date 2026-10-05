@@ -4,9 +4,16 @@
   "branch": "main",
   "editor": {
     "groups_flatten_singles": true,
-    "preview_urls": ["http://localhost:5173/preview/"],
+    "preview_urls": [
+      "http://localhost:5173/preview/"
+    ],
     "accept": {
-      "images": ["image/jpeg", "image/png", "image/webp"],
+      "images": [
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+        "image/svg+xml"
+      ],
       "files": []
     }
   },
@@ -14,7 +21,10 @@
     "directory": "__commitpress__",
     "intl": {
       "default_locale": "en",
-      "locales": ["en", "sv"]
+      "locales": [
+        "en",
+        "sv"
+      ]
     }
   },
   "assets": {

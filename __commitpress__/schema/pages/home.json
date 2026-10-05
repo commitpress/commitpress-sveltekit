@@ -76,6 +76,262 @@
                 "label": "Mobile"
               }
             ]
+          },
+          {
+            "uuid": "b86289e0-ac9c-4fd1-bc8a-fcf970c48b8d",
+            "name": "caption",
+            "label": "Cover caption",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "c7a078fb-195a-46d7-8e1f-8e4dfd099b0f",
+            "name": "link",
+            "label": "Opening link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": true
+          },
+          {
+            "uuid": "31a0cecd-1a01-4627-94b4-1759601592f6",
+            "name": "detail_label",
+            "label": "Detail label",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "643ebcf6-57f0-4b71-956b-7144f1038c67",
+            "name": "detail_note",
+            "label": "Detail note",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          }
+        ]
+      },
+      {
+        "uuid": "2e247892-f9a4-40a0-a502-2349b2f0ea6c",
+        "name": "navigation",
+        "label": "Featured pages",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "e6b6edc7-e139-49ba-9e28-04835274d0fd",
+            "name": "heading",
+            "label": "Heading",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "539edc5f-7856-4e3f-ab51-635c59ee5959",
+            "name": "items",
+            "label": "Links",
+            "type": "group",
+            "description": "",
+            "required": false,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": true,
+            "presentation": "",
+            "controls": [
+              {
+                "uuid": "47110563-9c54-4164-8974-e6bb62502d15",
+                "name": "number",
+                "label": "Number",
+                "type": "input",
+                "description": "",
+                "required": false,
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": "",
+                "localized": true
+              },
+              {
+                "uuid": "4d4f32fc-7c20-453d-bd42-c84644d09d27",
+                "name": "title",
+                "label": "Title",
+                "type": "input",
+                "description": "",
+                "required": false,
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": "",
+                "localized": true
+              },
+              {
+                "uuid": "41a1666a-d00c-414a-85d3-ff4af80a1ea5",
+                "name": "summary",
+                "label": "Summary",
+                "type": "textarea",
+                "description": "",
+                "required": false,
+                "rows": 3,
+                "resize": true,
+                "placeholder": "",
+                "localized": true
+              },
+              {
+                "uuid": "2265eb28-23bb-4cb7-967c-e05031b1c2d8",
+                "name": "link",
+                "label": "Link",
+                "type": "link",
+                "description": "",
+                "required": false,
+                "valueType": "any",
+                "localized": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "00dd8619-5d5e-418d-a83a-b16eaff1afdd",
+        "name": "highlights",
+        "label": "Collection highlights",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "1086551f-1795-423a-9882-43648ccf0496",
+            "name": "eyebrow",
+            "label": "Eyebrow",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "8a5ebe04-55a3-4f00-b9ba-fbcfbd08abca",
+            "name": "title",
+            "label": "Heading",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "115aa8a3-c97f-4885-a04a-6e595826df27",
+            "name": "link",
+            "label": "View all link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": true
+          }
+        ]
+      },
+      {
+        "uuid": "be1bb8d9-77b4-4917-92f4-c56178ad70e9",
+        "name": "language_note",
+        "label": "Language note",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "639438ec-6984-4cd1-8552-1d4b2814a061",
+            "name": "symbol",
+            "label": "Symbol",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "eed79751-cc9f-4881-8e81-bd24ab25f1c0",
+            "name": "eyebrow",
+            "label": "Eyebrow",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "1260d431-ae93-4361-81f4-b4b45ed42adf",
+            "name": "title",
+            "label": "Heading",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "36ad8196-47e6-408e-b4c0-2ad4653c2e2c",
+            "name": "body",
+            "label": "Text",
+            "type": "textarea",
+            "description": "",
+            "required": false,
+            "rows": 3,
+            "resize": true,
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "9c96c91b-d094-4f9b-8e66-4d2bfc2c434e",
+            "name": "link",
+            "label": "Link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": true
           }
         ]
       }

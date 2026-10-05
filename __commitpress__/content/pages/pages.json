@@ -107,7 +107,9 @@
         "type": "internal",
         "href": "/pages/a-quiet-corner",
         "label": "Follow a nested route"
-      }
+      },
+      "caption": "From the image library",
+      "body_label": "Page content"
     }
   },
   "locales": {
@@ -211,7 +213,9 @@
             "type": "internal",
             "href": "/sv/sidor/en-lugn-vra",
             "label": "Följ en undersida"
-          }
+          },
+          "caption": "En bild från biblioteket",
+          "body_label": "Sidans innehåll"
         }
       }
     }

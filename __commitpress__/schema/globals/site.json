@@ -38,6 +38,79 @@
             "rows": 3,
             "resize": true,
             "localized": true
+          },
+          {
+            "uuid": "6182e2e7-72e5-4527-affe-5c5dbf6f2f63",
+            "name": "home_link",
+            "label": "Home link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": true
+          },
+          {
+            "uuid": "9c16a1e7-2ef3-4d38-a38d-3951284eb75f",
+            "name": "header_logo",
+            "label": "Header logo",
+            "type": "image",
+            "description": "",
+            "required": false,
+            "localized": false,
+            "multiple": false,
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/svg+xml"
+            ],
+            "rootFolder": "branding",
+            "escapeRootFolder": true,
+            "sizes": [],
+            "renditions": true,
+            "alt": true
+          },
+          {
+            "uuid": "88c0e878-49cc-435a-a5e2-61de85b2e51e",
+            "name": "footer_logo",
+            "label": "Footer logo",
+            "type": "image",
+            "description": "",
+            "required": false,
+            "localized": false,
+            "multiple": false,
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/svg+xml"
+            ],
+            "rootFolder": "branding",
+            "escapeRootFolder": true,
+            "sizes": [],
+            "renditions": true,
+            "alt": true
+          },
+          {
+            "uuid": "d8488210-91c4-41ec-b4d6-bd8da6081e21",
+            "name": "favicon",
+            "label": "Browser icon",
+            "type": "image",
+            "description": "",
+            "required": false,
+            "localized": false,
+            "multiple": false,
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/svg+xml"
+            ],
+            "rootFolder": "branding",
+            "escapeRootFolder": true,
+            "sizes": [],
+            "renditions": true,
+            "alt": true
           }
         ],
         "presentation": ""
@@ -91,6 +164,289 @@
         ],
         "presentation": "",
         "localized": true
+      },
+      {
+        "uuid": "ea5359cc-7d41-458f-9589-d826d9dd4cf3",
+        "name": "footer",
+        "label": "Footer",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "9ea266ac-529e-43a9-8bfe-7273fa7373de",
+            "name": "copyright",
+            "label": "Copyright",
+            "type": "input",
+            "description": "Use {year} for the current year and {name} for the site name.",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "c3261cab-6ba9-4b10-8b36-fa66c2369bd9",
+            "name": "text",
+            "label": "Footer message",
+            "type": "textarea",
+            "description": "",
+            "required": false,
+            "rows": 3,
+            "resize": true,
+            "placeholder": "",
+            "localized": true
+          }
+        ]
+      },
+      {
+        "uuid": "e4cd4312-fd17-4796-afbc-92f6b6b4c160",
+        "name": "languages",
+        "label": "Language switcher",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": true,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "219c957c-6e92-4a60-9606-e22ec5ba0317",
+            "name": "locale",
+            "label": "Locale code",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": false
+          },
+          {
+            "uuid": "f647e1ae-ff5b-40c7-bee4-865f09672970",
+            "name": "label",
+            "label": "Short label",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": false
+          },
+          {
+            "uuid": "ae4f2c29-afb2-45f1-a4e7-65ba317c6e0a",
+            "name": "name",
+            "label": "Accessible name",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": false
+          },
+          {
+            "uuid": "5aef8535-3b3b-4f53-94d9-46bccb40f25b",
+            "name": "link",
+            "label": "Default link",
+            "type": "link",
+            "description": "",
+            "required": false,
+            "valueType": "any",
+            "localized": false
+          }
+        ]
+      },
+      {
+        "uuid": "8e6e0198-188b-451e-a76c-586dd55e4404",
+        "name": "ui",
+        "label": "Interface labels",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "presentation": "",
+        "controls": [
+          {
+            "uuid": "c815b799-8d4c-4006-bea6-73f31633c95f",
+            "name": "skip_link",
+            "label": "Skip to content",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "fe0af9c8-8c39-4a7b-a1d0-645cb1b5b55b",
+            "name": "menu",
+            "label": "Open menu",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "0b017a62-d0ac-485a-becc-d1d419875d01",
+            "name": "close_menu",
+            "label": "Close menu",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "fbc22bea-87b7-455b-9ed5-cc8027178319",
+            "name": "main_navigation",
+            "label": "Main navigation",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "7a28f556-366e-4907-8bb7-8bb55f6c059c",
+            "name": "mobile_navigation",
+            "label": "Mobile navigation",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "0b303da8-4c57-4a64-b0c0-f37bc2132ddb",
+            "name": "footer_navigation",
+            "label": "Footer navigation",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "c8fbe1d8-5625-435a-900f-d02815e86cbb",
+            "name": "languages",
+            "label": "Language navigation",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "56b45c40-12c1-4687-a66f-72a609705116",
+            "name": "image_open",
+            "label": "Open image",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "f479efe3-ec4b-475b-8599-76b53150d086",
+            "name": "image_viewer",
+            "label": "Image viewer",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "38307e7c-aced-42a8-84a3-42744dace695",
+            "name": "image_close",
+            "label": "Close image",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "493997d0-c51f-424f-834a-50f2990c0766",
+            "name": "preview_title",
+            "label": "Preview title",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "30a20c44-b73f-40be-9471-0f3c41caced2",
+            "name": "preview_empty",
+            "label": "Empty preview message",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "27c4d370-df22-49b7-a425-fe809c23ba96",
+            "name": "error_title",
+            "label": "Error heading",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          },
+          {
+            "uuid": "a45678e2-8af6-4764-91fa-b15d2425d163",
+            "name": "error_message",
+            "label": "Error message",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": "",
+            "localized": true
+          }
+        ]
       }
     ]
   }

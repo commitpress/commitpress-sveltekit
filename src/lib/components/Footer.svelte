@@ -1,15 +1,17 @@
 <script lang="ts">
   import Logo from './Logo.svelte';
   import type { SiteContent } from '../../commitpress.generated';
+  import type { ImageAsset } from '$lib/media/assets';
+  import type { PreviewAsset } from '@commitpress/sdk/preview';
   import type { Locale } from '$lib/content/locale';
-  let { site, locale = 'en' }: { site: SiteContent; locale?: Locale } = $props();
+  let { site, media = {} }: { media?:Record<string,ImageAsset|PreviewAsset>; site: SiteContent; locale?: Locale } = $props();
 </script>
 <footer>
   <div class="wrap footer-top">
-    <div><a href={locale === 'sv' ? '/sv' : '/'} aria-label="Commitpress home"><Logo class="h-8 w-auto" /></a><p>{site.details.tagline}</p></div>
-    <nav aria-label="Footer navigation">{#each site.nav as item}<a href={item.href.href}>{item.href.label}</a>{/each}</nav>
+    <div><a href={site.details.home_link?.href} aria-label={site.details.home_link?.label}><Logo image={site.details.footer_logo} {media} name={site.details.name} class="h-8 w-auto" /></a><p>{site.details.tagline}</p></div>
+    <nav aria-label={site.ui?.footer_navigation}>{#each site.nav as item}<a href={item.href?.href}>{item.href?.label}</a>{/each}</nav>
   </div>
-  <div class="wrap footer-bottom"><span>© {new Date().getFullYear()} {site.details.name}</span><span>{locale === 'sv' ? 'Innehåll som du äger. En webbplats som är din.' : 'Content you own. A website that is yours.'}</span></div>
+  <div class="wrap footer-bottom"><span>{site.footer?.copyright?.replaceAll('{year}', String(new Date().getFullYear())).replaceAll('{name}', site.details.name ?? '') ?? ''}</span><span>{site.footer?.text ?? ''}</span></div>
 </footer>
 <style>
   footer { margin-top: 80px; background: var(--color-ink); color: var(--color-paper); --logo-counter: var(--color-ink); }

@@ -1,7 +1,8 @@
 {
   "version": 1,
   "folders": [
-    "showcase"
+    "showcase",
+    "branding"
   ],
   "assets": [
     {
@@ -187,6 +188,54 @@
           "custom": true
         }
       ]
+    },
+    {
+      "id": "1791200000010",
+      "filename": "header-logo.svg",
+      "path": "1791200000010/original.svg",
+      "source_type": "image/svg+xml",
+      "width": 657,
+      "height": 136,
+      "bytes": 37084,
+      "uploaded_at": 1791200000000,
+      "alt": "Commitpress",
+      "folder": "branding",
+      "folders": [
+        "branding"
+      ],
+      "variants": []
+    },
+    {
+      "id": "1791200000011",
+      "filename": "footer-logo.svg",
+      "path": "1791200000011/original.svg",
+      "source_type": "image/svg+xml",
+      "width": 657,
+      "height": 136,
+      "bytes": 37084,
+      "uploaded_at": 1791200000000,
+      "alt": "Commitpress",
+      "folder": "branding",
+      "folders": [
+        "branding"
+      ],
+      "variants": []
+    },
+    {
+      "id": "1791200000012",
+      "filename": "favicon.svg",
+      "path": "1791200000012/original.svg",
+      "source_type": "image/svg+xml",
+      "width": 512,
+      "height": 512,
+      "bytes": 2317,
+      "uploaded_at": 1791200000000,
+      "alt": "Commitpress icon",
+      "folder": "branding",
+      "folders": [
+        "branding"
+      ],
+      "variants": []
     }
   ]
 }

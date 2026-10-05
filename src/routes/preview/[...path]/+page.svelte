@@ -24,21 +24,21 @@
     else posted=content as WebsitePageContent|NotesContent;
   }
   onMount(()=>{
-    const replay=takePreviewAssets();assets=replay.assets;folders=replay.folders;
+    const replay=takePreviewAssets();assets=replay.assets;folders=replay.folders;previewSite.setAssets(assets);
     const previous=takePreviewContent<WebsitePageContent|NotesContent|SiteContent>();
     if(previous){receive(previous);replayed=true;}
     const offContent=connectPreviewContent(receive);
-    const offAssets=connectPreviewAssets((next,nextFolders)=>{assets=next;folders=nextFolders;});
+    const offAssets=connectPreviewAssets((next,nextFolders)=>{assets=next;folders=nextFolders;previewSite.setAssets(assets);});
     const offOverlay=connectPreviewOverlay();
     window.parent?.postMessage({type:PREVIEW_HANDSHAKE},'*');
     return ()=>{offContent();offAssets();offOverlay();previewSite.clear();};
   });
 </script>
-<svelte:head><title>Preview | Commitpress</title><meta name="robots" content="noindex,nofollow" /></svelte:head>
+<svelte:head><title>{(previewSite.current ?? data.site).ui?.preview_title ?? ''} | {(previewSite.current ?? data.site).details.name}</title><meta name="robots" content="noindex,nofollow" /></svelte:head>
 {#key replayed}
   {#if data.kind === 'entry' && live}
     <StoryPage content={live as NotesContent} {media} locale={data.locale} marked />
   {:else if pageContent}
-    <ShowcasePage content={pageContent} cards={data.cards} {media} {galleryIds} locale={data.locale} site={previewSite.current ?? data.site} marked={!data.global} />
-  {:else}<p class="wrap py-16">{data.locale === 'sv' ? 'Ditt innehåll visas här när du börjar redigera.' : 'Your content will appear here as you start editing.'}</p>{/if}
+    <ShowcasePage content={pageContent} cards={data.cards} {media} {galleryIds} site={previewSite.current ?? data.site} marked={!data.global} />
+  {:else}<p class="wrap py-16">{(previewSite.current ?? data.site).ui?.preview_empty ?? ''}</p>{/if}
 {/key}

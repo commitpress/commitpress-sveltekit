@@ -1,22 +1,23 @@
 <script lang="ts">
   import MediaImage from './MediaImage.svelte';
   import type { ImageAsset } from '$lib/media/assets';
+  import type { SiteContent } from '../../commitpress.generated';
   import type { PreviewAsset } from '@commitpress/sdk/preview';
-  let { ids, media, locale = 'en' }: { ids:string[]; media:Record<string,ImageAsset | PreviewAsset>; locale?:string } = $props();
+  let { ids, media, labels }: { ids:string[]; media:Record<string,ImageAsset | PreviewAsset>; labels?:SiteContent['ui'] } = $props();
   let selected = $state('');
   let dialog = $state<HTMLDialogElement>();
   function open(id:string) { selected=id; dialog?.showModal(); }
 </script>
 <div class="image-grid">
   {#each ids as id, i}
-    <button class="gallery-image" class:tall={i % 3 === 0} onclick={() => open(id)} aria-label={(locale === 'sv' ? 'Öppna bild: ' : 'Open image: ') + (media[id]?.alt ?? '')}>
+    <button class="gallery-image" class:tall={i % 3 === 0} onclick={() => open(id)} aria-label={[labels?.image_open, media[id]?.alt].filter(Boolean).join(': ')}>
       <MediaImage image={id} {media} sizes="(max-width:640px) 100vw, 50vw" />
       <span class="image-caption"><span>{String(i+1).padStart(2,'0')}</span><span aria-hidden="true">↗</span></span>
     </button>
   {/each}
 </div>
-<dialog bind:this={dialog} aria-label={locale === 'sv' ? 'Bildvisare' : 'Image viewer'}>
-  <button class="close-image" onclick={() => dialog?.close()}>{locale === 'sv' ? 'Stäng' : 'Close'} ×</button>
+<dialog bind:this={dialog} aria-label={labels?.image_viewer}>
+  <button class="close-image" onclick={() => dialog?.close()}>{labels?.image_close} ×</button>
   {#if selected}<MediaImage image={selected} {media} eager sizes="90vw" /><p>{media[selected]?.alt}</p>{/if}
 </dialog>
 <style>

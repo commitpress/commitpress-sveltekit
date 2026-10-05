@@ -13,7 +13,7 @@ export function pageSchema(content: WebsitePageContent): PageSchema {
 }
 
 export type PageSection = HomeContent['home'] &
-  Partial<Pick<PageContent['page'], 'body' | 'next_page'>> &
+  Partial<Pick<PageContent['page'], 'body' | 'next_page' | 'body_label'>> &
   Partial<Pick<GalleryContent['gallery'], 'gallery'>>;
 
 export function pageSection(content: WebsitePageContent): PageSection | undefined {

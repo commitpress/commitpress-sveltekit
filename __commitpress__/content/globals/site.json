@@ -7,7 +7,15 @@
   "content": {
     "details": {
       "name": "Commitpress",
-      "tagline": "A few pages. A lot to explore."
+      "tagline": "A few pages. A lot to explore.",
+      "home_link": {
+        "href": "/",
+        "label": "Commitpress home",
+        "type": "internal"
+      },
+      "header_logo": "1791200000010",
+      "footer_logo": "1791200000011",
+      "favicon": "1791200000012"
     },
     "nav": [
       {
@@ -60,7 +68,49 @@
           "label": "Images"
         }
       }
-    ]
+    ],
+    "footer": {
+      "copyright": "© {year} {name}",
+      "text": "Content you own. A website that is yours."
+    },
+    "languages": [
+      {
+        "locale": "en",
+        "label": "EN",
+        "name": "English",
+        "link": {
+          "href": "/",
+          "label": "English",
+          "type": "internal"
+        }
+      },
+      {
+        "locale": "sv",
+        "label": "SV",
+        "name": "Svenska",
+        "link": {
+          "href": "/sv",
+          "label": "Svenska",
+          "type": "internal"
+        }
+      }
+    ],
+    "ui": {
+      "skip_link": "Skip to content",
+      "menu": "Menu",
+      "close_menu": "Close",
+      "main_navigation": "Main navigation",
+      "mobile_navigation": "Mobile navigation",
+      "footer_navigation": "Footer navigation",
+      "languages": "Language",
+      "image_open": "Open image",
+      "image_viewer": "Image viewer",
+      "image_close": "Close",
+      "preview_title": "Preview",
+      "preview_empty": "Your content will appear here as you start editing.",
+      "error_title": "Page unavailable",
+      "error_message": "This page could not be found or loaded."
+    }
   },
   "locales": {
     "sv": {
@@ -70,7 +120,12 @@
       "content": {
         "details": {
           "name": "Commitpress",
-          "tagline": "Några sidor. Mycket att upptäcka."
+          "tagline": "Några sidor. Mycket att upptäcka.",
+          "home_link": {
+            "href": "/sv",
+            "label": "Commitpress startsida",
+            "type": "internal"
+          }
         },
         "nav": [
           {
@@ -123,7 +178,27 @@
               "label": "Bilder"
             }
           }
-        ]
+        ],
+        "footer": {
+          "copyright": "© {year} {name}",
+          "text": "Innehåll som du äger. En webbplats som är din."
+        },
+        "ui": {
+          "skip_link": "Till innehållet",
+          "menu": "Meny",
+          "close_menu": "Stäng",
+          "main_navigation": "Huvudmeny",
+          "mobile_navigation": "Mobilmeny",
+          "footer_navigation": "Sidfotsmeny",
+          "languages": "Språk",
+          "image_open": "Öppna bild",
+          "image_viewer": "Bildvisare",
+          "image_close": "Stäng",
+          "preview_title": "Förhandsgranskning",
+          "preview_empty": "Ditt innehåll visas här när du börjar redigera.",
+          "error_title": "Sidan är inte tillgänglig",
+          "error_message": "Den här sidan kunde inte hittas eller laddas."
+        }
       }
     }
   }

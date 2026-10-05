@@ -1,7 +1,8 @@
 <script lang="ts">
-  import Branding from './Branding.svelte';
-  let { class: className = 'h-8 w-auto' }: { class?: string } = $props();
+  import MediaImage from '$lib/showcase/MediaImage.svelte';
+  import type { ImageAsset } from '$lib/media/assets';
+  import type { PreviewAsset } from '@commitpress/sdk/preview';
+  import type { ImageValue } from '@commitpress/sdk/image';
+  let { image, media, name = '', class: className = '' }: { image?:ImageValue; media:Record<string,ImageAsset|PreviewAsset>; name?:string; class?:string } = $props();
 </script>
-<span class="inline-block aspect-[657/136] {className}" role="img" aria-label="Commitpress">
-  <Branding stroke="currentColor" fill="var(--logo-counter, #fff)" />
-</span>
+{#if image}<MediaImage {image} {media} alt={name} class={className} eager sizes="160px" />{:else}<span>{name}</span>{/if}

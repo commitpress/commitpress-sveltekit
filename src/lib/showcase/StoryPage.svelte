@@ -9,13 +9,13 @@
   const story=$derived(content.story);
 </script>
 {#if story}
-<svelte:element this={marked ? 'commitpress-section' : 'article'} {...marked ? sectionMarker('story', story.title || 'Entry') : {}}>
+<svelte:element this={marked ? 'commitpress-section' : 'article'} {...marked ? sectionMarker('story', story.title || '') : {}}>
   <div class="wrap story-opening">
-    <a class="kicker" href={locale === 'sv' ? '/sv/samling' : '/collection'}>← {locale === 'sv' ? 'Till samlingen' : 'Back to the collection'}</a>
+    {#if story.back_link?.href}<a class="kicker" href={story.back_link.href} target={story.back_link.target}><span aria-hidden="true">←</span> {story.back_link.label}</a>{/if}
     <p class="story-category">{story.category}</p><h1>{story.title}</h1><p class="opening-summary">{story.summary}</p>
     {#if story.date}<time datetime={story.date}>{new Intl.DateTimeFormat(locale,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(story.date+'T12:00:00Z'))}</time>{/if}
   </div>
-  <div class="wrap story-image"><MediaImage image={story.cover} {media} eager sizes="100vw" /></div>
+  {#if story.cover}<div class="wrap story-image"><MediaImage image={story.cover} {media} eager sizes="100vw" /></div>{/if}
   <div class="wrap story-body"><div class="prose">{@html richtext(story.body)}</div></div>
 </svelte:element>
 {/if}

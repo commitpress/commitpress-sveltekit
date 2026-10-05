@@ -35,6 +35,7 @@ const CONTENT_TYPES: Record<string, string> = {
 	'.jpg': 'image/jpeg',
 	'.jpeg': 'image/jpeg',
 	'.png': 'image/png',
+	'.svg': 'image/svg+xml',
 	'.json': 'application/json'
 };
 
@@ -73,6 +74,7 @@ export const GET: RequestHandler = async ({ params, request }) => {
 			'content-type': contentType,
 			'content-length': String(stats.size),
 			'cache-control': cache,
+			...(contentType === 'image/svg+xml' ? { 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'; sandbox" } : {}),
 			// So revalidating the descriptor costs a 304 rather than a re-download. Free, since the
 			// stat it is built from has already happened.
 			etag

@@ -74,7 +74,9 @@
         "type": "internal",
         "href": "/pages",
         "label": "Back to example pages"
-      }
+      },
+      "caption": "From the image library",
+      "body_label": "Page content"
     }
   },
   "locales": {
@@ -144,7 +146,9 @@
             "type": "internal",
             "href": "/sv/sidor",
             "label": "Till exempelsidorna"
-          }
+          },
+          "caption": "En bild från biblioteket",
+          "body_label": "Sidans innehåll"
         }
       }
     }

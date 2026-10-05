@@ -68,6 +68,11 @@
             ]
           }
         ]
+      },
+      "back_link": {
+        "href": "/collection",
+        "label": "Back to the collection",
+        "type": "internal"
       }
     }
   },
@@ -138,6 +143,11 @@
                 ]
               }
             ]
+          },
+          "back_link": {
+            "href": "/sv/samling",
+            "label": "Till samlingen",
+            "type": "internal"
           }
         }
       }

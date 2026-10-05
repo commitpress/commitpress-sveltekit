@@ -1,7 +1,8 @@
 {
   "version": 1,
   "folders": [
-    "showcase"
+    "showcase",
+    "showcase/gallery"
   ],
   "profiles": {},
   "assets": [

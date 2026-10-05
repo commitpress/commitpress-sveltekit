@@ -1,0 +1,18 @@
+{
+  "v": 1,
+  "schema": "gallery",
+  "slug": "gallery",
+  "status": "draft",
+  "last_edited": 0,
+  "content": {
+    "gallery": {
+      "title": "Gallery",
+      "tagline": "Your images will appear here.",
+      "gallery": ""
+    },
+    "seo": {
+      "title": "Gallery | Commitpress starter",
+      "no_index": true
+    }
+  }
+}

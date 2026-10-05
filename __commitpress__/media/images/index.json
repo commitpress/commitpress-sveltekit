@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "folders": [
+    "showcase"
+  ],
+  "assets": [
+    {
+      "id": "1791200000001",
+      "filename": "photo-1470770841072-f978cf4d019e.jpg",
+      "path": "1791200000001/original.jpg",
+      "source_type": "image/jpeg",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 392753,
+      "uploaded_at": 1791200000000,
+      "alt": "A small wooden cabin beside a still mountain lake",
+      "folder": "showcase",
+      "folders": [
+        "showcase"
+      ],
+      "variants": [
+        {
+          "name": "small",
+          "path": "1791200000001/small.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 30936
+        },
+        {
+          "name": "medium",
+          "path": "1791200000001/medium.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 106392
+        },
+        {
+          "name": "large",
+          "path": "1791200000001/large.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 257330
+        },
+        {
+          "name": "portrait",
+          "path": "1791200000001/portrait.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 62174,
+          "custom": true
+        }
+      ]
+    },
+    {
+      "id": "1791200000002",
+      "filename": "photo-1441974231531-c6227db76b6e.jpg",
+      "path": "1791200000002/original.jpg",
+      "source_type": "image/jpeg",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 573211,
+      "uploaded_at": 1791200000000,
+      "alt": "Sunlight falling through a green forest",
+      "folder": "showcase",
+      "folders": [
+        "showcase"
+      ],
+      "variants": [
+        {
+          "name": "small",
+          "path": "1791200000002/small.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 43762
+        },
+        {
+          "name": "medium",
+          "path": "1791200000002/medium.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 164096
+        },
+        {
+          "name": "large",
+          "path": "1791200000002/large.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 418230
+        },
+        {
+          "name": "portrait",
+          "path": "1791200000002/portrait.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 170118,
+          "custom": true
+        }
+      ]
+    },
+    {
+      "id": "1791200000003",
+      "filename": "photo-1497250681960-ef046c08a56e.jpg",
+      "path": "1791200000003/original.jpg",
+      "source_type": "image/jpeg",
+      "width": 1600,
+      "height": 2399,
+      "bytes": 866687,
+      "uploaded_at": 1791200000000,
+      "alt": "Green leaves against a soft pink background",
+      "folder": "showcase",
+      "folders": [
+        "showcase"
+      ],
+      "variants": [
+        {
+          "name": "small",
+          "path": "1791200000003/small.webp",
+          "width": 480,
+          "height": 719,
+          "bytes": 84588
+        },
+        {
+          "name": "medium",
+          "path": "1791200000003/medium.webp",
+          "width": 960,
+          "height": 1439,
+          "bytes": 237214
+        },
+        {
+          "name": "large",
+          "path": "1791200000003/large.webp",
+          "width": 1600,
+          "height": 2399,
+          "bytes": 488764
+        },
+        {
+          "name": "portrait",
+          "path": "1791200000003/portrait.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 120690,
+          "custom": true
+        }
+      ]
+    },
+    {
+      "id": "1791200000004",
+      "filename": "photo-1449247709967-d4461a6a6103.jpg",
+      "path": "1791200000004/original.jpg",
+      "source_type": "image/jpeg",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 83448,
+      "uploaded_at": 1791200000000,
+      "alt": "A light-filled interior with warm natural materials",
+      "folder": "showcase",
+      "folders": [
+        "showcase"
+      ],
+      "variants": [
+        {
+          "name": "small",
+          "path": "1791200000004/small.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 2720
+        },
+        {
+          "name": "medium",
+          "path": "1791200000004/medium.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 7456
+        },
+        {
+          "name": "large",
+          "path": "1791200000004/large.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 16050
+        },
+        {
+          "name": "portrait",
+          "path": "1791200000004/portrait.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 8790,
+          "custom": true
+        }
+      ]
+    }
+  ]
+}

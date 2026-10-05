@@ -1,0 +1,1779 @@
+{
+  "$schema": "https://commitpress.com/app/schema/schema/v1",
+  "icon": "page",
+  "blocks": {
+    "components": [
+      {
+        "uuid": "e0e7e217-1bf1-4b87-9d83-b619b1a0fe89",
+        "name": "blocks",
+        "label": "Blocks",
+        "description": "",
+        "required": true,
+        "type": "multiblock",
+        "collapsed": false,
+        "multiple": true,
+        "min": 0,
+        "max": 0,
+        "controls": [
+          {
+            "uuid": "b00fc10e-766a-45f0-8e8e-b2ef530544d0",
+            "type": "group",
+            "name": "hero",
+            "label": "Hero",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "cf5346d0-0b6f-4be1-8746-89e286d5b275",
+                "type": "group",
+                "name": "slides",
+                "label": "Slides",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "73c8e27c-61c6-4b57-8ce9-8f69861c12ff",
+                    "name": "line",
+                    "label": "Line",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "9cb8570c-a02f-41c4-9c12-2d3796cae6de",
+                    "name": "alt",
+                    "label": "Alt",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "b7d9e238-93ec-4fc7-b749-ca4941a36e54",
+                    "name": "image",
+                    "label": "Image",
+                    "description": "",
+                    "required": false,
+                    "type": "image",
+                    "multiple": false,
+                    "accept": [
+                      "image/jpeg",
+                      "image/png",
+                      "image/webp"
+                    ],
+                    "rootFolder": "",
+                    "escapeRootFolder": true,
+                    "sizes": [],
+                    "renditions": true,
+                    "breakpoints": [
+                      {
+                        "name": "mobile",
+                        "label": "Mobile"
+                      }
+                    ]
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "9ce5f532-4d43-47b9-885e-de27e852ab06",
+            "type": "group",
+            "name": "page_header",
+            "label": "Page header",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "4470ddd1-1a1c-49d0-b49d-ae5293aa9525",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "fd847f7f-fa84-403b-a99d-a6f85d640928",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "b6dea279-4bb8-4a74-b8a6-84bfb7fbcd62",
+                "name": "lead",
+                "label": "Lead",
+                "description": "",
+                "required": false,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "369bd199-3e3c-4af5-9af0-10924623dd27",
+                "name": "alt",
+                "label": "Alt",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "6d56ad20-ccc8-4677-8990-4557173c3bb7",
+                "name": "image",
+                "label": "Image",
+                "description": "",
+                "required": false,
+                "type": "image",
+                "multiple": false,
+                "accept": [
+                  "image/jpeg",
+                  "image/png",
+                  "image/webp"
+                ],
+                "rootFolder": "",
+                "escapeRootFolder": true,
+                "sizes": [],
+                "renditions": true
+              },
+              {
+                "uuid": "26f488a7-38c4-4f6b-8b52-b54b43f97d8b",
+                "type": "group",
+                "name": "buttons",
+                "label": "Buttons",
+                "description": "",
+                "required": false,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "ba8b013c-a0d9-4828-a4a4-1252f93b2016",
+                    "name": "link",
+                    "label": "Link",
+                    "description": "",
+                    "required": false,
+                    "type": "link",
+                    "valueType": "any"
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "3b074122-916e-4402-a16f-ec6577d21b1a",
+            "type": "group",
+            "name": "intro",
+            "label": "Intro",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "c9bc5934-d11f-4252-917d-e22bee10a37b",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": "",
+                "localized": true
+              },
+              {
+                "uuid": "4946e913-a00c-4111-9a34-06e66a64e196",
+                "name": "statement",
+                "label": "Statement",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true,
+                "localized": true
+              },
+              {
+                "uuid": "14d415cd-b3ae-4893-b606-a9194035f4d1",
+                "name": "body",
+                "label": "Body",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true,
+                "localized": true
+              },
+              {
+                "uuid": "eb5c0e81-cbd8-4542-80cd-5909936cf8e2",
+                "name": "link",
+                "label": "Link",
+                "description": "",
+                "required": true,
+                "type": "link",
+                "valueType": "any",
+                "localized": true
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "7f3829e4-5a5b-425e-a395-3aee1f0c8287",
+            "type": "group",
+            "name": "services",
+            "label": "Services",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "3199bf70-24bc-4ec3-9749-bbb2e92b82c6",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "42184826-6463-4188-af32-53fa7e626adf",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "70ac265c-889f-4ead-a5fe-04572f22205f",
+                "name": "note",
+                "label": "Note",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "3322cb07-37db-42c8-8b28-4ef9b0749631",
+                "type": "group",
+                "name": "items",
+                "label": "Items",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "6217c742-6964-4d5a-a96a-8f6a41419032",
+                    "name": "title",
+                    "label": "Title",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "5e49579f-0b07-47c5-9240-d2739e32a795",
+                    "name": "body",
+                    "label": "Body",
+                    "description": "",
+                    "required": true,
+                    "type": "textarea",
+                    "placeholder": "",
+                    "rows": 3,
+                    "resize": true
+                  },
+                  {
+                    "uuid": "3752137e-a601-4c82-a33b-698870d5d8e5",
+                    "name": "href",
+                    "label": "Href",
+                    "description": "",
+                    "required": true,
+                    "type": "link",
+                    "valueType": "internal"
+                  },
+                  {
+                    "uuid": "d3789c7a-d703-44ba-8d23-85affb645889",
+                    "name": "alt",
+                    "label": "Alt",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "9f12d516-c454-4b99-b474-a224dd3a83b3",
+                    "name": "image",
+                    "label": "Image",
+                    "description": "",
+                    "required": false,
+                    "type": "image",
+                    "multiple": false,
+                    "accept": [
+                      "image/jpeg",
+                      "image/png",
+                      "image/webp"
+                    ],
+                    "rootFolder": "",
+                    "escapeRootFolder": true,
+                    "sizes": [],
+                    "renditions": true
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "d43f084a-c5e3-4e72-8b0c-769f9492b424",
+            "type": "group",
+            "name": "steps",
+            "label": "Steps",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "7c6d34d2-095d-478c-8575-6c59dac1026e",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "7adff9b7-429b-48e5-a1ee-c292aa0b5ade",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "f497ca4e-c916-41e1-858b-2f63ff90ac99",
+                "name": "note",
+                "label": "Note",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "3a6a147f-814d-407a-bd3c-ddc24befa67d",
+                "type": "group",
+                "name": "items",
+                "label": "Items",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "f3419d6c-2c1f-4e70-bd27-fcdb1eb8e9da",
+                    "name": "title",
+                    "label": "Title",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "3c2288f3-c900-4afb-b087-3d302973e173",
+                    "name": "body",
+                    "label": "Body",
+                    "description": "",
+                    "required": true,
+                    "type": "textarea",
+                    "placeholder": "",
+                    "rows": 3,
+                    "resize": true
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "b2103c42-f1e5-4925-abe9-1b71da6773a7",
+            "type": "group",
+            "name": "packages",
+            "label": "Packages",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "55f07943-73f0-45ec-8667-69b786aadb7a",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "9424f79d-d822-4d2b-83a8-1741bf1896d2",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "2f8da6ee-5286-4973-9e3d-0f2543bdcf5a",
+                "name": "note",
+                "label": "Note",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "30489dd8-7a07-4da5-a313-dfee3c2a6eaa",
+                "type": "group",
+                "name": "items",
+                "label": "Items",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "47c046a0-a99a-41c3-8662-570bd5e9ab54",
+                    "name": "name",
+                    "label": "Name",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "24d0066d-962b-4026-97a8-0d09bce7ec83",
+                    "name": "price",
+                    "label": "Price",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "2fb3d566-108b-4bad-91c9-9ef47ba2e4a6",
+                    "name": "body",
+                    "label": "Body",
+                    "description": "",
+                    "required": true,
+                    "type": "textarea",
+                    "placeholder": "",
+                    "rows": 3,
+                    "resize": true
+                  },
+                  {
+                    "uuid": "f1fd2971-b9c0-4084-ab2d-e34f8799061f",
+                    "type": "group",
+                    "name": "includes",
+                    "label": "Includes",
+                    "description": "",
+                    "required": true,
+                    "collapsed": false,
+                    "min": 0,
+                    "max": 0,
+                    "multiple": true,
+                    "controls": [
+                      {
+                        "uuid": "567aaabb-92fa-4755-a5d8-cab8e09ae000",
+                        "name": "item",
+                        "label": "Item",
+                        "description": "",
+                        "required": true,
+                        "type": "input",
+                        "valueType": "string",
+                        "pattern": "",
+                        "placeholder": ""
+                      }
+                    ],
+                    "presentation": ""
+                  },
+                  {
+                    "uuid": "19ef7f76-7560-4b84-a2d2-5ea35718e855",
+                    "name": "link",
+                    "label": "Link",
+                    "description": "",
+                    "required": true,
+                    "type": "link",
+                    "valueType": "any"
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "4d1db51e-eae3-4207-8f91-7ac09f94d39e",
+            "type": "group",
+            "name": "gallery",
+            "label": "Gallery",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "6cd88af4-e599-4ef1-bc73-b6d63ba9b404",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "a0476a99-016a-4795-b9c3-fa3886b90afa",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "fc9a07df-b6d2-4102-9e00-7a47494b256c",
+                "type": "group",
+                "name": "items",
+                "label": "Items",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "5dad4d15-58ab-4ad7-a345-98c9f637c6c2",
+                    "name": "alt",
+                    "label": "Alt",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "ec7f9886-72d3-447b-a1f2-e24c9fb06e6e",
+                    "name": "image",
+                    "label": "Image",
+                    "description": "",
+                    "required": false,
+                    "type": "image",
+                    "multiple": false,
+                    "accept": [
+                      "image/jpeg",
+                      "image/png",
+                      "image/webp"
+                    ],
+                    "rootFolder": "",
+                    "escapeRootFolder": true,
+                    "sizes": [],
+                    "renditions": true
+                  },
+                  {
+                    "uuid": "021b3df6-216c-43c4-ac53-33425f71f09b",
+                    "name": "span",
+                    "label": "Span",
+                    "description": "",
+                    "required": true,
+                    "type": "select",
+                    "multiple": false,
+                    "options": [
+                      {
+                        "label": "Wide",
+                        "value": "wide"
+                      },
+                      {
+                        "label": "Tall",
+                        "value": "tall"
+                      }
+                    ]
+                  },
+                  {
+                    "uuid": "c480093a-6e29-4cac-8b74-baaa33ae1de3",
+                    "name": "link",
+                    "label": "Link",
+                    "description": "",
+                    "required": true,
+                    "type": "link",
+                    "valueType": "internal"
+                  },
+                  {
+                    "uuid": "acc4e211-5640-4d2b-ab13-b687ac4bab76",
+                    "name": "title",
+                    "label": "Title",
+                    "description": "",
+                    "required": false,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "9abf0d5c-926d-4f80-8cba-2c813c8dfc1f",
+                    "name": "tagline",
+                    "label": "Tagline",
+                    "description": "",
+                    "required": false,
+                    "type": "textarea",
+                    "placeholder": "",
+                    "rows": 3,
+                    "resize": true
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "64488f78-f9fd-4049-800e-e4d5905cdd8e",
+            "type": "group",
+            "name": "gallery_grid",
+            "label": "Gallery grid",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "88371e05-186b-4d48-8ab3-66f94d67873d",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "2787d28f-d03f-4c1b-8209-b5dc37b8a399",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "525db850-2da0-4355-9363-d795cfc08e7f",
+                "name": "note",
+                "label": "Note",
+                "description": "",
+                "required": false,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "2fac294c-6cef-43d6-8346-9af7eff38dde",
+                "name": "gallery",
+                "label": "Gallery",
+                "description": "",
+                "required": false,
+                "type": "gallery",
+                "rootFolder": "",
+                "escapeRootFolder": true,
+                "options": [
+                  {
+                    "label": "Upright",
+                    "value": "upright"
+                  },
+                  {
+                    "label": "Landscape",
+                    "value": "landscape"
+                  }
+                ]
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "a2355762-f62a-4993-a206-553d7dd98804",
+            "type": "group",
+            "name": "photo_grid",
+            "label": "Photo grid",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "5bd1c371-ac6c-4771-85f0-5136c7fcb7ad",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "f09bc3d2-df74-425d-9a5e-2eec84c863fe",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "6081d167-e979-4c43-9c56-65f97d9b1d9f",
+                "name": "note",
+                "label": "Note",
+                "description": "",
+                "required": false,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "c9092d65-8b84-4d6f-80d5-f3b681a195b5",
+                "name": "gallery",
+                "label": "Gallery",
+                "description": "",
+                "required": false,
+                "type": "boolean"
+              },
+              {
+                "uuid": "9d06ba9e-e51a-46e8-b420-e889bbd1a7f6",
+                "type": "group",
+                "name": "items",
+                "label": "Items",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "616eb41b-2f9a-40e4-8152-39a2098da051",
+                    "name": "image",
+                    "label": "Image",
+                    "description": "",
+                    "required": false,
+                    "type": "image",
+                    "multiple": false,
+                    "accept": [
+                      "image/jpeg",
+                      "image/png",
+                      "image/webp"
+                    ],
+                    "rootFolder": "",
+                    "escapeRootFolder": true,
+                    "sizes": [],
+                    "renditions": true
+                  },
+                  {
+                    "uuid": "b155a9fa-4d0a-4a2e-b906-f72c43fd7179",
+                    "name": "orientation",
+                    "label": "Orientation",
+                    "description": "",
+                    "required": true,
+                    "type": "select",
+                    "multiple": false,
+                    "options": [
+                      {
+                        "label": "Upright",
+                        "value": "upright"
+                      },
+                      {
+                        "label": "Landscape",
+                        "value": "landscape"
+                      }
+                    ]
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "0f728705-6aca-4d9d-ac45-42a02110bd77",
+            "type": "group",
+            "name": "id_photo",
+            "label": "Id photo",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "ae17b7d4-ba63-44c4-a976-768fe5ccfddb",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "87800681-e3f6-4484-a148-77d3fcbb0661",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "947d5741-2161-4c23-9253-ac4423b64edf",
+                "name": "body",
+                "label": "Body",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "2920dcfb-8882-4697-9a60-fbdf8381a174",
+                "type": "group",
+                "name": "points",
+                "label": "Points",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "2d9a2df5-f927-45a8-9366-623b1f60e51a",
+                    "name": "point",
+                    "label": "Point",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  }
+                ],
+                "presentation": ""
+              },
+              {
+                "uuid": "2d055a5e-0deb-442b-b2e0-032199dcc2d2",
+                "name": "hours_heading",
+                "label": "Hours heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "aad02b8f-9a82-4f74-b863-fa6ef32634e9",
+                "type": "group",
+                "name": "buttons",
+                "label": "Buttons",
+                "description": "",
+                "required": false,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "ce17732a-006f-4142-a1e3-efb4d310bad4",
+                    "name": "link",
+                    "label": "Link",
+                    "description": "",
+                    "required": false,
+                    "type": "link",
+                    "valueType": "any"
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "27e291d4-90f8-4d60-8b76-da54dfdefbe2",
+            "type": "group",
+            "name": "booking",
+            "label": "Booking",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "5ae530e8-7798-4c7b-8d90-0010e1c627c5",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "bd458604-281f-4c76-ba8c-5e92b293d63a",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "a676c7c8-93a7-41f3-a555-6d7cbebd85e3",
+                "name": "body",
+                "label": "Body",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "88108c98-b2be-462b-8952-373b522edd71",
+                "type": "group",
+                "name": "open_days",
+                "label": "Open days",
+                "description": "",
+                "required": false,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "54af5f20-3e0b-458b-97f0-c424605a88c4",
+                    "name": "date",
+                    "label": "Date",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "769ddcb4-2e6f-4239-bc5c-d2676f0eb3b7",
+                    "name": "from",
+                    "label": "From",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "f79e92cc-901a-4f66-8ef3-1c4052b92f44",
+                    "name": "to",
+                    "label": "To",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  }
+                ],
+                "presentation": ""
+              },
+              {
+                "uuid": "2f4c95b8-9386-4353-b942-c1272fae119f",
+                "type": "group",
+                "name": "closed_days",
+                "label": "Closed days",
+                "description": "",
+                "required": false,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "de8553d3-3143-4bf0-b22d-32ce97e2d6cd",
+                    "name": "date",
+                    "label": "Date",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  },
+                  {
+                    "uuid": "d57b5684-0072-409c-857d-f0f8593c1b64",
+                    "name": "note",
+                    "label": "Note",
+                    "description": "",
+                    "required": false,
+                    "type": "textarea",
+                    "placeholder": "",
+                    "rows": 3,
+                    "resize": true
+                  }
+                ],
+                "presentation": ""
+              },
+              {
+                "uuid": "ac43aa8e-ee4e-4a47-a65b-52c6d82052b2",
+                "name": "slot_minutes",
+                "label": "Slot minutes",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "62de7669-e248-4c56-896d-cf475278666d",
+                "name": "lead_time_hours",
+                "label": "Lead time hours",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "cfd9ddab-e065-4151-bce3-0344e795bf1b",
+                "name": "horizon_days",
+                "label": "Horizon days",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "96958b54-e1c1-46c0-a7f4-04a8a963161b",
+                "type": "group",
+                "name": "id_types",
+                "label": "Id types",
+                "description": "",
+                "required": false,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "d905dfbd-557d-4b74-9a4b-2e39a4fe7954",
+                    "name": "label",
+                    "label": "Label",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  }
+                ],
+                "presentation": ""
+              },
+              {
+                "uuid": "46af8570-36e5-40ff-ab58-f4d63810faf4",
+                "name": "cta_label",
+                "label": "Cta label",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "8e91feb5-9895-4356-ac10-6c15ba1e3bfa",
+                "name": "submit_label",
+                "label": "Submit label",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "5ef591fc-3c1d-4d4c-b091-c86aef369a19",
+                "name": "footnote",
+                "label": "Footnote",
+                "description": "",
+                "required": false,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "d04ac81f-bed1-49c9-adcf-d7e0469bd256",
+                "name": "empty_note",
+                "label": "Empty note",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "00d04c6f-8a3a-4a46-a0f0-1ce97997e4b9",
+                "name": "confirm_heading",
+                "label": "Confirm heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "eb408c69-b787-4f9d-a631-6dfa7d32b91b",
+                "name": "confirm_body",
+                "label": "Confirm body",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "224c7f12-fbaa-43cf-9025-bea6a59659ec",
+            "type": "group",
+            "name": "about",
+            "label": "About",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "116ca0f3-894e-48d1-a782-50a6132b4c5b",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "2a2ad8fd-9db7-4c29-834a-5469263c6927",
+                "name": "statement",
+                "label": "Statement",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "9f05daea-337c-4d06-b225-416c07d68d3e",
+                "type": "group",
+                "name": "paragraphs",
+                "label": "Paragraphs",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "b2ce036f-53a9-415e-9bb0-217a9f56d719",
+                    "name": "paragraph",
+                    "label": "Paragraph",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  }
+                ],
+                "presentation": ""
+              },
+              {
+                "uuid": "ad4fd0f4-cff2-4271-91d6-393887ca5982",
+                "name": "alt",
+                "label": "Alt",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "99a8a147-00f1-45a2-921d-5941ae623c0f",
+                "name": "image",
+                "label": "Image",
+                "description": "",
+                "required": false,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "eb0066be-556b-41cc-a58e-0f42bd4e06ec",
+            "type": "group",
+            "name": "faq",
+            "label": "Faq",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "6575972a-6584-4ec5-9e19-7605c409450e",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": "",
+                "localized": true
+              },
+              {
+                "uuid": "c55a8533-bb75-44b5-acfe-651ee0742389",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": "",
+                "localized": true
+              },
+              {
+                "uuid": "b29b0fa4-fa78-4b88-8967-078b3e390c9a",
+                "type": "group",
+                "name": "items",
+                "label": "Items",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "c0e79537-02ef-4d21-9263-81d72ed236f5",
+                    "name": "question",
+                    "label": "Question",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": "",
+                    "localized": true
+                  },
+                  {
+                    "uuid": "e448855f-4321-4c30-910c-6ca4dcf5ba7e",
+                    "name": "answer",
+                    "label": "Answer",
+                    "description": "",
+                    "required": true,
+                    "type": "textarea",
+                    "placeholder": "",
+                    "rows": 3,
+                    "resize": true,
+                    "localized": true
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "6fcfefac-48c5-4d68-9f1c-1afd004102ef",
+            "type": "group",
+            "name": "contact",
+            "label": "Contact",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "d914cc2f-4f89-451c-bb67-993f81e517a9",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "6952d39f-88da-49c8-8e20-dd9b1db0690c",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "db19e6ff-5a5e-4589-9e41-0a45f4e2d213",
+                "name": "body",
+                "label": "Body",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "7ee15863-cd29-47e9-8493-c248e43228cf",
+                "type": "group",
+                "name": "enquiry_types",
+                "label": "Enquiry types",
+                "description": "",
+                "required": true,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "5dd222d8-35dd-4e6f-be7d-6bd3cb967741",
+                    "name": "label",
+                    "label": "Label",
+                    "description": "",
+                    "required": true,
+                    "type": "input",
+                    "valueType": "string",
+                    "pattern": "",
+                    "placeholder": ""
+                  }
+                ],
+                "presentation": ""
+              },
+              {
+                "uuid": "3ece83d0-e2f1-4786-ac3f-e35da323ebc3",
+                "name": "submit_label",
+                "label": "Submit label",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "af3b680c-ccbd-4440-b9ad-2dd4cc2b2c73",
+                "name": "footnote",
+                "label": "Footnote",
+                "description": "",
+                "required": false,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              }
+            ],
+            "presentation": ""
+          },
+          {
+            "uuid": "7d745626-fbdd-4be5-b52b-43f787f0f41a",
+            "type": "group",
+            "name": "cta",
+            "label": "Cta",
+            "description": "",
+            "required": true,
+            "collapsed": false,
+            "min": 0,
+            "max": 0,
+            "multiple": false,
+            "controls": [
+              {
+                "uuid": "8d21e77a-0af8-44ed-8212-c8d8dac4716f",
+                "name": "eyebrow",
+                "label": "Eyebrow",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "ce12630f-c196-4489-af58-0ca002c22ce4",
+                "name": "heading",
+                "label": "Heading",
+                "description": "",
+                "required": true,
+                "type": "input",
+                "valueType": "string",
+                "pattern": "",
+                "placeholder": ""
+              },
+              {
+                "uuid": "fa0b9962-2583-466a-96b7-a730848bddce",
+                "name": "body",
+                "label": "Body",
+                "description": "",
+                "required": true,
+                "type": "textarea",
+                "placeholder": "",
+                "rows": 3,
+                "resize": true
+              },
+              {
+                "uuid": "c7f88af1-576e-4bfc-80e4-db7f35d41b48",
+                "type": "group",
+                "name": "buttons",
+                "label": "Buttons",
+                "description": "",
+                "required": false,
+                "collapsed": false,
+                "min": 0,
+                "max": 0,
+                "multiple": true,
+                "controls": [
+                  {
+                    "uuid": "3ee24fc3-9621-49b0-9792-e6aa95fc05e7",
+                    "name": "link",
+                    "label": "Link",
+                    "description": "",
+                    "required": false,
+                    "type": "link",
+                    "valueType": "any"
+                  },
+                  {
+                    "uuid": "d4d87451-07d3-42ab-92ad-5a210fb8c504",
+                    "name": "style",
+                    "label": "Style",
+                    "description": "",
+                    "required": false,
+                    "type": "select",
+                    "multiple": false,
+                    "options": [
+                      {
+                        "label": "Border",
+                        "value": "border"
+                      },
+                      {
+                        "label": "Solid",
+                        "value": "solid"
+                      }
+                    ]
+                  }
+                ],
+                "presentation": ""
+              }
+            ],
+            "presentation": ""
+          }
+        ]
+      },
+      {
+        "uuid": "e7924fb7-e7b5-440a-91e9-7455fa7d844f",
+        "name": "showcase",
+        "label": "Showcase",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "presentation": "",
+        "multiple": false,
+        "controls": [
+          {
+            "uuid": "2fcb8808-7056-4dac-b901-5a44df0c4c1a",
+            "name": "layout",
+            "label": "Layout",
+            "type": "select",
+            "description": "",
+            "required": false,
+            "options": [
+              {
+                "label": "home",
+                "value": "home"
+              },
+              {
+                "label": "page",
+                "value": "page"
+              },
+              {
+                "label": "collection",
+                "value": "collection"
+              },
+              {
+                "label": "images",
+                "value": "images"
+              }
+            ]
+          },
+          {
+            "uuid": "c32390fe-bef9-4e70-9e96-5167fccbe17d",
+            "name": "eyebrow",
+            "label": "Eyebrow",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": ""
+          },
+          {
+            "uuid": "481d0b53-91fd-4298-bc4c-640338a72f39",
+            "name": "title",
+            "label": "Title",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": ""
+          },
+          {
+            "uuid": "6403f035-83f3-44ae-b9df-d7f8a8315173",
+            "name": "summary",
+            "label": "Summary",
+            "type": "textarea",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "rows": 4,
+            "resize": true,
+            "placeholder": ""
+          },
+          {
+            "uuid": "03b2a9d2-4053-4f72-8c7d-365e9d29f0d5",
+            "name": "cover",
+            "label": "Cover",
+            "type": "image",
+            "description": "",
+            "required": false,
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ],
+            "multiple": false,
+            "rootFolder": "showcase",
+            "escapeRootFolder": true,
+            "renditions": true,
+            "alt": true,
+            "sizes": [],
+            "breakpoints": [
+              {
+                "name": "mobile",
+                "label": "Mobile"
+              }
+            ]
+          },
+          {
+            "uuid": "cae1f0eb-194a-490f-bbb9-3bd9f29faa78",
+            "name": "body",
+            "label": "Body",
+            "type": "richtext",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "rows": 12,
+            "resize": true,
+            "placeholder": "Write something worth reading.",
+            "standalone": true,
+            "controls": [],
+            "toolbarOptions": {
+              "bold": true,
+              "italic": true,
+              "strike": true,
+              "underline": true,
+              "code": true,
+              "codeBlock": true,
+              "heading1": true,
+              "heading2": true,
+              "heading3": true,
+              "heading4": true,
+              "heading5": true,
+              "heading6": true,
+              "bulletList": true,
+              "orderedList": true,
+              "blockquote": true,
+              "hr": true,
+              "link": true
+            }
+          },
+          {
+            "uuid": "0b8fd01e-d600-4974-a0a3-232acc49a82f",
+            "name": "gallery",
+            "label": "Gallery",
+            "type": "gallery",
+            "description": "",
+            "required": false,
+            "rootFolder": "showcase",
+            "escapeRootFolder": true,
+            "options": []
+          },
+          {
+            "uuid": "11744674-ec53-4b43-ac7f-c6ddf8d6f353",
+            "type": "link",
+            "name": "next_page",
+            "label": "Next page",
+            "description": "An optional link to continue exploring.",
+            "required": false,
+            "localized": true,
+            "valueType": "any"
+          }
+        ]
+      }
+    ]
+  }
+}

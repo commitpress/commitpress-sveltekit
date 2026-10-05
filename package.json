@@ -1,0 +1,39 @@
+{
+    "name":  "commitpress-sveltekit-starter",
+    "private":  true,
+    "version":  "0.0.1",
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=22"
+                },
+    "scripts":  {
+                    "dev":  "vite dev",
+                    "//build":  "generate runs first so a deploy triggered by the CMS committing a new page compiles against that page. The generated file is committed too, so a fresh clone can `check` and `dev` without running the CLI first.",
+                    "build":  "pnpm --filter @commitpress/sdk build \u0026\u0026 commitpress generate \u0026\u0026 vite build",
+                    "start":  "node build",
+                    "preview":  "pnpm run build \u0026\u0026 pnpm run start",
+                    "check":  "svelte-kit sync \u0026\u0026 svelte-check --tsconfig ./tsconfig.json",
+                    "check:watch":  "svelte-kit sync \u0026\u0026 svelte-check --tsconfig ./tsconfig.json --watch",
+                    "cms:generate":  "commitpress generate",
+                    "predev":  "pnpm --filter @commitpress/sdk build",
+                    "precheck":  "pnpm --filter @commitpress/sdk build"
+                },
+    "dependencies":  {
+                         "@commitpress/sdk":  "workspace:*",
+                         "better-sqlite3":  "^13.0.3"
+                     },
+    "devDependencies":  {
+                            "@sveltejs/adapter-node":  "^5.3.3",
+                            "@sveltejs/kit":  "^2.46.4",
+                            "@sveltejs/vite-plugin-svelte":  "^6.2.1",
+                            "@tailwindcss/vite":  "^4.1.18",
+                            "@types/better-sqlite3":  "^9.6.0",
+                            "@types/gtag.js":  "^0.0.20",
+                            "@types/node":  "^24.9.2",
+                            "svelte":  "^5.43.6",
+                            "svelte-check":  "^4.3.3",
+                            "tailwindcss":  "^4.1.18",
+                            "typescript":  "^5.9.3",
+                            "vite":  "^7.1.12"
+                        }
+}

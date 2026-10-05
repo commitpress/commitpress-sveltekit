@@ -1,0 +1,153 @@
+{
+  "v": 2,
+  "schema": "page",
+  "slug": "pages/a-quiet-corner",
+  "status": "published",
+  "last_edited": 1791200000000,
+  "content": {
+    "blocks": [],
+    "showcase": {
+      "layout": "page",
+      "eyebrow": "A nested page",
+      "title": "A quiet corner.",
+      "summary": "A smaller page, tucked one level deeper. Same site, same shared details, a different place to land.",
+      "cover": {
+        "src": "1791200000002",
+        "mobile": "1791200000002",
+        "renditions": {
+          "mobile": "portrait"
+        }
+      },
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Something to build on."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This page is an example, ready to become something of your own. The content lives in your repository, and the design belongs to your site."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The navigation and footer are shared globals. The text and imagery here belong to this page. Change one without having to change the other."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "There is always something else to notice."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "next_page": {
+        "type": "internal",
+        "href": "/pages",
+        "label": "Back to example pages"
+      }
+    },
+    "seo": {
+      "title": "A quiet corner. | Commitpress",
+      "description": "A smaller page, tucked one level deeper. Same site, same shared details, a different place to land."
+    }
+  },
+  "locales": {
+    "sv": {
+      "slug": "sidor/en-lugn-vra",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "content": {
+        "showcase": {
+          "eyebrow": "En undersida",
+          "title": "En lugn vrå.",
+          "summary": "En mindre sida, en nivå längre ner. Samma webbplats och gemensamma detaljer, en ny plats att landa på.",
+          "body": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Något att bygga vidare på."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Den här sidan är ett exempel, redo att bli något eget. Innehållet finns i ditt repository och designen hör till din webbplats."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Navigering och sidfot är gemensamma globala värden. Texten och bilderna här hör till just den här sidan."
+                  }
+                ]
+              },
+              {
+                "type": "blockquote",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "There is always something else to notice."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "next_page": {
+            "type": "internal",
+            "href": "/sv/sidor",
+            "label": "Till exempelsidorna"
+          }
+        },
+        "seo": {
+          "title": "En lugn vrå. | Commitpress",
+          "description": "En mindre sida, en nivå längre ner. Samma webbplats och gemensamma detaljer, en ny plats att landa på."
+        }
+      }
+    }
+  }
+}

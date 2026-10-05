@@ -1,0 +1,69 @@
+{
+  "v": 2,
+  "schema": "notes",
+  "slug": "not-yet",
+  "status": "draft",
+  "last_edited": 1791200000000,
+  "content": {
+    "story": {
+      "title": "Still taking shape.",
+      "summary": "A draft that stays out of the public collection.",
+      "category": "Draft",
+      "date": "2026-10-05",
+      "cover": "1791200000003",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Not quite ready."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This entry appears in preview, but not on the public site."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "There is always something else to notice."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "locales": {
+    "sv": {
+      "slug": "inte-an",
+      "status": "draft",
+      "last_edited": 1791200000000,
+      "content": {
+        "story": {
+          "title": "På väg.",
+          "summary": "Ett utkast som inte visas i den offentliga samlingen."
+        }
+      }
+    }
+  }
+}

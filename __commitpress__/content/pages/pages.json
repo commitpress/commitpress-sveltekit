@@ -1,0 +1,220 @@
+{
+  "v": 2,
+  "schema": "page",
+  "slug": "pages",
+  "status": "published",
+  "last_edited": 1791200000000,
+  "content": {
+    "blocks": [
+      {
+        "intro": {
+          "eyebrow": "Reusable sections",
+          "statement": "Arrange the pieces your way.",
+          "body": "This section is a block. So is the set of questions below. They can be edited, reordered, or switched off without changing the rest of the page.",
+          "link": {
+            "type": "internal",
+            "href": "/collection",
+            "label": "Explore the collection"
+          }
+        }
+      },
+      {
+        "faq": {
+          "eyebrow": "A few answers",
+          "heading": "What can you change?",
+          "items": [
+            {
+              "question": "Can I rearrange the sections?",
+              "answer": "Yes. These sections are separate blocks in the page content. Reorder them in Commitpress to change the page."
+            },
+            {
+              "question": "Are navigation and footer editable too?",
+              "answer": "Yes. They come from the site global, shared by every page and translated for each language."
+            },
+            {
+              "question": "Can I preview an unpublished entry?",
+              "answer": "Yes. The collection includes an example draft. The public site hides it, while the preview route can display it."
+            }
+          ]
+        }
+      }
+    ],
+    "showcase": {
+      "layout": "page",
+      "eyebrow": "Pages & routing",
+      "title": "Room for a different layout.",
+      "summary": "A page can be a short introduction, a long read, or a place to bring things together. Start here, then follow a route a little further.",
+      "cover": {
+        "src": "1791200000004",
+        "mobile": "1791200000004",
+        "renditions": {
+          "mobile": "portrait"
+        }
+      },
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Something to build on."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This page is an example, ready to become something of your own. The content lives in your repository, and the design belongs to your site."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The navigation and footer are shared globals. The text and imagery here belong to this page. Change one without having to change the other."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "There is always something else to notice."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "next_page": {
+        "type": "internal",
+        "href": "/pages/a-quiet-corner",
+        "label": "Follow a nested route"
+      }
+    },
+    "seo": {
+      "title": "Room for a different layout. | Commitpress",
+      "description": "A page can be a short introduction, a long read, or a place to bring things together. Start here, then follow a route a little further."
+    }
+  },
+  "locales": {
+    "sv": {
+      "slug": "sidor",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "content": {
+        "showcase": {
+          "eyebrow": "Sidor och sökvägar",
+          "title": "Plats för en annan layout.",
+          "summary": "En sida kan vara en kort introduktion, en längre text eller en plats där allt möts. Börja här och följ sedan en sökväg lite längre.",
+          "body": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Något att bygga vidare på."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Den här sidan är ett exempel, redo att bli något eget. Innehållet finns i ditt repository och designen hör till din webbplats."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Navigering och sidfot är gemensamma globala värden. Texten och bilderna här hör till just den här sidan."
+                  }
+                ]
+              },
+              {
+                "type": "blockquote",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "There is always something else to notice."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "next_page": {
+            "type": "internal",
+            "href": "/sv/sidor/en-lugn-vra",
+            "label": "Följ en undersida"
+          }
+        },
+        "seo": {
+          "title": "Plats för en annan layout. | Commitpress",
+          "description": "En sida kan vara en kort introduktion, en längre text eller en plats där allt möts. Börja här och följ sedan en sökväg lite längre."
+        },
+        "blocks": [
+          {
+            "intro": {
+              "eyebrow": "Återanvändbara sektioner",
+              "statement": "Ordna delarna på ditt sätt.",
+              "body": "Den här sektionen är ett block. Frågorna nedan är ett annat. De kan redigeras, flyttas eller stängas av utan att ändra resten av sidan.",
+              "link": {
+                "type": "internal",
+                "href": "/sv/samling",
+                "label": "Utforska samlingen"
+              }
+            }
+          },
+          {
+            "faq": {
+              "eyebrow": "Några svar",
+              "heading": "Vad kan du ändra?",
+              "items": [
+                {
+                  "question": "Kan jag flytta sektionerna?",
+                  "answer": "Ja. Sektionerna är separata block i sidans innehåll. Flytta dem i Commitpress för att ändra sidan."
+                },
+                {
+                  "question": "Kan jag redigera menyn och sidfoten?",
+                  "answer": "Ja. De kommer från globala värden, gemensamma för alla sidor och översatta till varje språk."
+                },
+                {
+                  "question": "Kan jag förhandsvisa ett utkast?",
+                  "answer": "Ja. Samlingen innehåller ett utkast. Det döljs på den offentliga webbplatsen men visas i förhandsvisningen."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

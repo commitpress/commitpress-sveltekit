@@ -1,0 +1,46 @@
+{
+  "id": "1791200000003",
+  "filename": "photo-1497250681960-ef046c08a56e.jpg",
+  "path": "1791200000003/original.jpg",
+  "source_type": "image/jpeg",
+  "width": 1600,
+  "height": 2399,
+  "bytes": 866687,
+  "uploaded_at": 1791200000000,
+  "alt": "Green leaves against a soft pink background",
+  "folder": "showcase",
+  "folders": [
+    "showcase"
+  ],
+  "variants": [
+    {
+      "name": "small",
+      "path": "1791200000003/small.webp",
+      "width": 480,
+      "height": 719,
+      "bytes": 84588
+    },
+    {
+      "name": "medium",
+      "path": "1791200000003/medium.webp",
+      "width": 960,
+      "height": 1439,
+      "bytes": 237214
+    },
+    {
+      "name": "large",
+      "path": "1791200000003/large.webp",
+      "width": 1600,
+      "height": 2399,
+      "bytes": 488764
+    },
+    {
+      "name": "portrait",
+      "path": "1791200000003/portrait.webp",
+      "width": 640,
+      "height": 800,
+      "bytes": 120690,
+      "custom": true
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "v": 1,
+  "schema": "page",
+  "slug": "about",
+  "status": "published",
+  "last_edited": 0,
+  "content": {
+    "seo": {
+      "title": "About | Commitpress starter",
+      "description": "A small collection of pages and sections, ready to make your own."
+    },
+    "blocks": [
+      {
+        "page_header": {
+          "eyebrow": "About the starter",
+          "heading": "A starting point, with space to grow.",
+          "lead": "This example shows how a few reusable sections can become a complete page. Everything here is ready to be replaced with your own content.",
+          "alt": "",
+          "buttons": [
+            {
+              "link": {
+                "type": "internal",
+                "href": "/",
+                "label": "Back to home"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "faq": {
+          "eyebrow": "Good to know",
+          "heading": "A few simple answers.",
+          "items": [
+            {
+              "question": "Can I change the look?",
+              "answer": "Yes. Colors, typography, and the page width are defined together in the theme. Adjust them once to give the whole site your own visual identity."
+            },
+            {
+              "question": "Where does the content live?",
+              "answer": "The example pages and site settings live in the repository, under __commitpress__/content. You can edit them directly or connect the repository to Commitpress."
+            },
+            {
+              "question": "Can I add my own sections?",
+              "answer": "Yes. Add a section to the page schema and its component to the block renderer. Start small and add what your site needs."
+            }
+          ]
+        }
+      },
+      {
+        "cta": {
+          "eyebrow": "Your next chapter",
+          "heading": "Start with something simple.",
+          "body": "You don't need a big site to make a good first impression. A clear message and a few thoughtful details go a long way.",
+          "buttons": [
+            {
+              "link": {
+                "type": "internal",
+                "href": "/",
+                "label": "Return to the homepage"
+              },
+              "style": "solid"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

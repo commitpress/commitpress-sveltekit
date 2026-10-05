@@ -1,0 +1,146 @@
+{
+  "v": 2,
+  "schema": "notes",
+  "slug": "room-to-breathe",
+  "status": "published",
+  "last_edited": 1791200000000,
+  "content": {
+    "story": {
+      "title": "Room to breathe.",
+      "category": "Everyday",
+      "summary": "Light, texture, and the things that make a space feel like yours.",
+      "date": "2026-10-05",
+      "cover": "1791200000004",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Look a little closer."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Light, texture, and the things that make a space feel like yours."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "It is easy to walk past the details. A reflection, a patch of sunlight, the shape of a leaf. This collection is a place to keep some of them."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Every entry is its own content record. It can be edited, translated, previewed, and published independently."
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "There is always something else to notice."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "locales": {
+    "sv": {
+      "slug": "rum-att-andas",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "content": {
+        "story": {
+          "title": "Rum att andas.",
+          "category": "Vardag",
+          "summary": "Ljus, material och det som gör en plats till din.",
+          "body": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": {
+                  "level": 2
+                },
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Titta lite närmare."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Ljus, material och det som gör en plats till din."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Det är lätt att gå förbi detaljerna. En spegling, en solfläck, formen på ett löv. Den här samlingen är en plats att spara några av dem."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Varje inlägg kan redigeras, översättas, förhandsvisas och publiceras för sig."
+                  }
+                ]
+              },
+              {
+                "type": "blockquote",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "There is always something else to notice."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

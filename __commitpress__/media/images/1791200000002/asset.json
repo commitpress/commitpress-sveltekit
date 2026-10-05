@@ -1,0 +1,46 @@
+{
+  "id": "1791200000002",
+  "filename": "photo-1441974231531-c6227db76b6e.jpg",
+  "path": "1791200000002/original.jpg",
+  "source_type": "image/jpeg",
+  "width": 1600,
+  "height": 1066,
+  "bytes": 573211,
+  "uploaded_at": 1791200000000,
+  "alt": "Sunlight falling through a green forest",
+  "folder": "showcase",
+  "folders": [
+    "showcase"
+  ],
+  "variants": [
+    {
+      "name": "small",
+      "path": "1791200000002/small.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 43762
+    },
+    {
+      "name": "medium",
+      "path": "1791200000002/medium.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 164096
+    },
+    {
+      "name": "large",
+      "path": "1791200000002/large.webp",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 418230
+    },
+    {
+      "name": "portrait",
+      "path": "1791200000002/portrait.webp",
+      "width": 640,
+      "height": 800,
+      "bytes": 170118,
+      "custom": true
+    }
+  ]
+}

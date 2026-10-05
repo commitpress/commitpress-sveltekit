@@ -1,0 +1,59 @@
+{
+  "$schema": "https://cms.commitpress.com/app/schema/config/v2",
+  "root": "",
+  "branch": "main",
+  "editor": {
+    "groups_flatten_singles": true,
+    "preview_urls": ["http://localhost:5173/preview/"],
+    "accept": {
+      "images": ["image/jpeg", "image/png", "image/webp"],
+      "files": []
+    }
+  },
+  "content": {
+    "directory": "__commitpress__",
+    "intl": {
+      "default_locale": "en",
+      "locales": ["en", "sv"]
+    }
+  },
+  "assets": {
+    "storage": {
+      "public_url": "/__commitpress__/media/images"
+    },
+    "images": {
+      "sizes": [
+        {
+          "name": "small",
+          "width": 480,
+          "fit": "inside"
+        },
+        {
+          "name": "medium",
+          "width": 960,
+          "fit": "inside"
+        },
+        {
+          "name": "large",
+          "width": 1600,
+          "fit": "inside"
+        }
+      ],
+      "gallery": {
+        "grid": 960,
+        "full": 1600
+      }
+    }
+  },
+  "build": {
+    "sdk": {
+      "output": "src/commitpress.generated.ts"
+    },
+    "deploy": {
+      "strategy": "direct",
+      "marker": {
+        "path": "__commitpress__/release.json"
+      }
+    }
+  }
+}

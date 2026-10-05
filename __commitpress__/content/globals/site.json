@@ -1,0 +1,136 @@
+{
+  "v": 2,
+  "schema": "site",
+  "slug": "site",
+  "status": "published",
+  "last_edited": 1791200000000,
+  "content": {
+    "details": {
+      "name": "Commitpress",
+      "tagline": "A few pages. A lot to explore.",
+      "phone": "",
+      "phone_href": "",
+      "email": "",
+      "street": "",
+      "postal": ""
+    },
+    "opening_hours": [],
+    "nav": [
+      {
+        "href": {
+          "href": "/",
+          "label": "Explore"
+        }
+      },
+      {
+        "href": {
+          "href": "/pages",
+          "label": "Pages"
+        }
+      },
+      {
+        "href": {
+          "href": "/collection",
+          "label": "Collection"
+        }
+      },
+      {
+        "href": {
+          "href": "/images",
+          "label": "Images"
+        }
+      }
+    ],
+    "mobile_nav": [
+      {
+        "href": {
+          "href": "/",
+          "label": "Explore"
+        }
+      },
+      {
+        "href": {
+          "href": "/pages",
+          "label": "Pages"
+        }
+      },
+      {
+        "href": {
+          "href": "/collection",
+          "label": "Collection"
+        }
+      },
+      {
+        "href": {
+          "href": "/images",
+          "label": "Images"
+        }
+      }
+    ]
+  },
+  "locales": {
+    "sv": {
+      "slug": "site",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "content": {
+        "details": {
+          "name": "Commitpress",
+          "tagline": "Några sidor. Mycket att upptäcka."
+        },
+        "nav": [
+          {
+            "href": {
+              "href": "/sv",
+              "label": "Utforska"
+            }
+          },
+          {
+            "href": {
+              "href": "/sv/sidor",
+              "label": "Sidor"
+            }
+          },
+          {
+            "href": {
+              "href": "/sv/samling",
+              "label": "Samling"
+            }
+          },
+          {
+            "href": {
+              "href": "/sv/bilder",
+              "label": "Bilder"
+            }
+          }
+        ],
+        "mobile_nav": [
+          {
+            "href": {
+              "href": "/sv",
+              "label": "Utforska"
+            }
+          },
+          {
+            "href": {
+              "href": "/sv/sidor",
+              "label": "Sidor"
+            }
+          },
+          {
+            "href": {
+              "href": "/sv/samling",
+              "label": "Samling"
+            }
+          },
+          {
+            "href": {
+              "href": "/sv/bilder",
+              "label": "Bilder"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

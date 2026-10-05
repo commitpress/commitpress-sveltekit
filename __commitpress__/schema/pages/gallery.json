@@ -1,0 +1,65 @@
+{
+  "$schema": "https://commitpress.com/app/schema/schema/v1",
+  "icon": "gallery",
+  "blocks": {
+    "components": [
+      {
+        "uuid": "b759d300-d18b-4dde-83b8-c2974eb5f9e6",
+        "type": "group",
+        "name": "gallery",
+        "label": "Gallery",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "multiple": false,
+        "controls": [
+          {
+            "uuid": "1e3db99a-19ca-47f1-9afb-331001473d05",
+            "name": "title",
+            "label": "Title",
+            "description": "",
+            "required": false,
+            "type": "input",
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": ""
+          },
+          {
+            "uuid": "a9484775-0df5-4205-a653-9c7162f95cb8",
+            "name": "tagline",
+            "label": "Tagline",
+            "description": "",
+            "required": false,
+            "type": "textarea",
+            "placeholder": "",
+            "rows": 3,
+            "resize": true
+          },
+          {
+            "uuid": "cca873f4-05fe-47bc-afaf-54cfdd788998",
+            "name": "gallery",
+            "label": "Gallery",
+            "description": "",
+            "required": false,
+            "type": "gallery",
+            "rootFolder": "",
+            "escapeRootFolder": true,
+            "options": [
+              {
+                "label": "Upright",
+                "value": "upright"
+              },
+              {
+                "label": "Landscape",
+                "value": "landscape"
+              }
+            ]
+          }
+        ],
+        "presentation": ""
+      }
+    ]
+  }
+}

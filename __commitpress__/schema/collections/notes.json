@@ -1,0 +1,129 @@
+{
+  "$schema": "https://commitpress.com/app/schema/schema/v1",
+  "icon": "article",
+  "blocks": {
+    "components": [
+      {
+        "uuid": "d244a7e1-bb72-4f1c-a306-9e4292bbe8f7",
+        "name": "story",
+        "label": "Story",
+        "type": "group",
+        "description": "",
+        "required": false,
+        "collapsed": false,
+        "min": 0,
+        "max": 0,
+        "presentation": "",
+        "multiple": false,
+        "controls": [
+          {
+            "uuid": "34711215-85cb-4719-9735-9235bd0acb84",
+            "name": "title",
+            "label": "Title",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": ""
+          },
+          {
+            "uuid": "b45372ad-6ed9-4f35-a70a-1dc5c9cdbd05",
+            "name": "summary",
+            "label": "Summary",
+            "type": "textarea",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "rows": 4,
+            "resize": true,
+            "placeholder": ""
+          },
+          {
+            "uuid": "733efac0-2918-4288-9b88-68e31c6f7d3c",
+            "name": "category",
+            "label": "Category",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": ""
+          },
+          {
+            "uuid": "a13de715-1cd3-4d9a-b409-778ec7fddd32",
+            "name": "date",
+            "label": "Date",
+            "type": "input",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "valueType": "string",
+            "pattern": "",
+            "placeholder": ""
+          },
+          {
+            "uuid": "51cad789-f373-4352-a754-a3f970769c12",
+            "name": "cover",
+            "label": "Cover",
+            "type": "image",
+            "description": "",
+            "required": false,
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ],
+            "multiple": false,
+            "rootFolder": "showcase",
+            "escapeRootFolder": true,
+            "renditions": true,
+            "alt": true,
+            "sizes": [],
+            "breakpoints": [
+              {
+                "name": "mobile",
+                "label": "Mobile"
+              }
+            ]
+          },
+          {
+            "uuid": "cae1f0eb-194a-490f-bbb9-3bd9f29faa78",
+            "name": "body",
+            "label": "Body",
+            "type": "richtext",
+            "description": "",
+            "required": false,
+            "localized": true,
+            "rows": 12,
+            "resize": true,
+            "placeholder": "Write something worth reading.",
+            "standalone": true,
+            "controls": [],
+            "toolbarOptions": {
+              "bold": true,
+              "italic": true,
+              "strike": true,
+              "underline": true,
+              "code": true,
+              "codeBlock": true,
+              "heading1": true,
+              "heading2": true,
+              "heading3": true,
+              "heading4": true,
+              "heading5": true,
+              "heading6": true,
+              "bulletList": true,
+              "orderedList": true,
+              "blockquote": true,
+              "hr": true,
+              "link": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

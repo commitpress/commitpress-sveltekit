@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env*
+# ...but not the example, which exists to be read by whoever sets the real ones up. `.env*` matched
+# it too, so the one file here that is meant to be committed was the one file that never was.
+!.env.example
+
+# The booking database. Personal data on one side and a file that differs on every machine on the
+# other; in production it lives on the mounted volume. Committing it would publish customers' names
+# and phone numbers to the repository.
+#
+# Anchored with a leading slash, and it has to stay that way. A bare `data/` matches a directory of
+# that name at *any* depth, which also swallows `__commitpress__/data/` — the data-source
+# definitions. That failure is silent and total: the file stays on the laptop that wrote it, the CMS
+# reads sources from the repository and finds none, and the deployed descriptor endpoint answers 500
+# because the file it reads was never in the build.
+/data/
+
+# SvelteKit
+.svelte-kit
+build
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+playwright/test-report/*
+playwright/test-results/*
+.last-run.json

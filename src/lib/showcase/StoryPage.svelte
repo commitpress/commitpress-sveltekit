@@ -1,0 +1,21 @@
+<script lang="ts">
+  import MediaImage from './MediaImage.svelte';
+  import {richtext} from '@commitpress/sdk/richtext';
+  import {sectionMarker} from '@commitpress/sdk/preview';
+  import type {NotesContent} from '../../commitpress.generated';
+  import type {ImageAsset} from '$lib/media/assets';
+  import type {PreviewAsset} from '@commitpress/sdk/preview';
+  let { content, media, locale='en', marked=false }: { content:NotesContent; media:Record<string,ImageAsset|PreviewAsset>; locale?:string; marked?:boolean }=$props();
+  const story=$derived(content.story);
+</script>
+{#if story}
+<svelte:element this={marked ? 'commitpress-section' : 'article'} {...marked ? sectionMarker('story', story.title || 'Entry') : {}}>
+  <div class="wrap story-opening">
+    <a class="kicker" href={locale === 'sv' ? '/sv/samling' : '/collection'}>← {locale === 'sv' ? 'Till samlingen' : 'Back to the collection'}</a>
+    <p class="story-category">{story.category}</p><h1>{story.title}</h1><p class="opening-summary">{story.summary}</p>
+    {#if story.date}<time datetime={story.date}>{new Intl.DateTimeFormat(locale,{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(story.date+'T12:00:00Z'))}</time>{/if}
+  </div>
+  <div class="wrap story-image"><MediaImage image={story.cover} {media} eager sizes="100vw" /></div>
+  <div class="wrap story-body"><div class="prose">{@html richtext(story.body)}</div></div>
+</svelte:element>
+{/if}

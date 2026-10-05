@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "path": "about",
+      "sha": "6fa5b25a77dd1480a522c0fd2606cf71d989be2c",
+      "schema": "page",
+      "status": "published",
+      "published_at": 0,
+      "last_edited": 0,
+      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "drift": 0
+    },
+    {
+      "path": "collection",
+      "sha": "8ee14843461f3b6acdcf81c6c5a4b8dc9a1079fd",
+      "schema": "page",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "drift": 0
+    },
+    {
+      "path": "gallery",
+      "sha": "3f917a820249a7a2b73c57334426ff4c9fde7227",
+      "schema": "gallery",
+      "status": "published",
+      "published_at": 0,
+      "last_edited": 0,
+      "checksum": "7927c51df7bf1d1dbb038373161afdab05d44b69",
+      "drift": 0
+    },
+    {
+      "path": "images",
+      "sha": "26f3dcf113d371e26856250e56c1e4d448a1a233",
+      "schema": "page",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "drift": 0
+    },
+    {
+      "path": "index",
+      "sha": "408706dbabddb48ff84dc9f1405022c1da245cfa",
+      "schema": "page",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "drift": 0
+    },
+    {
+      "path": "pages",
+      "sha": "21d771183d236d279c0f7f7eabafe20fb3274af0",
+      "schema": "page",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "drift": 0
+    },
+    {
+      "path": "pages/a-quiet-corner",
+      "sha": "e04191148d5b5b9062f18e91c191b12e6d0fffa6",
+      "schema": "page",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "782ea53f1130d464e836de78eea571fa066d97c2",
+      "drift": 0
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   "height": 1067,
   "bytes": 83448,
   "uploaded_at": 1791200000000,
-  "updated_at": 1791227823156,
+  "updated_at": 1791227874192,
   "alt": "A light-filled interior with warm natural materials",
   "folder": "showcase",
   "folders": [
@@ -35,6 +35,20 @@
       "width": 1600,
       "height": 1067,
       "bytes": 36795
+    },
+    {
+      "name": "cp-grid",
+      "path": "1791200000004/cp-grid.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 7068
+    },
+    {
+      "name": "cp-full",
+      "path": "1791200000004/cp-full.webp",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 33978
     },
     {
       "name": "cp-thumb",

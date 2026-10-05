@@ -7,6 +7,7 @@
   "height": 1066,
   "bytes": 573211,
   "uploaded_at": 1791200000000,
+  "updated_at": 1791227734252,
   "alt": "Sunlight falling through a green forest",
   "folder": "showcase",
   "folders": [
@@ -18,29 +19,50 @@
       "path": "1791200000002/small.webp",
       "width": 480,
       "height": 320,
-      "bytes": 43762
+      "bytes": 69387
     },
     {
       "name": "medium",
       "path": "1791200000002/medium.webp",
       "width": 960,
       "height": 640,
-      "bytes": 164096
+      "bytes": 242790
     },
     {
       "name": "large",
       "path": "1791200000002/large.webp",
       "width": 1600,
       "height": 1066,
-      "bytes": 418230
+      "bytes": 630999
+    },
+    {
+      "name": "cp-grid",
+      "path": "1791200000002/cp-grid.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 144012
+    },
+    {
+      "name": "cp-full",
+      "path": "1791200000002/cp-full.webp",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 585513
+    },
+    {
+      "name": "cp-thumb",
+      "path": "1791200000002/cp-thumb.webp",
+      "width": 320,
+      "height": 213,
+      "bytes": 13635
     },
     {
       "name": "portrait",
+      "custom": true,
       "path": "1791200000002/portrait.webp",
       "width": 640,
       "height": 800,
-      "bytes": 170118,
-      "custom": true
+      "bytes": 244110
     }
   ]
 }

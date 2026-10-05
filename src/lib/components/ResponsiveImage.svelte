@@ -33,7 +33,7 @@
 	 * published page it is the same thing without anybody watching.
 	 *
 	 * So the prop is the field's value and `imageId()` is what reads an id out of it — from
-	 * `@commitpress/sdk/image`, which is the entry that carries no `node:fs` and can therefore be
+	 * `@commitpress/sdk-node/image`, which is the entry that carries no `node:fs` and can therefore be
 	 * imported by a component. A plain string is still a perfectly good value and is what most call
 	 * sites pass.
 	 *
@@ -81,7 +81,7 @@
 		type ImageManifest,
 		type ImageSources
 	} from '$lib/media/assets';
-	import { imageAlt, imageId, imageRendition, type ImageValue } from '@commitpress/sdk/image';
+	import { imageAlt, imageId, imageRendition, type ImageValue } from '@commitpress/sdk-node/image';
 
 	let {
 		image,

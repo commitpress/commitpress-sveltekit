@@ -1,4 +1,4 @@
-import { query, queryList, queryByLocaleSlug, gallery, resolveIntlConfig, isPublished, type ContentFile } from '@commitpress/sdk';
+import { query, queryList, queryByLocaleSlug, gallery, resolveIntlConfig, isPublished, type ContentFile } from '@commitpress/sdk-node';
 import { error } from '@sveltejs/kit';
 import { imageManifest } from '$lib/media/assets.server';
 import { collectionSegment, localizedHref, type Locale } from './locale';

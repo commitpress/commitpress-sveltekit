@@ -3,7 +3,7 @@
   import { page } from '$app/state';
   import type { SiteContent } from '../../commitpress.generated';
   import type { ImageAsset } from '$lib/media/assets';
-  import type { PreviewAsset } from '@commitpress/sdk/preview';
+  import type { PreviewAsset } from '@commitpress/sdk-node/preview';
   import type { Locale } from '$lib/content/locale';
   let { site, locale = 'en', alternates = [], media = {} }: { media?: Record<string,ImageAsset|PreviewAsset>; site: SiteContent; locale?: Locale; alternates?: { locale: string; href: string }[] } = $props();
   let menuOpen = $state(false);

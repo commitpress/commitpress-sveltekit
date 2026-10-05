@@ -1,10 +1,10 @@
 <script lang="ts">
   import MediaImage from './MediaImage.svelte';
-  import {richtext} from '@commitpress/sdk/richtext';
-  import {sectionMarker} from '@commitpress/sdk/preview';
+  import {richtext} from '@commitpress/sdk-node/richtext';
+  import {sectionMarker} from '@commitpress/sdk-node/preview';
   import type {NotesContent} from '../../commitpress.generated';
   import type {ImageAsset} from '$lib/media/assets';
-  import type {PreviewAsset} from '@commitpress/sdk/preview';
+  import type {PreviewAsset} from '@commitpress/sdk-node/preview';
   let { content, media, locale='en', marked=false }: { content:NotesContent; media:Record<string,ImageAsset|PreviewAsset>; locale?:string; marked?:boolean }=$props();
   const story=$derived(content.story);
 </script>

@@ -3,12 +3,12 @@
   import CollectionCards from './CollectionCards.svelte';
   import ImageGallery from './ImageGallery.svelte';
   import Blocks from '$lib/blocks/Blocks.svelte';
-  import { richtext } from '@commitpress/sdk/richtext';
-  import { sectionMarker } from '@commitpress/sdk/preview';
+  import { richtext } from '@commitpress/sdk-node/richtext';
+  import { sectionMarker } from '@commitpress/sdk-node/preview';
   import type { NotesContent, SiteContent } from '../../commitpress.generated';
   import { pageSchema, pageSection, type WebsitePageContent } from '$lib/content/page-types';
   import type { ImageAsset } from '$lib/media/assets';
-  import type { PreviewAsset } from '@commitpress/sdk/preview';
+  import type { PreviewAsset } from '@commitpress/sdk-node/preview';
   let { content, cards = [], media = {}, galleryIds = [], marked = false, site }: { content:WebsitePageContent; cards:(NonNullable<NotesContent['story']>&{href:string})[]; media:Record<string,ImageAsset|PreviewAsset>; galleryIds:string[]; marked?:boolean; site:SiteContent } = $props();
   const section = $derived(pageSection(content));
   const layout = $derived(pageSchema(content));

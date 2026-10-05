@@ -1,4 +1,4 @@
-import {readPreviewPath} from '@commitpress/sdk/preview';
+import {readPreviewPath} from '@commitpress/sdk-node/preview';
 import {error, isHttpError} from '@sveltejs/kit';
 import {loadShowcase} from '$lib/content/showcase.server';
 import {readPreviewRoute} from '$lib/content/locale';

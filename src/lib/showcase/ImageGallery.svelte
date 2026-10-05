@@ -2,7 +2,7 @@
   import MediaImage from './MediaImage.svelte';
   import type { ImageAsset } from '$lib/media/assets';
   import type { SiteContent } from '../../commitpress.generated';
-  import type { PreviewAsset } from '@commitpress/sdk/preview';
+  import type { PreviewAsset } from '@commitpress/sdk-node/preview';
   let { ids, media, labels }: { ids:string[]; media:Record<string,ImageAsset | PreviewAsset>; labels?:SiteContent['ui'] } = $props();
   let selected = $state('');
   let dialog = $state<HTMLDialogElement>();

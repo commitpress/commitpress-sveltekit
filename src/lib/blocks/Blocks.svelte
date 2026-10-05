@@ -2,7 +2,7 @@
   import Intro from '$lib/sections/Intro.svelte';
   import Faq from '$lib/sections/Faq.svelte';
   import Cta from '$lib/sections/Cta.svelte';
-  import { sectionMarker, sectionPath, humanizeBlockName } from '@commitpress/sdk/preview';
+  import { sectionMarker, sectionPath, humanizeBlockName } from '@commitpress/sdk-node/preview';
   import type { PageContent } from '../../commitpress.generated';
 
   let { blocks = [], marked = false }: { blocks?: PageContent['blocks']; marked?: boolean } = $props();

@@ -9,17 +9,15 @@
     "scripts": {
         "dev": "vite dev",
         "//build": "generate runs first so a deploy triggered by the CMS committing a new page compiles against that page. The generated file is committed too, so a fresh clone can `check` and `dev` without running the CLI first.",
-        "build": "pnpm --filter @commitpress/sdk build && commitpress generate && vite build",
+        "build": "commitpress generate && vite build",
         "start": "node build",
         "preview": "pnpm run build && pnpm run start",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "cms:generate": "commitpress generate",
-        "predev": "pnpm --filter @commitpress/sdk build",
-        "precheck": "pnpm --filter @commitpress/sdk build"
+        "cms:generate": "commitpress generate"
     },
     "dependencies": {
-        "@commitpress/sdk": "workspace:*"
+        "@commitpress/sdk-node": "^0.1.0"
     },
     "devDependencies": {
         "@sveltejs/adapter-node": "^5.3.3",

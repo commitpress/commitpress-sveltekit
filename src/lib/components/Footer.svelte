@@ -2,7 +2,7 @@
   import Logo from './Logo.svelte';
   import type { SiteContent } from '../../commitpress.generated';
   import type { ImageAsset } from '$lib/media/assets';
-  import type { PreviewAsset } from '@commitpress/sdk/preview';
+  import type { PreviewAsset } from '@commitpress/sdk-node/preview';
   import type { Locale } from '$lib/content/locale';
   let { site, media = {} }: { media?:Record<string,ImageAsset|PreviewAsset>; site: SiteContent; locale?: Locale } = $props();
 </script>

@@ -152,7 +152,7 @@ const ORIGINAL_RENDITION = 'original';
  * rendition is a page serving a 320px copy at quality 0.7: since `images.sizes` on this project is
  * empty, that thumbnail is frequently the *only* entry in `variants`, and the "renditions, else the
  * original" rule below would then hand every photograph on the site to a 320px preview cut for a
- * 160px tile. Named here rather than imported because `@commitpress/sdk` reads the library with
+ * 160px tile. Named here rather than imported because `@commitpress/sdk-node` reads the library with
  * `node:fs` and this module is browser-safe on purpose; the CMS's own guards are written against
  * the same string.
  */
@@ -173,9 +173,9 @@ const EDITOR_THUMB = 'cp-thumb';
  * where the renditions are a ladder somebody configured for delivery; it is wrong here, where the
  * two files are a tile and a lightbox and the call site knows which one it is.
  *
- * Named here rather than imported from `@commitpress/sdk` for the reason `EDITOR_THUMB` is: the
+ * Named here rather than imported from `@commitpress/sdk-node` for the reason `EDITOR_THUMB` is: the
  * SDK's `assets.ts` reads the library with `node:fs` and this module is browser-safe on purpose.
- * (`@commitpress/sdk/image` is fs-free, but these constants live in the fs-bound entry.)
+ * (`@commitpress/sdk-node/image` is fs-free, but these constants live in the fs-bound entry.)
  */
 export const GALLERY_GRID = 'cp-grid';
 export const GALLERY_FULL = 'cp-full';

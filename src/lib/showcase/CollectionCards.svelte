@@ -2,7 +2,7 @@
   import MediaImage from './MediaImage.svelte';
   import type { NotesContent } from '../../commitpress.generated';
   import type { ImageAsset } from '$lib/media/assets';
-  import type { PreviewAsset } from '@commitpress/sdk/preview';
+  import type { PreviewAsset } from '@commitpress/sdk-node/preview';
   let { cards, media }: { cards: (NonNullable<NotesContent['story']> & {href:string})[]; media: Record<string,ImageAsset | PreviewAsset> } = $props();
 </script>
 <div class="collection-grid">

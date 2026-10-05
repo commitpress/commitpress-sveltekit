@@ -1,7 +1,7 @@
 <script lang="ts">
   import {onMount} from 'svelte';
-  import {connectPreviewContent,connectPreviewAssets,connectPreviewOverlay,takePreviewContent,takePreviewAssets,PREVIEW_HANDSHAKE,type PreviewAssetMap,type PreviewFolderMap} from '@commitpress/sdk/preview';
-  import {galleryFolder,galleryOrder} from '@commitpress/sdk/gallery';
+  import {connectPreviewContent,connectPreviewAssets,connectPreviewOverlay,takePreviewContent,takePreviewAssets,PREVIEW_HANDSHAKE,type PreviewAssetMap,type PreviewFolderMap} from '@commitpress/sdk-node/preview';
+  import {galleryFolder,galleryOrder} from '@commitpress/sdk-node/gallery';
   import {previewSite} from '$lib/preview/site.svelte';
   import ShowcasePage from '$lib/showcase/ShowcasePage.svelte';
   import StoryPage from '$lib/showcase/StoryPage.svelte';

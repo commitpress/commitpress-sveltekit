@@ -3,7 +3,7 @@
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import { previewSite } from '$lib/preview/site.svelte';
-  import { imageId } from '@commitpress/sdk/image';
+  import { imageId } from '@commitpress/sdk-node/image';
   import { page } from '$app/state';
   import type { LayoutData } from './$types';
   let { data, children }: { data: LayoutData; children: import('svelte').Snippet } = $props();

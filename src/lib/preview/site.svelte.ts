@@ -11,7 +11,7 @@
  * the public site ever writes it, so `current` is null there and the layout uses what the server
  * loaded — the live path costs a `??` on a page that is not being previewed.
  */
-import type { PreviewAssetMap } from '@commitpress/sdk/preview';
+import type { PreviewAssetMap } from '@commitpress/sdk-node/preview';
 import type { SiteContent } from '../../commitpress.generated';
 
 /**

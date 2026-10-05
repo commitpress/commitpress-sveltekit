@@ -74,6 +74,6 @@ Run `pnpm cms:generate` after changing schemas. The production build regenerates
 
 ## SDK and sample imagery
 
-The SDK is vendored in `commitpress-sdk/`, retaining the local package name `@commitpress/sdk`. It includes locale-aware querying, rich text, managed assets, and the preview protocol. It must be synchronized deliberately with the upstream SDK when updating the CMS integration.
+The starter installs `@commitpress/sdk-node` from npm. It includes locale-aware querying, rich text, managed assets, and the preview protocol. Update it with `pnpm update @commitpress/sdk-node`.
 
 Sample photographs are stored locally with multiple WebP sizes and an alternate portrait crop. See [image credits](IMAGE-CREDITS.md) for their sources.

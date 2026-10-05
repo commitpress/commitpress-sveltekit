@@ -2,7 +2,7 @@
   import ResponsiveImage from "$lib/components/ResponsiveImage.svelte";
   import { reveal } from "$lib/actions/reveal";
   import type { ImageManifest } from "$lib/media/assets";
-  import { imageId, type ImageValue } from "@commitpress/sdk/image";
+  import { imageId, type ImageValue } from "@commitpress/sdk-node/image";
 
   interface Props {
     /** Aspect utility for the box, e.g. `aspect-[3/2]`. */

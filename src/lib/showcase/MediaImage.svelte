@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { imageId, imageRendition, imageAlt, type ImageValue } from '@commitpress/sdk/image';
+  import { imageId, imageRendition, imageAlt, type ImageValue } from '@commitpress/sdk-node/image';
   import type { ImageAsset } from '$lib/media/assets';
-  import type { PreviewAsset, PreviewAssetVariant } from '@commitpress/sdk/preview';
+  import type { PreviewAsset, PreviewAssetVariant } from '@commitpress/sdk-node/preview';
   let { image, media, alt = '', class: className = '', eager = false, sizes = '(max-width: 640px) 100vw, 50vw' }: { image?: ImageValue; media: Record<string, ImageAsset | PreviewAsset>; alt?: string; class?: string; eager?: boolean; sizes?: string } = $props();
   function source(slot?: string) {
     const asset = media[imageId(image, slot) ?? ''];

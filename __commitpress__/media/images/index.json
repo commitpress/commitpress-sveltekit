@@ -3,6 +3,9 @@
   "folders": [
     "showcase"
   ],
+  "profiles": {
+    "showcase": "gallery"
+  },
   "assets": [
     {
       "id": "1791200000001",
@@ -42,11 +45,11 @@
         },
         {
           "name": "portrait",
+          "custom": true,
           "path": "1791200000001/portrait.webp",
           "width": 640,
           "height": 800,
-          "bytes": 62174,
-          "custom": true
+          "bytes": 62174
         }
       ]
     },
@@ -88,11 +91,11 @@
         },
         {
           "name": "portrait",
+          "custom": true,
           "path": "1791200000002/portrait.webp",
           "width": 640,
           "height": 800,
-          "bytes": 170118,
-          "custom": true
+          "bytes": 170118
         }
       ]
     },
@@ -134,11 +137,11 @@
         },
         {
           "name": "portrait",
+          "custom": true,
           "path": "1791200000003/portrait.webp",
           "width": 640,
           "height": 800,
-          "bytes": 120690,
-          "custom": true
+          "bytes": 120690
         }
       ]
     },
@@ -180,11 +183,11 @@
         },
         {
           "name": "portrait",
+          "custom": true,
           "path": "1791200000004/portrait.webp",
           "width": 640,
           "height": 800,
-          "bytes": 8790,
-          "custom": true
+          "bytes": 8790
         }
       ]
     }

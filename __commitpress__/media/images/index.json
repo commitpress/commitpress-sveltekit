@@ -3,9 +3,7 @@
   "folders": [
     "showcase"
   ],
-  "profiles": {
-    "showcase": "gallery"
-  },
+  "profiles": {},
   "assets": [
     {
       "id": "1791200000001",

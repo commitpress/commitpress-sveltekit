@@ -7,10 +7,12 @@
   "height": 1067,
   "bytes": 83448,
   "uploaded_at": 1791200000000,
+  "updated_at": 1791227874192,
   "alt": "A light-filled interior with warm natural materials",
   "folder": "showcase",
   "folders": [
-    "showcase"
+    "showcase",
+    "showcase/gallery"
   ],
   "variants": [
     {
@@ -18,29 +20,50 @@
       "path": "1791200000004/small.webp",
       "width": 480,
       "height": 320,
-      "bytes": 2720
+      "bytes": 5448
     },
     {
       "name": "medium",
       "path": "1791200000004/medium.webp",
       "width": 960,
       "height": 640,
-      "bytes": 7456
+      "bytes": 13755
     },
     {
       "name": "large",
       "path": "1791200000004/large.webp",
       "width": 1600,
       "height": 1067,
-      "bytes": 16050
+      "bytes": 36795
+    },
+    {
+      "name": "cp-grid",
+      "path": "1791200000004/cp-grid.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 7068
+    },
+    {
+      "name": "cp-full",
+      "path": "1791200000004/cp-full.webp",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 33978
+    },
+    {
+      "name": "cp-thumb",
+      "path": "1791200000004/cp-thumb.webp",
+      "width": 320,
+      "height": 213,
+      "bytes": 1527
     },
     {
       "name": "portrait",
+      "custom": true,
       "path": "1791200000004/portrait.webp",
       "width": 640,
       "height": 800,
-      "bytes": 8790,
-      "custom": true
+      "bytes": 17643
     }
   ]
 }

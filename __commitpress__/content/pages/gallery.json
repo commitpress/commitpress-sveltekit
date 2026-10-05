@@ -1,18 +1,52 @@
 {
-  "v": 1,
+  "v": 3,
   "schema": "gallery",
   "slug": "gallery",
-  "status": "draft",
-  "last_edited": 0,
+  "status": "published",
+  "published_at": 0,
+  "checksum": "ce40b73feeabf9ca16f64d1809f4559be821a99d",
+  "last_edited": 1791227942494,
+  "fields": {
+    "e36eddcd-b520-428a-b9d7-e4b006c26485": "gallery",
+    "e457f2b6-97b9-40a1-90f0-a3806e3c6583": "gallery.eyebrow",
+    "c2c87780-f9cb-4b3b-83b8-f2e46dccc6bb": "gallery.title",
+    "177031e9-dfcb-4e25-959d-3dda4c64920d": "gallery.summary",
+    "3b4a20f7-3920-4e33-8e70-4af1cac02cd1": "gallery.gallery",
+    "commitpress:seo": "seo",
+    "commitpress:seo.title": "seo.title",
+    "commitpress:seo.description": "seo.description",
+    "commitpress:seo.social_image": "seo.social_image",
+    "commitpress:seo.social_title": "seo.social_title",
+    "commitpress:seo.social_description": "seo.social_description",
+    "commitpress:seo.og_type": "seo.og_type",
+    "commitpress:seo.no_index": "seo.no_index",
+    "commitpress:seo.exclude_from_sitemap": "seo.exclude_from_sitemap"
+  },
   "content": {
     "gallery": {
+      "eyebrow": "",
       "title": "Gallery",
       "summary": "Your images will appear here.",
-      "gallery": ""
+      "gallery": {
+        "folder": "showcase/gallery"
+      }
     },
     "seo": {
       "title": "Gallery | Commitpress starter",
-      "no_index": true
+      "description": "",
+      "social_title": "",
+      "social_description": "",
+      "no_index": true,
+      "exclude_from_sitemap": false
+    }
+  },
+  "locales": {
+    "en": {
+      "slug": "gallery",
+      "status": "published",
+      "published_at": 1791227942494,
+      "last_edited": 1791227942494,
+      "content": {}
     }
   }
 }

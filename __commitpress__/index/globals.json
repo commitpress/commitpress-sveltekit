@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "path": "site",
+      "sha": "4a5ae949af77bbba08970c31e6a2ebfcbedd9f49",
+      "schema": "site",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "d4b24c0f67c1de992bdfd0422497d9101425ef56",
+      "drift": 0
+    }
+  ]
+}

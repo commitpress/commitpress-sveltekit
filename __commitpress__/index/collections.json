@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "path": "notes/by-the-water",
+      "sha": "ed587d49bfecdd98fac94e6730bd7bc70667ff63",
+      "schema": "notes",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "330672366fd9351114e36b3129c734b5e21c3853",
+      "drift": 0
+    },
+    {
+      "path": "notes/into-the-green",
+      "sha": "c41869d7e7ac4bb6e2f3a8ad69583eac925f5d36",
+      "schema": "notes",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "330672366fd9351114e36b3129c734b5e21c3853",
+      "drift": 0
+    },
+    {
+      "path": "notes/not-yet",
+      "sha": "72f7915a77437554392205f0bd4aace60d998a85",
+      "schema": "notes",
+      "status": "draft",
+      "last_edited": 1791200000000,
+      "checksum": "330672366fd9351114e36b3129c734b5e21c3853",
+      "drift": 0
+    },
+    {
+      "path": "notes/room-to-breathe",
+      "sha": "356042503d844f1cd8f0d27f9591d9e7578c2070",
+      "schema": "notes",
+      "status": "published",
+      "last_edited": 1791200000000,
+      "checksum": "330672366fd9351114e36b3129c734b5e21c3853",
+      "drift": 0
+    }
+  ]
+}

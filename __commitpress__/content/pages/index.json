@@ -2,9 +2,10 @@
   "v": 3,
   "schema": "home",
   "slug": "index",
-  "status": "draft",
+  "status": "published",
+  "published_at": 1791319590603,
   "checksum": "2226117e967b0fe8f02d17fe19ef77ba1b500851",
-  "last_edited": 1791319526095,
+  "last_edited": 1791319590603,
   "fields": {
     "a34e4d75-e687-4fe7-94f6-a5ac7ddae7eb": "home",
     "c7e2bb58-cc83-4a5e-8e19-132ff6da1437": "home.eyebrow",
@@ -209,8 +210,9 @@
     },
     "en": {
       "slug": "index",
-      "status": "draft",
-      "last_edited": 1791319526095,
+      "status": "published",
+      "published_at": 1791319590603,
+      "last_edited": 1791319590603,
       "content": {}
     }
   }

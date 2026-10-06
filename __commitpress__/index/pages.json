@@ -41,10 +41,11 @@
     },
     {
       "path": "index",
-      "sha": "14240e552cd4ec6c64bddf2a9a49aae7e85a6590",
+      "sha": "78daad80a61fce130279fc1866e80c691f997b41",
       "schema": "home",
-      "status": "draft",
-      "last_edited": 1791319526095,
+      "status": "published",
+      "published_at": 1791319590603,
+      "last_edited": 1791319590603,
       "checksum": "2226117e967b0fe8f02d17fe19ef77ba1b500851",
       "drift": 0
     },

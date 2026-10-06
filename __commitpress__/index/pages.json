@@ -63,10 +63,11 @@
     },
     {
       "path": "pages/a-quiet-corner",
-      "sha": "4f0d59e995024842ce62530ac08d025478c4e123",
+      "sha": "b1313cdfe9fe4a4de9c61cdb7257fb3c3714aa2b",
       "schema": "page",
       "status": "published",
-      "last_edited": 1791200000000,
+      "published_at": 1791319725870,
+      "last_edited": 1791319725870,
       "checksum": "62501fd0eae4c0903921663237d570ab5a302637",
       "drift": 0
     }

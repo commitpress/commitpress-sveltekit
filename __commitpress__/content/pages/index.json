@@ -2,13 +2,47 @@
   "v": 3,
   "schema": "home",
   "slug": "index",
-  "status": "published",
-  "last_edited": 1791200000000,
+  "status": "draft",
+  "checksum": "2226117e967b0fe8f02d17fe19ef77ba1b500851",
+  "last_edited": 1791319526095,
+  "fields": {
+    "a34e4d75-e687-4fe7-94f6-a5ac7ddae7eb": "home",
+    "c7e2bb58-cc83-4a5e-8e19-132ff6da1437": "home.eyebrow",
+    "cc30ee68-5471-4917-a725-1b89d5045582": "home.title",
+    "8880a960-f897-4cd9-8ead-647671f76749": "home.summary",
+    "052295df-7741-433d-9868-dc0d36eeee31": "home.cover",
+    "b86289e0-ac9c-4fd1-bc8a-fcf970c48b8d": "home.caption",
+    "c7a078fb-195a-46d7-8e1f-8e4dfd099b0f": "home.link",
+    "31a0cecd-1a01-4627-94b4-1759601592f6": "home.detail_label",
+    "643ebcf6-57f0-4b71-956b-7144f1038c67": "home.detail_note",
+    "2e247892-f9a4-40a0-a502-2349b2f0ea6c": "navigation",
+    "e6b6edc7-e139-49ba-9e28-04835274d0fd": "navigation.heading",
+    "539edc5f-7856-4e3f-ab51-635c59ee5959": "navigation.items",
+    "47110563-9c54-4164-8974-e6bb62502d15": "navigation.items.number",
+    "4d4f32fc-7c20-453d-bd42-c84644d09d27": "navigation.items.title",
+    "41a1666a-d00c-414a-85d3-ff4af80a1ea5": "navigation.items.summary",
+    "2265eb28-23bb-4cb7-967c-e05031b1c2d8": "navigation.items.link",
+    "00dd8619-5d5e-418d-a83a-b16eaff1afdd": "highlights",
+    "1086551f-1795-423a-9882-43648ccf0496": "highlights.eyebrow",
+    "8a5ebe04-55a3-4f00-b9ba-fbcfbd08abca": "highlights.title",
+    "115aa8a3-c97f-4885-a04a-6e595826df27": "highlights.link",
+    "be1bb8d9-77b4-4917-92f4-c56178ad70e9": "language_note",
+    "639438ec-6984-4cd1-8552-1d4b2814a061": "language_note.symbol",
+    "eed79751-cc9f-4881-8e81-bd24ab25f1c0": "language_note.eyebrow",
+    "1260d431-ae93-4361-81f4-b4b45ed42adf": "language_note.title",
+    "36ad8196-47e6-408e-b4c0-2ad4653c2e2c": "language_note.body",
+    "9c96c91b-d094-4f9b-8e66-4d2bfc2c434e": "language_note.link",
+    "commitpress:seo": "seo",
+    "commitpress:seo.title": "seo.title",
+    "commitpress:seo.description": "seo.description",
+    "commitpress:seo.social_image": "seo.social_image",
+    "commitpress:seo.social_title": "seo.social_title",
+    "commitpress:seo.social_description": "seo.social_description",
+    "commitpress:seo.og_type": "seo.og_type",
+    "commitpress:seo.no_index": "seo.no_index",
+    "commitpress:seo.exclude_from_sitemap": "seo.exclude_from_sitemap"
+  },
   "content": {
-    "seo": {
-      "title": "Made with Commitpress. | Commitpress",
-      "description": "Pages, pictures, and a few good ideas. Take a look around - everything here starts with editable content."
-    },
     "home": {
       "eyebrow": "A working example",
       "title": "Made with Commitpress.",
@@ -83,6 +117,14 @@
         "label": "Läs på svenska",
         "type": "internal"
       }
+    },
+    "seo": {
+      "title": "Made with Commitpress. | Commitpress",
+      "description": "Pages, pictures, and a few good ideas. Take a look around - everything here starts with editable content.",
+      "social_title": "",
+      "social_description": "",
+      "no_index": false,
+      "exclude_from_sitemap": false
     }
   },
   "locales": {
@@ -164,6 +206,12 @@
           }
         }
       }
+    },
+    "en": {
+      "slug": "index",
+      "status": "draft",
+      "last_edited": 1791319526095,
+      "content": {}
     }
   }
 }

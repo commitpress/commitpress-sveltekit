@@ -1,5 +1,5 @@
 {
-  "$schema": "https://commitpress.com/app/schema/schema/v1",
+  "$schema": "https://cms.commitpress.com/app/schema/schema/v1",
   "icon": "page",
   "blocks": {
     "components": [
@@ -59,11 +59,7 @@
             "type": "image",
             "description": "",
             "required": false,
-            "accept": [
-              "image/jpeg",
-              "image/png",
-              "image/webp"
-            ],
+            "accept": ["image/jpeg", "image/png", "image/webp"],
             "multiple": false,
             "rootFolder": "showcase",
             "escapeRootFolder": true,

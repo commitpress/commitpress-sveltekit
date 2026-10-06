@@ -1,91 +1,95 @@
 {
-  "$schema": "https://cms.commitpress.com/app/schema/schema/v1",
+  "$schema": "https://cms.commitpress.com/app/schema/v10",
   "icon": "page",
   "blocks": {
     "components": [
       {
         "uuid": "d1199505-982a-4e8d-a1ab-476b2d6570df",
+        "type": "group",
         "name": "page",
         "label": "Page",
-        "type": "group",
         "description": "A reading page with an optional cover, rich text, and a link to the next page.",
-        "required": true,
         "collapsed": false,
+        "required": true,
+        "multiple": false,
         "min": 0,
         "max": 0,
         "presentation": "",
-        "multiple": false,
         "controls": [
           {
             "uuid": "3c6ab09b-4d6d-43aa-bddf-5d9e89dd848c",
+            "type": "input",
             "name": "eyebrow",
             "label": "Eyebrow",
-            "type": "input",
-            "description": "",
             "required": false,
-            "localized": true,
-            "valueType": "string",
             "pattern": "",
-            "placeholder": ""
+            "description": "",
+            "placeholder": "",
+            "valueType": "string",
+            "localized": true
           },
           {
             "uuid": "1e2d2f51-8e6e-4a08-8b69-43330e4ac78d",
+            "type": "input",
             "name": "title",
             "label": "Title",
-            "type": "input",
-            "description": "",
             "required": true,
-            "localized": true,
-            "valueType": "string",
             "pattern": "",
-            "placeholder": ""
+            "description": "",
+            "placeholder": "",
+            "valueType": "string",
+            "localized": true
           },
           {
             "uuid": "7f74b229-e79c-4afc-9d4a-3f24407ffd8c",
+            "type": "textarea",
             "name": "summary",
             "label": "Summary",
-            "type": "textarea",
-            "description": "A short introduction displayed beneath the title.",
             "required": false,
-            "localized": true,
+            "description": "A short introduction displayed beneath the title.",
             "rows": 4,
             "resize": true,
-            "placeholder": ""
+            "placeholder": "",
+            "localized": true
           },
           {
             "uuid": "b04b3cad-ab2a-4449-8dc7-d47db6fdb418",
+            "type": "image",
             "name": "cover",
             "label": "Cover",
-            "type": "image",
-            "description": "",
             "required": false,
-            "accept": ["image/jpeg", "image/png", "image/webp"],
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ],
             "multiple": false,
+            "description": "",
             "rootFolder": "showcase",
             "escapeRootFolder": true,
-            "renditions": true,
-            "alt": true,
             "sizes": [],
             "breakpoints": [
               {
                 "name": "mobile",
                 "label": "Mobile"
               }
-            ]
+            ],
+            "renditions": true,
+            "alt": true,
+            "localized": false
           },
           {
             "uuid": "e415ec27-4777-4d22-b47b-4083dbb9ad0e",
+            "type": "richtext",
             "name": "body",
             "label": "Body",
-            "type": "richtext",
-            "description": "",
             "required": false,
-            "localized": true,
+            "description": "",
             "rows": 12,
             "resize": true,
             "placeholder": "Write something worth reading.",
+            "localized": true,
             "standalone": true,
-            "controls": [],
             "toolbarOptions": {
               "bold": true,
               "italic": true,
@@ -104,55 +108,68 @@
               "blockquote": true,
               "hr": true,
               "link": true
-            }
+            },
+            "controls": [
+              {
+                "uuid": "muwsvmrp-1vx5b-ssk63-wdv2z-g0isl",
+                "type": "gallery",
+                "name": "gallery_inline",
+                "label": "Gallery",
+                "required": false,
+                "description": "",
+                "rootFolder": "",
+                "escapeRootFolder": false,
+                "localized": false
+              }
+            ]
           },
           {
             "uuid": "9eb8912c-b68d-44e4-b51f-0be724fca863",
             "type": "link",
             "name": "next_page",
             "label": "Next page",
-            "description": "An optional link to continue exploring.",
             "required": false,
-            "localized": true,
-            "valueType": "any"
+            "description": "An optional link to continue exploring.",
+            "valueType": "any",
+            "localized": true
           },
           {
             "uuid": "ec6110eb-e1bf-4cb1-ab20-6beaec7ceb96",
+            "type": "input",
             "name": "caption",
             "label": "Cover caption",
-            "type": "input",
-            "description": "",
             "required": false,
-            "valueType": "string",
             "pattern": "",
+            "description": "",
             "placeholder": "",
+            "valueType": "string",
             "localized": true
           },
           {
             "uuid": "55f3e140-6d39-4a1b-ab57-b81c2dc6134b",
+            "type": "input",
             "name": "body_label",
             "label": "Body heading",
-            "type": "input",
-            "description": "",
             "required": false,
-            "valueType": "string",
             "pattern": "",
+            "description": "",
             "placeholder": "",
+            "valueType": "string",
             "localized": true
           }
         ]
       },
       {
         "uuid": "e0e7e217-1bf1-4b87-9d83-b619b1a0fe89",
+        "type": "multiblock",
         "name": "blocks",
         "label": "Blocks",
         "description": "Add, reorder, or disable reusable sections below the page content.",
-        "required": false,
-        "type": "multiblock",
         "collapsed": false,
-        "multiple": true,
         "min": 0,
         "max": 0,
+        "multiple": true,
+        "required": false,
         "controls": [
           {
             "uuid": "3b074122-916e-4402-a16f-ec6577d21b1a",
@@ -160,60 +177,60 @@
             "name": "intro",
             "label": "Intro",
             "description": "",
-            "required": true,
             "collapsed": false,
+            "required": true,
+            "multiple": false,
             "min": 0,
             "max": 0,
-            "multiple": false,
+            "presentation": "",
             "controls": [
               {
                 "uuid": "c9bc5934-d11f-4252-917d-e22bee10a37b",
+                "type": "input",
                 "name": "eyebrow",
                 "label": "Eyebrow",
-                "description": "",
                 "required": true,
-                "type": "input",
-                "valueType": "string",
                 "pattern": "",
+                "description": "",
                 "placeholder": "",
+                "valueType": "string",
                 "localized": true
               },
               {
                 "uuid": "4946e913-a00c-4111-9a34-06e66a64e196",
+                "type": "textarea",
                 "name": "statement",
                 "label": "Statement",
-                "description": "",
                 "required": true,
-                "type": "textarea",
-                "placeholder": "",
+                "description": "",
                 "rows": 3,
                 "resize": true,
+                "placeholder": "",
                 "localized": true
               },
               {
                 "uuid": "14d415cd-b3ae-4893-b606-a9194035f4d1",
+                "type": "textarea",
                 "name": "body",
                 "label": "Body",
-                "description": "",
                 "required": true,
-                "type": "textarea",
-                "placeholder": "",
+                "description": "",
                 "rows": 3,
                 "resize": true,
+                "placeholder": "",
                 "localized": true
               },
               {
                 "uuid": "eb5c0e81-cbd8-4542-80cd-5909936cf8e2",
+                "type": "link",
                 "name": "link",
                 "label": "Link",
-                "description": "",
                 "required": true,
-                "type": "link",
+                "description": "",
                 "valueType": "any",
                 "localized": true
               }
-            ],
-            "presentation": ""
+            ]
           },
           {
             "uuid": "eb0066be-556b-41cc-a58e-0f42bd4e06ec",
@@ -221,34 +238,35 @@
             "name": "faq",
             "label": "Faq",
             "description": "",
-            "required": true,
             "collapsed": false,
+            "required": true,
+            "multiple": false,
             "min": 0,
             "max": 0,
-            "multiple": false,
+            "presentation": "",
             "controls": [
               {
                 "uuid": "6575972a-6584-4ec5-9e19-7605c409450e",
+                "type": "input",
                 "name": "eyebrow",
                 "label": "Eyebrow",
-                "description": "",
                 "required": true,
-                "type": "input",
-                "valueType": "string",
                 "pattern": "",
+                "description": "",
                 "placeholder": "",
+                "valueType": "string",
                 "localized": true
               },
               {
                 "uuid": "c55a8533-bb75-44b5-acfe-651ee0742389",
+                "type": "input",
                 "name": "heading",
                 "label": "Heading",
-                "description": "",
                 "required": true,
-                "type": "input",
-                "valueType": "string",
                 "pattern": "",
+                "description": "",
                 "placeholder": "",
+                "valueType": "string",
                 "localized": true
               },
               {
@@ -257,41 +275,41 @@
                 "name": "items",
                 "label": "Items",
                 "description": "",
-                "required": true,
                 "collapsed": false,
+                "required": true,
+                "multiple": true,
                 "min": 0,
                 "max": 0,
-                "multiple": true,
+                "presentation": "",
+                "sort": "",
                 "controls": [
                   {
                     "uuid": "c0e79537-02ef-4d21-9263-81d72ed236f5",
+                    "type": "input",
                     "name": "question",
                     "label": "Question",
-                    "description": "",
                     "required": true,
-                    "type": "input",
-                    "valueType": "string",
                     "pattern": "",
+                    "description": "",
                     "placeholder": "",
+                    "valueType": "string",
                     "localized": true
                   },
                   {
                     "uuid": "e448855f-4321-4c30-910c-6ca4dcf5ba7e",
+                    "type": "textarea",
                     "name": "answer",
                     "label": "Answer",
-                    "description": "",
                     "required": true,
-                    "type": "textarea",
-                    "placeholder": "",
+                    "description": "",
                     "rows": 3,
                     "resize": true,
+                    "placeholder": "",
                     "localized": true
                   }
-                ],
-                "presentation": ""
+                ]
               }
-            ],
-            "presentation": ""
+            ]
           },
           {
             "uuid": "7d745626-fbdd-4be5-b52b-43f787f0f41a",
@@ -299,46 +317,47 @@
             "name": "cta",
             "label": "Call to action",
             "description": "",
-            "required": true,
             "collapsed": false,
+            "required": true,
+            "multiple": false,
             "min": 0,
             "max": 0,
-            "multiple": false,
+            "presentation": "",
             "controls": [
               {
                 "uuid": "8d21e77a-0af8-44ed-8212-c8d8dac4716f",
+                "type": "input",
                 "name": "eyebrow",
                 "label": "Eyebrow",
-                "description": "",
                 "required": true,
-                "type": "input",
-                "valueType": "string",
                 "pattern": "",
+                "description": "",
                 "placeholder": "",
+                "valueType": "string",
                 "localized": true
               },
               {
                 "uuid": "ce12630f-c196-4489-af58-0ca002c22ce4",
+                "type": "input",
                 "name": "heading",
                 "label": "Heading",
-                "description": "",
                 "required": true,
-                "type": "input",
-                "valueType": "string",
                 "pattern": "",
+                "description": "",
                 "placeholder": "",
+                "valueType": "string",
                 "localized": true
               },
               {
                 "uuid": "fa0b9962-2583-466a-96b7-a730848bddce",
+                "type": "textarea",
                 "name": "body",
                 "label": "Body",
-                "description": "",
                 "required": true,
-                "type": "textarea",
-                "placeholder": "",
+                "description": "",
                 "rows": 3,
                 "resize": true,
+                "placeholder": "",
                 "localized": true
               },
               {
@@ -347,30 +366,31 @@
                 "name": "buttons",
                 "label": "Buttons",
                 "description": "",
-                "required": false,
                 "collapsed": false,
+                "required": false,
+                "multiple": true,
                 "min": 0,
                 "max": 0,
-                "multiple": true,
+                "presentation": "",
+                "sort": "",
                 "controls": [
                   {
                     "uuid": "3ee24fc3-9621-49b0-9792-e6aa95fc05e7",
+                    "type": "link",
                     "name": "link",
                     "label": "Link",
-                    "description": "",
                     "required": false,
-                    "type": "link",
+                    "description": "",
                     "valueType": "any",
                     "localized": true
                   },
                   {
                     "uuid": "d4d87451-07d3-42ab-92ad-5a210fb8c504",
+                    "type": "select",
                     "name": "style",
                     "label": "Style",
-                    "description": "",
                     "required": false,
-                    "type": "select",
-                    "multiple": false,
+                    "description": "",
                     "options": [
                       {
                         "label": "Border",
@@ -380,13 +400,13 @@
                         "label": "Solid",
                         "value": "solid"
                       }
-                    ]
+                    ],
+                    "multiple": false,
+                    "localized": false
                   }
-                ],
-                "presentation": ""
+                ]
               }
-            ],
-            "presentation": ""
+            ]
           }
         ]
       }

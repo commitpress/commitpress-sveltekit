@@ -13,10 +13,11 @@
     },
     {
       "path": "collection",
-      "sha": "35ed6bb70727e99ee5ebeb21d8ad2e61a11a81b6",
+      "sha": "c024b8e9b55a9d747dbb3ffe8eae2ea47b98f6c7",
       "schema": "collection",
       "status": "published",
-      "last_edited": 1791200000000,
+      "published_at": 1791319654364,
+      "last_edited": 1791319654364,
       "checksum": "d7851d72617f123d20b7cc1a8894041da913081f",
       "drift": 0
     },

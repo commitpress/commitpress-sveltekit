@@ -3,12 +3,29 @@
   "schema": "collection",
   "slug": "collection",
   "status": "published",
-  "last_edited": 1791200000000,
+  "published_at": 1791319654364,
+  "checksum": "d7851d72617f123d20b7cc1a8894041da913081f",
+  "last_edited": 1791319654364,
+  "fields": {
+    "60503658-331f-44a0-8658-5b3ec2c1f946": "collection",
+    "860df670-e007-4863-b1ea-dc91731f1237": "collection.eyebrow",
+    "ab0010da-5cfe-44d2-a296-2481ef27f5ac": "collection.title",
+    "ae955bb3-6910-495a-9c8c-d47050fc3a03": "collection.summary",
+    "7b5d6f4c-9ee8-411c-a07f-3bbea0742f06": "highlights",
+    "b0acf218-f0d4-4da0-8b94-51ec77cf5fce": "highlights.eyebrow",
+    "e909ca30-6c2e-407a-ab1d-4ddb5dbcafbe": "highlights.title",
+    "286f6202-a166-4918-b764-547397bc0517": "highlights.link",
+    "commitpress:seo": "seo",
+    "commitpress:seo.title": "seo.title",
+    "commitpress:seo.description": "seo.description",
+    "commitpress:seo.social_image": "seo.social_image",
+    "commitpress:seo.social_title": "seo.social_title",
+    "commitpress:seo.social_description": "seo.social_description",
+    "commitpress:seo.og_type": "seo.og_type",
+    "commitpress:seo.no_index": "seo.no_index",
+    "commitpress:seo.exclude_from_sitemap": "seo.exclude_from_sitemap"
+  },
   "content": {
-    "seo": {
-      "title": "Things worth keeping. | Commitpress",
-      "description": "A growing collection of places, observations, and small discoveries. Each entry has a page of its own."
-    },
     "collection": {
       "eyebrow": "The collection",
       "title": "Things worth keeping.",
@@ -16,7 +33,20 @@
     },
     "highlights": {
       "eyebrow": "From the collection",
-      "title": "A few things we kept."
+      "title": "A few things we kept.",
+      "link": {
+        "href": "",
+        "label": "",
+        "type": "internal"
+      }
+    },
+    "seo": {
+      "title": "Things worth keeping. | Commitpress",
+      "description": "A growing collection of places, observations, and small discoveries. Each entry has a page of its own.",
+      "social_title": "",
+      "social_description": "",
+      "no_index": false,
+      "exclude_from_sitemap": false
     }
   },
   "locales": {
@@ -39,6 +69,13 @@
           "title": "Några saker vi sparat."
         }
       }
+    },
+    "en": {
+      "slug": "collection",
+      "status": "published",
+      "published_at": 1791319654364,
+      "last_edited": 1791319654364,
+      "content": {}
     }
   }
 }

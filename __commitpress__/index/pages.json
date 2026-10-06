@@ -53,10 +53,11 @@
     },
     {
       "path": "pages",
-      "sha": "9cb814ad2db3c3561fa4ce1ccddabe36b23e6801",
+      "sha": "e2d0461a6c373249f54fe23b5d641e7b324abb28",
       "schema": "page",
       "status": "published",
-      "last_edited": 1791200000000,
+      "published_at": 1791319709680,
+      "last_edited": 1791319709680,
       "checksum": "62501fd0eae4c0903921663237d570ab5a302637",
       "drift": 0
     },

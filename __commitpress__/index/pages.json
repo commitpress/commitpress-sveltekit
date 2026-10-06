@@ -33,10 +33,11 @@
     },
     {
       "path": "images",
-      "sha": "2b0dce565f52f4bc33d107cc396f91ede385cded",
+      "sha": "f81884b9f33809161513ffbed134624ea1ebc056",
       "schema": "gallery",
       "status": "published",
-      "last_edited": 1791200000000,
+      "published_at": 1791319687315,
+      "last_edited": 1791319687315,
       "checksum": "fe7515ef9a0720bf67e6fc249378a52e7c79c698",
       "drift": 0
     },

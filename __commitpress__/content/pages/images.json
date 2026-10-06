@@ -3,12 +3,26 @@
   "schema": "gallery",
   "slug": "images",
   "status": "published",
-  "last_edited": 1791200000000,
+  "published_at": 1791319687315,
+  "checksum": "fe7515ef9a0720bf67e6fc249378a52e7c79c698",
+  "last_edited": 1791319687315,
+  "fields": {
+    "e36eddcd-b520-428a-b9d7-e4b006c26485": "gallery",
+    "e457f2b6-97b9-40a1-90f0-a3806e3c6583": "gallery.eyebrow",
+    "c2c87780-f9cb-4b3b-83b8-f2e46dccc6bb": "gallery.title",
+    "177031e9-dfcb-4e25-959d-3dda4c64920d": "gallery.summary",
+    "3b4a20f7-3920-4e33-8e70-4af1cac02cd1": "gallery.gallery",
+    "commitpress:seo": "seo",
+    "commitpress:seo.title": "seo.title",
+    "commitpress:seo.description": "seo.description",
+    "commitpress:seo.social_image": "seo.social_image",
+    "commitpress:seo.social_title": "seo.social_title",
+    "commitpress:seo.social_description": "seo.social_description",
+    "commitpress:seo.og_type": "seo.og_type",
+    "commitpress:seo.no_index": "seo.no_index",
+    "commitpress:seo.exclude_from_sitemap": "seo.exclude_from_sitemap"
+  },
   "content": {
-    "seo": {
-      "title": "A change of scenery. | Commitpress",
-      "description": "A few photographs, a few different shapes. Open an image and take a closer look."
-    },
     "gallery": {
       "eyebrow": "The image library",
       "title": "A change of scenery.",
@@ -20,8 +34,17 @@
           "1791200000001",
           "1791200000004",
           "1791200000002"
-        ]
+        ],
+        "sort": "manual"
       }
+    },
+    "seo": {
+      "title": "A change of scenery. | Commitpress",
+      "description": "A few photographs, a few different shapes. Open an image and take a closer look.",
+      "social_title": "",
+      "social_description": "",
+      "no_index": false,
+      "exclude_from_sitemap": false
     }
   },
   "locales": {
@@ -40,6 +63,13 @@
           "summary": "Några fotografier i olika format. Öppna en bild och titta närmare."
         }
       }
+    },
+    "en": {
+      "slug": "images",
+      "status": "published",
+      "published_at": 1791319687315,
+      "last_edited": 1791319687315,
+      "content": {}
     }
   }
 }

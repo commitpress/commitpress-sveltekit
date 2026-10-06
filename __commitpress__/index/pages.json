@@ -3,11 +3,11 @@
   "entries": [
     {
       "path": "about",
-      "sha": "79156234416ac5ecf6bfaa091e8d8952aed10f20",
+      "sha": "5d8e5c98c8a0614a60f500ec8741ee4adaf8dc02",
       "schema": "page",
       "status": "published",
       "published_at": 0,
-      "last_edited": 0,
+      "last_edited": 1791319623269,
       "checksum": "62501fd0eae4c0903921663237d570ab5a302637",
       "drift": 0
     },

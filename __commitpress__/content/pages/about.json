@@ -1,13 +1,63 @@
 {
-  "v": 1,
+  "v": 3,
   "schema": "page",
   "slug": "about",
   "status": "published",
-  "last_edited": 0,
+  "published_at": 0,
+  "checksum": "62501fd0eae4c0903921663237d570ab5a302637",
+  "last_edited": 1791319623269,
+  "fields": {
+    "d1199505-982a-4e8d-a1ab-476b2d6570df": "page",
+    "3c6ab09b-4d6d-43aa-bddf-5d9e89dd848c": "page.eyebrow",
+    "1e2d2f51-8e6e-4a08-8b69-43330e4ac78d": "page.title",
+    "7f74b229-e79c-4afc-9d4a-3f24407ffd8c": "page.summary",
+    "b04b3cad-ab2a-4449-8dc7-d47db6fdb418": "page.cover",
+    "e415ec27-4777-4d22-b47b-4083dbb9ad0e": "page.body",
+    "muwsvmrp-1vx5b-ssk63-wdv2z-g0isl": "page.body.gallery_inline",
+    "9eb8912c-b68d-44e4-b51f-0be724fca863": "page.next_page",
+    "ec6110eb-e1bf-4cb1-ab20-6beaec7ceb96": "page.caption",
+    "55f3e140-6d39-4a1b-ab57-b81c2dc6134b": "page.body_label",
+    "e0e7e217-1bf1-4b87-9d83-b619b1a0fe89": "blocks",
+    "3b074122-916e-4402-a16f-ec6577d21b1a": "blocks.intro",
+    "c9bc5934-d11f-4252-917d-e22bee10a37b": "blocks.intro.eyebrow",
+    "4946e913-a00c-4111-9a34-06e66a64e196": "blocks.intro.statement",
+    "14d415cd-b3ae-4893-b606-a9194035f4d1": "blocks.intro.body",
+    "eb5c0e81-cbd8-4542-80cd-5909936cf8e2": "blocks.intro.link",
+    "eb0066be-556b-41cc-a58e-0f42bd4e06ec": "blocks.faq",
+    "6575972a-6584-4ec5-9e19-7605c409450e": "blocks.faq.eyebrow",
+    "c55a8533-bb75-44b5-acfe-651ee0742389": "blocks.faq.heading",
+    "b29b0fa4-fa78-4b88-8967-078b3e390c9a": "blocks.faq.items",
+    "c0e79537-02ef-4d21-9263-81d72ed236f5": "blocks.faq.items.question",
+    "e448855f-4321-4c30-910c-6ca4dcf5ba7e": "blocks.faq.items.answer",
+    "7d745626-fbdd-4be5-b52b-43f787f0f41a": "blocks.cta",
+    "8d21e77a-0af8-44ed-8212-c8d8dac4716f": "blocks.cta.eyebrow",
+    "ce12630f-c196-4489-af58-0ca002c22ce4": "blocks.cta.heading",
+    "fa0b9962-2583-466a-96b7-a730848bddce": "blocks.cta.body",
+    "c7f88af1-576e-4bfc-80e4-db7f35d41b48": "blocks.cta.buttons",
+    "3ee24fc3-9621-49b0-9792-e6aa95fc05e7": "blocks.cta.buttons.link",
+    "d4d87451-07d3-42ab-92ad-5a210fb8c504": "blocks.cta.buttons.style",
+    "commitpress:seo": "seo",
+    "commitpress:seo.title": "seo.title",
+    "commitpress:seo.description": "seo.description",
+    "commitpress:seo.social_image": "seo.social_image",
+    "commitpress:seo.social_title": "seo.social_title",
+    "commitpress:seo.social_description": "seo.social_description",
+    "commitpress:seo.og_type": "seo.og_type",
+    "commitpress:seo.no_index": "seo.no_index",
+    "commitpress:seo.exclude_from_sitemap": "seo.exclude_from_sitemap"
+  },
   "content": {
-    "seo": {
-      "title": "About | Commitpress starter",
-      "description": "A small collection of pages and sections, ready to make your own."
+    "page": {
+      "eyebrow": "About the starter",
+      "title": "A starting point, with space to grow.",
+      "summary": "This example shows how a few reusable sections can become a complete page. Everything here is ready to be replaced with your own content.",
+      "next_page": {
+        "href": "/",
+        "label": "Back to home",
+        "type": "internal"
+      },
+      "caption": "From the image library",
+      "body_label": "Page content"
     },
     "blocks": [
       {
@@ -38,9 +88,9 @@
           "buttons": [
             {
               "link": {
-                "type": "internal",
                 "href": "/",
-                "label": "Return to the homepage"
+                "label": "Return to the homepage",
+                "type": "internal"
               },
               "style": "solid"
             }
@@ -48,17 +98,22 @@
         }
       }
     ],
-    "page": {
-      "eyebrow": "About the starter",
-      "title": "A starting point, with space to grow.",
-      "summary": "This example shows how a few reusable sections can become a complete page. Everything here is ready to be replaced with your own content.",
-      "next_page": {
-        "type": "internal",
-        "href": "/",
-        "label": "Back to home"
-      },
-      "caption": "From the image library",
-      "body_label": "Page content"
+    "seo": {
+      "title": "About | Commitpress starter",
+      "description": "A small collection of pages and sections, ready to make your own.",
+      "social_title": "",
+      "social_description": "",
+      "no_index": false,
+      "exclude_from_sitemap": false
+    }
+  },
+  "locales": {
+    "en": {
+      "slug": "about",
+      "status": "published",
+      "published_at": 1791319623269,
+      "last_edited": 1791319623269,
+      "content": {}
     }
   }
 }

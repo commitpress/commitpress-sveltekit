@@ -28,9 +28,6 @@
 @utility btn-solid { @apply btn bg-ink text-paper hover:bg-accent; }
 @utility btn-ghost { @apply btn border border-line text-ink hover:border-ink; }
 @utility btn-light { @apply btn bg-paper text-ink hover:bg-mist; }
-.frame { @apply relative overflow-hidden bg-mist; }
-.frame > :where(img,.frame-fill) { @apply absolute inset-0 h-full w-full object-cover; }
-.reveal,.reveal[data-revealed] { opacity:1;transform:none; }
 .ulink { text-decoration:underline;text-underline-offset:4px; }
 .kicker { font:11px/1.5 var(--font-mono);letter-spacing:.09em;text-transform:uppercase;color:var(--color-ash); }
 .dot { display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--color-accent);flex-shrink:0; }

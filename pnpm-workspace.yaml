@@ -1,16 +1,3 @@
-# pnpm 10 no longer runs a dependency's install/postinstall scripts unless it is listed here.
-# esbuild unpacks its platform binary in that script, so without this it installs but cannot run.
-#
-# It is not a direct dependency — Vite pulls it in — so it does not appear in package.json and looks
-# removable. It is not: dropping this entry breaks `vite build`.
-#
-# The trap is that this is only *fatal* in CI: a normal `pnpm install` prints ERR_PNPM_IGNORED_BUILDS
-# as a warning and carries on, but pnpm treats it as an error when `CI` is set, which Railway sets.
-# So the same install passes on a laptop and fails in the deploy.
-#
-# better-sqlite3 is a direct dependency and does appear in package.json, but it has the same shape
-# of problem: its install script fetches the prebuilt native binding for the platform. Without the
-# script it installs as JavaScript with no `.node` to bind to, and every query throws at runtime.
+# Vite uses esbuild, whose install script prepares its platform binary.
 onlyBuiltDependencies:
   - esbuild
-  - better-sqlite3

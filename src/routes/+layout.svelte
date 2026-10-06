@@ -7,7 +7,7 @@
   import { page } from '$app/state';
   import type { LayoutData } from './$types';
   let { data, children }: { data: LayoutData; children: import('svelte').Snippet } = $props();
-  const site = $derived(previewSite.current ?? data.site);
+  const site = $derived(previewSite.content ?? data.site);
   const media = $derived({...data.siteMedia,...previewSite.assets});
   const icon = $derived(media[imageId(site.details.favicon) ?? '']);
   const favicon = $derived(icon ? ('preview_url' in icon ? icon.preview_url : '/__commitpress__/media/images/'+icon.path) : undefined);

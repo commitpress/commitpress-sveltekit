@@ -1,6 +1,8 @@
 # Commitpress SvelteKit starter
 
-A working CMS showcase with pages, a collection, an image library, English/Swedish content, and live preview.
+A CMS starter with pages, a collection, an image library, English/Swedish content, and live preview.
+
+The application renders Commitpress content and connects the editor to live previews. Its examples demonstrate CMS pages, blocks, collections, translations, and managed media. Fonts and sample images are served locally.
 
 ## Run locally
 
@@ -40,7 +42,7 @@ Connect this repository in Commitpress. The committed v2 config declares the con
 
 Run the starter while editing in the CMS. For a deployed preview, replace or supplement `editor.preview_urls` in `commitpress.config.json` with the deployed site's `/preview/` URL.
 
-Preview targets support pages, collection entries, and the site global, including `?locale=sv`. They receive live content, image descriptors, gallery folder membership, and section selections using the SDK's preview protocol.
+Preview targets support pages (`/preview/index`), collection entries (`/preview/collections/notes/by-the-water`), and the site global (`/preview/globals/site`), including `?locale=sv`. New items start with an empty preview until the editor posts their content. They receive live content, image descriptors, gallery folder membership, and section selections using the SDK's preview protocol.
 
 ## Make it your own
 
@@ -50,10 +52,14 @@ Preview targets support pages, collection entries, and the site global, includin
 - Collection: `__commitpress__/content/collections/notes/`.
 - Schemas: `__commitpress__/schema/`.
 - Image files and descriptors: `__commitpress__/media/images/`.
-- Route and locale resolution: `src/lib/content/showcase.server.ts`.
+- Dynamic URL resolution: `src/lib/content/routes.server.ts`.
+- Page loading: `src/lib/content/pages.server.ts`.
+- Collection entries and cards: `src/lib/content/notes.server.ts`.
+- Translation and publication lookup: `src/lib/content/read.server.ts`.
+- Locale paths and links: `src/lib/content/locale.ts`.
 - Page rendering and example components: `src/lib/showcase/`.
 
-English lives in each record's base `content`; Swedish overlays live in `locales.sv.content`, with independently translated slugs and publication states. The SDK resolves the requested locale without silently falling back to another language. The language switcher follows the equivalent page or entry.
+English lives in each record's base `content`; Swedish overlays live in `locales.sv.content`, with independently translated slugs and publication states. The SDK resolves the requested locale without silently falling back to another language. The language switcher follows the equivalent page or entry. Locales come from `commitpress.config.json`. Every public page is resolved by its content slug through one dynamic route. Collection-entry URLs use the collection page's translated slug followed by the entry's translated slug; renaming either in the CMS changes the URL without a code change.
 
 Choose a page schema when creating a page in the CMS:
 

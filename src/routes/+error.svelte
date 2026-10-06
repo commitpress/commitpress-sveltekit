@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { previewSite } from '$lib/preview/site.svelte';
-  const site = $derived(previewSite.current ?? page.data.site);
+  const site = $derived(previewSite.content ?? page.data.site);
 </script>
 <svelte:head><title>{site?.ui?.error_title ?? ''} | {site?.details.name ?? ''}</title></svelte:head>
 <section class="wrap py-16">

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { reveal } from "$lib/actions/reveal";
   import type { IntroBlock } from "../../commitpress.generated";
 
   let { block }: { block: IntroBlock } = $props();
@@ -7,7 +6,7 @@
 
 <section class="wrap py-16 md:py-20">
   <div class="grid grid-cols-12 gap-x-8 gap-y-12">
-    <div class="col-span-12 lg:col-span-7 reveal" use:reveal>
+    <div class="col-span-12 lg:col-span-7">
       <p class="eyebrow eyebrow-rule mb-7">{block.eyebrow}</p>
       <p
         class="font-display font-normal text-[clamp(1.6rem,3.2vw,2.4rem)] leading-[1.3] tracking-tight text-ink max-w-[24ch]"
@@ -16,7 +15,7 @@
       </p>
     </div>
 
-    <div class="col-span-12 lg:col-span-4 lg:col-start-9 reveal" use:reveal>
+    <div class="col-span-12 lg:col-span-4 lg:col-start-9">
       <p class="text-[17px] max-w-[42ch]">{block.body}</p>
       {#if block.link?.href}<a
         href={block.link.href}

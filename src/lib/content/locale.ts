@@ -1,20 +1,45 @@
-export type Locale = 'en' | 'sv';
-export const collectionSegment = (locale: Locale) => locale === 'sv' ? 'samling' : 'collection';
-export function readRoute(path: string, requested?: string | null) {
-  const parts = path.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
-  const prefix = parts[0] === 'sv' || parts[0] === 'en' ? parts.shift() : undefined;
-  const locale: Locale = requested === 'sv' || prefix === 'sv' ? 'sv' : 'en';
-  return { locale, path: parts.join('/') };
+import { readPreviewPath } from '@commitpress/sdk-node/preview';
+import config from '../../../commitpress.config.json';
+
+export const locales = config.content.intl.locales;
+export type Locale = typeof locales[number];
+export const defaultLocale = config.content.intl.default_locale;
+
+function isLocale(value?: string | null): value is Locale {
+  return typeof value === 'string' && locales.includes(value);
 }
-export function localizedHref(slug: string, locale: Locale, collection = false) {
-  const route = collection ? collectionSegment(locale) + '/' + slug : slug === 'index' ? '' : slug;
-  return (locale === 'sv' ? '/sv' : '') + '/' + route.split('/').filter(Boolean).map(encodeURIComponent).join('/');
+
+export function readRoute(path: string, requestedLocale?: string | null) {
+  const segments = path.split('/').filter(Boolean);
+  const prefix = isLocale(segments[0]) ? segments.shift() as Locale : defaultLocale;
+  const locale = isLocale(requestedLocale) ? requestedLocale : prefix;
+  return { locale, path: segments.join('/') };
 }
-export function readPreviewRoute(path: string, requested?: string | null) {
-  const parts = path.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
-  if (['globals', 'collections', 'blocks'].includes(parts[0]) && ['en', 'sv'].includes(parts[1])) {
-    const locale = parts.splice(1, 1)[0];
-    return readRoute(parts.join('/'), requested || locale);
+
+export function readPreviewRoute(path: string, requestedLocale?: string | null) {
+  const target = readPreviewPath(path);
+  const route = readRoute(target.path, requestedLocale);
+  return { ...route, kind: target.kind };
+}
+
+export function isPreviewPath(path: string) {
+  return path === '/preview' || path.startsWith('/preview/');
+}
+
+export function routeLocale(url: URL): Locale {
+  if (isPreviewPath(url.pathname)) {
+    return readPreviewRoute(url.pathname.slice('/preview'.length), url.searchParams.get('locale')).locale;
   }
-  return readRoute(path, requested);
+  return readRoute(url.pathname).locale;
+}
+
+export function pageHref(slug: string, locale: Locale) {
+  const route = slug === 'index' ? '' : slug;
+  const encoded = route.split('/').map(encodeURIComponent).join('/');
+  const prefix = locale === defaultLocale ? '' : '/' + locale;
+  return encoded ? prefix + '/' + encoded : prefix || '/';
+}
+
+export function entryHref(collectionSlug: string, entrySlug: string, locale: Locale) {
+  return pageHref(collectionSlug + '/' + entrySlug, locale);
 }

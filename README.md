@@ -44,6 +44,8 @@ Run the starter while editing in the CMS. For a deployed preview, replace or sup
 
 Preview targets support pages (`/preview/index`), collection entries (`/preview/collections/notes/by-the-water`), and the site global (`/preview/globals/site`), including `?locale=sv`. New items start with an empty preview until the editor posts their content. They receive live content, image descriptors, gallery folder membership, and section selections using the SDK's preview protocol.
 
+The image CSP in `svelte.config.js` permits local images, data/blob images, `https://cms.commitpress.com`, and `https://commitpress-assets.up.railway.app`. Both hosted origins are needed because draft images redirect from the CMS to the isolated asset host. Development also permits HTTP loopback origins for a local CMS. For a self-hosted CMS, adjust these image origins to match the editor and its `ASSET_ORIGIN`; keep SDK preview message trust limited to the editor origin.
+
 ## Make it your own
 
 - Theme: `src/app.css`. Warm paper, forest green, editorial headings, and locally served brand fonts.

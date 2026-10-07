@@ -5,7 +5,7 @@
   "status": "published",
   "published_at": 1791319590603,
   "checksum": "2226117e967b0fe8f02d17fe19ef77ba1b500851",
-  "last_edited": 1791319590603,
+  "last_edited": 1791338672420,
   "fields": {
     "a34e4d75-e687-4fe7-94f6-a5ac7ddae7eb": "home",
     "c7e2bb58-cc83-4a5e-8e19-132ff6da1437": "home.eyebrow",
@@ -109,7 +109,7 @@
       }
     },
     "language_note": {
-      "symbol": "Aa",
+      "symbol": "Bb",
       "eyebrow": "Two languages, one website",
       "title": "Hello. Hej.",
       "body": "Switch to Swedish in the navigation. The headlines, content, and routes come along.",
@@ -212,7 +212,7 @@
       "slug": "index",
       "status": "published",
       "published_at": 1791319590603,
-      "last_edited": 1791319590603,
+      "last_edited": 1791338672420,
       "content": {}
     }
   }

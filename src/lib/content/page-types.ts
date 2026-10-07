@@ -1,8 +1,13 @@
-import type { HomeContent, PageContent, CollectionContent, GalleryContent } from '../../commitpress.generated';
+import type { HomeContent, PageContent, GalleryContent, ContentListMap } from '../../commitpress.generated';
 
 export const pageSchemas = ['home', 'page', 'collection', 'gallery'] as const;
 export type PageSchema = typeof pageSchemas[number];
-export type WebsitePageContent = HomeContent | PageContent | CollectionContent | GalleryContent;
+type WebsitePageFile = Extract<ContentListMap['content/pages'], { schema: PageSchema }>;
+export type WebsitePageContent = WebsitePageFile['content'];
+
+export function isWebsitePage(file: ContentListMap['content/pages']): file is WebsitePageFile {
+  return pageSchemas.some(schema => schema === file.schema);
+}
 
 /** The field group also identifies the layout in unsaved preview messages. */
 export function pageSchema(content: WebsitePageContent): PageSchema {

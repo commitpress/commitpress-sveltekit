@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@commitpress/sdk-node':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
     devDependencies:
       '@sveltejs/adapter-node':
         specifier: ^5.3.3
@@ -45,8 +45,8 @@ importers:
 
 packages:
 
-  '@commitpress/sdk-node@0.1.0':
-    resolution: {integrity: sha512-Oh41mZqKoh6qfkAZwJVUyiowl3xDFVS6S1gaOC0/XWrfy5B9bUTabSrp8EyekCbmo+GiCfGt+BiXML+o1nx3nw==}
+  '@commitpress/sdk-node@0.1.1':
+    resolution: {integrity: sha512-j4Hj9nIF//bdlDnj+YPCTJ4sOl0oHa/dNa/i2b5aJFWUuczUEkU8jdHS6/JlZc+h5D4ewRdJR7R4VdLL1Dgl4g==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -905,7 +905,7 @@ packages:
 
 snapshots:
 
-  '@commitpress/sdk-node@0.1.0':
+  '@commitpress/sdk-node@0.1.1':
     dependencies:
       parse5: 7.3.0
       yaml: 2.9.1

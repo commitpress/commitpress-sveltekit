@@ -1,14 +1,14 @@
 import { gallery } from '@commitpress/sdk-node';
 import { error } from '@sveltejs/kit';
 import { imageManifest } from '$lib/media/assets.server';
-import { pageSchemas, type WebsitePageContent } from './page-types';
+import { isWebsitePage } from './page-types';
 import { pageHref, type Locale } from './locale';
 import { readContent } from './read.server';
 import { loadCards } from './notes.server';
 
 export async function loadPage(slug: string, locale: Locale, { preview = false } = {}) {
-  const { file, translations } = await readContent<WebsitePageContent>('content/pages', slug, locale, preview);
-  if (file && !pageSchemas.some(schema => schema === file.schema)) error(404, 'Unsupported page schema');
+  const { file, translations } = await readContent('content/pages', slug, locale, preview);
+  if (file && !isWebsitePage(file)) error(404, 'Unsupported page schema');
   const page = file?.content ?? null;
 
   let cards: Awaited<ReturnType<typeof loadCards>> = [];

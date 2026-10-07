@@ -78,6 +78,8 @@ Visible copy and editorial links come from CMS content, including cover captions
 
 Run `pnpm cms:generate` after changing schemas. The production build regenerates the types automatically.
 
+Server loaders import `query` and `queryList` from `src/commitpress.generated.ts`. Literal content paths infer the result type, so `queryList('content/collections/notes', { locale, defaultLocale })` returns typed notes without an explicit generic or root argument. Page lists return a union of schemas; check `file.schema` to narrow the content.
+
 ## SDK and sample imagery
 
 The starter installs `@commitpress/sdk-node` from npm. It includes locale-aware querying, rich text, managed assets, and the preview protocol. Update it with `pnpm update @commitpress/sdk-node`.

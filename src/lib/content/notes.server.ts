@@ -1,13 +1,11 @@
-import { queryList } from '@commitpress/sdk-node';
+import { queryList } from '../../commitpress.generated';
 import { error } from '@sveltejs/kit';
-import type { NotesContent } from '../../commitpress.generated';
-import type { WebsitePageContent } from './page-types';
 import { imageManifest } from '$lib/media/assets.server';
 import { defaultLocale, entryHref, type Locale } from './locale';
 import { readContent } from './read.server';
 
 async function collectionPage(locale: Locale, preview = false) {
-  const pages = await queryList<WebsitePageContent>('content/pages', undefined, {
+  const pages = await queryList('content/pages', {
     locale,
     defaultLocale,
     includeDrafts: preview,
@@ -19,7 +17,7 @@ export async function loadCards(locale: Locale, collectionSlug?: string) {
   const parentSlug = collectionSlug ?? (await collectionPage(locale))?.slug;
   if (!parentSlug) return [];
 
-  const entries = await queryList<NotesContent>('content/collections/notes', undefined, {
+  const entries = await queryList('content/collections/notes', {
     locale,
     defaultLocale,
   });
@@ -33,13 +31,13 @@ export async function loadEntry(slug: string, locale: Locale, {
   collectionSlug,
   preview = false,
 }: { collectionSlug?: string; preview?: boolean } = {}) {
-  const { file, translations } = await readContent<NotesContent>('content/collections/notes', slug, locale, preview);
+  const { file, translations } = await readContent('content/collections/notes', slug, locale, preview);
   if (file && file.schema !== 'notes') error(404, 'Unsupported collection schema');
   const entry = file?.content ?? null;
 
   const parentSlug = collectionSlug ?? (await collectionPage(locale, preview))?.slug;
   const parent = parentSlug
-    ? await readContent<WebsitePageContent>('content/pages', parentSlug, locale, preview)
+    ? await readContent('content/pages', parentSlug, locale, preview)
     : null;
   const alternates = [];
   for (const translation of translations) {

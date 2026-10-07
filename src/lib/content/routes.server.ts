@@ -1,14 +1,13 @@
-import { queryList } from '@commitpress/sdk-node';
+import { queryList } from '../../commitpress.generated';
 import { error } from '@sveltejs/kit';
 import { loadPage } from './pages.server';
 import { loadEntry } from './notes.server';
 import { defaultLocale, type Locale } from './locale';
-import type { WebsitePageContent } from './page-types';
 
 /** Resolve public paths entirely from content slugs. */
 export async function loadRoute(path: string, locale: Locale, { preview = false } = {}) {
   const slug = path || 'index';
-  const pages = await queryList<WebsitePageContent>('content/pages', undefined, {
+  const pages = await queryList('content/pages', {
     locale,
     defaultLocale,
     includeDrafts: preview,

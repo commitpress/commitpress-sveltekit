@@ -1,9 +1,6 @@
 {
   "version": 1,
-  "folders": [
-    "branding",
-    "showcase"
-  ],
+  "folders": ["branding", "showcase"],
   "profiles": {
     "showcase/gallery": "gallery"
   },
@@ -20,10 +17,7 @@
       "updated_at": 1791227874189,
       "alt": "A small wooden cabin beside a still mountain lake",
       "folder": "showcase",
-      "folders": [
-        "showcase",
-        "showcase/gallery"
-      ],
+      "folders": ["showcase", "showcase/gallery"],
       "variants": [
         {
           "name": "small",
@@ -89,10 +83,7 @@
       "updated_at": 1791227874190,
       "alt": "Sunlight falling through a green forest",
       "folder": "showcase",
-      "folders": [
-        "showcase",
-        "showcase/gallery"
-      ],
+      "folders": ["showcase", "showcase/gallery"],
       "variants": [
         {
           "name": "small",
@@ -158,10 +149,7 @@
       "updated_at": 1791227874192,
       "alt": "Green leaves against a soft pink background",
       "folder": "showcase",
-      "folders": [
-        "showcase",
-        "showcase/gallery"
-      ],
+      "folders": ["showcase", "showcase/gallery"],
       "variants": [
         {
           "name": "small",
@@ -227,10 +215,7 @@
       "updated_at": 1791227874192,
       "alt": "A light-filled interior with warm natural materials",
       "folder": "showcase",
-      "folders": [
-        "showcase",
-        "showcase/gallery"
-      ],
+      "folders": ["showcase", "showcase/gallery"],
       "variants": [
         {
           "name": "small",
@@ -295,9 +280,7 @@
       "uploaded_at": 1791200000000,
       "alt": "Commitpress",
       "folder": "branding",
-      "folders": [
-        "branding"
-      ],
+      "folders": ["branding"],
       "variants": []
     },
     {
@@ -311,9 +294,7 @@
       "uploaded_at": 1791200000000,
       "alt": "Commitpress",
       "folder": "branding",
-      "folders": [
-        "branding"
-      ],
+      "folders": ["branding"],
       "variants": []
     },
     {
@@ -328,28 +309,13 @@
       "updated_at": 1791412003909,
       "alt": "Commitpress icon",
       "folder": "branding",
-      "folders": [
-        "branding"
-      ],
+      "folders": ["branding"],
       "focal": {
         "x": 0.5,
         "y": 0.5
       },
-      "variants": [
-        {
-          "name": "cp-thumb",
-          "path": "1791200000012/cp-thumb.webp",
-          "width": 320,
-          "height": 320,
-          "bytes": 3252
-        }
-      ],
-      "skipped": [
-        "large",
-        "medium",
-        "small",
-        "tablet-16-9"
-      ]
+      "variants": [],
+      "skipped": ["large", "medium", "small", "tablet-16-9"]
     }
   ]
 }

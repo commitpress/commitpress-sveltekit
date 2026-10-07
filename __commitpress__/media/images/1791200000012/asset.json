@@ -19,13 +19,6 @@
   },
   "variants": [
     {
-      "name": "large",
-      "path": "1791200000012/large.webp",
-      "width": 512,
-      "height": 512,
-      "bytes": 6192
-    },
-    {
       "name": "tablet-16-9",
       "custom": true,
       "path": "1791200000012/tablet-16-9.webp",
@@ -42,6 +35,7 @@
     }
   ],
   "skipped": [
+    "large",
     "medium",
     "small"
   ]

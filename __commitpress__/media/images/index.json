@@ -337,13 +337,6 @@
       },
       "variants": [
         {
-          "name": "medium",
-          "path": "1791200000012/medium.webp",
-          "width": 512,
-          "height": 512,
-          "bytes": 6192
-        },
-        {
           "name": "large",
           "path": "1791200000012/large.webp",
           "width": 512,
@@ -367,6 +360,7 @@
         }
       ],
       "skipped": [
+        "medium",
         "small"
       ]
     }

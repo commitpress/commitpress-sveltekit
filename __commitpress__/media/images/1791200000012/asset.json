@@ -10,26 +10,11 @@
   "updated_at": 1791412003909,
   "alt": "Commitpress icon",
   "folder": "branding",
-  "folders": [
-    "branding"
-  ],
+  "folders": ["branding"],
   "focal": {
     "x": 0.5,
     "y": 0.5
   },
-  "variants": [
-    {
-      "name": "cp-thumb",
-      "path": "1791200000012/cp-thumb.webp",
-      "width": 320,
-      "height": 320,
-      "bytes": 3252
-    }
-  ],
-  "skipped": [
-    "large",
-    "medium",
-    "small",
-    "tablet-16-9"
-  ]
+  "variants": [],
+  "skipped": ["large", "medium", "small", "tablet-16-9"]
 }

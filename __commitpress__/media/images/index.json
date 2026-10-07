@@ -337,41 +337,18 @@
       },
       "variants": [
         {
-          "name": "small",
-          "path": "1791200000012/small.webp",
-          "width": 480,
-          "height": 480,
-          "bytes": 5802
-        },
-        {
-          "name": "medium",
-          "path": "1791200000012/medium.webp",
-          "width": 512,
-          "height": 512,
-          "bytes": 6192
-        },
-        {
-          "name": "large",
-          "path": "1791200000012/large.webp",
-          "width": 512,
-          "height": 512,
-          "bytes": 6192
-        },
-        {
-          "name": "tablet-16-9",
-          "custom": true,
-          "path": "1791200000012/tablet-16-9.webp",
-          "width": 512,
-          "height": 288,
-          "bytes": 4839
-        },
-        {
           "name": "cp-thumb",
           "path": "1791200000012/cp-thumb.webp",
           "width": 320,
           "height": 320,
           "bytes": 3252
         }
+      ],
+      "skipped": [
+        "large",
+        "medium",
+        "small",
+        "tablet-16-9"
       ]
     }
   ]

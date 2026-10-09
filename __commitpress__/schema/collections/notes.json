@@ -6,6 +6,10 @@
     {
       "path": "collections/notes",
       "includeSubfolders": true
+    },
+    {
+      "path": "collections/posts",
+      "includeSubfolders": true
     }
   ],
   "blocks": {

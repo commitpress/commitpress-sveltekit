@@ -1,0 +1,56 @@
+{
+  "v": 3,
+  "schema": "notes",
+  "slug": "test-collection",
+  "status": "draft",
+  "checksum": "9aa1e5d1980327cf1ef6e10f80afd213c578eeb6",
+  "last_edited": 1791512156322,
+  "fields": {
+    "d244a7e1-bb72-4f1c-a306-9e4292bbe8f7": "story",
+    "34711215-85cb-4719-9735-9235bd0acb84": "story.title",
+    "b45372ad-6ed9-4f35-a70a-1dc5c9cdbd05": "story.summary",
+    "733efac0-2918-4288-9b88-68e31c6f7d3c": "story.category",
+    "a13de715-1cd3-4d9a-b409-778ec7fddd32": "story.date",
+    "51cad789-f373-4352-a754-a3f970769c12": "story.cover",
+    "cae1f0eb-194a-490f-bbb9-3bd9f29faa78": "story.body",
+    "c21d2b81-cc85-467d-b284-ca172a0002ab": "story.back_link",
+    "commitpress:seo": "seo",
+    "commitpress:seo.title": "seo.title",
+    "commitpress:seo.description": "seo.description",
+    "commitpress:seo.social_image": "seo.social_image",
+    "commitpress:seo.social_title": "seo.social_title",
+    "commitpress:seo.social_description": "seo.social_description",
+    "commitpress:seo.og_type": "seo.og_type",
+    "commitpress:seo.no_index": "seo.no_index",
+    "commitpress:seo.exclude_from_sitemap": "seo.exclude_from_sitemap"
+  },
+  "content": {
+    "story": {
+      "title": "test",
+      "summary": "collection",
+      "category": "A",
+      "date": "",
+      "back_link": {
+        "href": "",
+        "label": "",
+        "type": "internal"
+      }
+    },
+    "seo": {
+      "title": "",
+      "description": "",
+      "social_title": "",
+      "social_description": "",
+      "no_index": false,
+      "exclude_from_sitemap": false
+    }
+  },
+  "locales": {
+    "en": {
+      "slug": "test-collection",
+      "status": "draft",
+      "last_edited": 1791512156322,
+      "content": {}
+    }
+  }
+}

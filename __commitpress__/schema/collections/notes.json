@@ -1,103 +1,114 @@
 {
-  "$schema": "https://cms.commitpress.com/app/schema/schema/v1",
+  "$schema": "https://cms.commitpress.com/app/schema/v12",
   "icon": "article",
+  "livePreview": true,
+  "allowedPaths": [
+    {
+      "path": "collections/notes",
+      "includeSubfolders": true
+    }
+  ],
   "blocks": {
     "components": [
       {
         "uuid": "d244a7e1-bb72-4f1c-a306-9e4292bbe8f7",
+        "type": "group",
         "name": "story",
         "label": "Story",
-        "type": "group",
         "description": "",
-        "required": false,
         "collapsed": false,
+        "required": false,
+        "multiple": false,
         "min": 0,
         "max": 0,
         "presentation": "",
-        "multiple": false,
         "controls": [
           {
             "uuid": "34711215-85cb-4719-9735-9235bd0acb84",
+            "type": "input",
             "name": "title",
             "label": "Title",
-            "type": "input",
-            "description": "",
             "required": false,
-            "localized": true,
-            "valueType": "string",
             "pattern": "",
-            "placeholder": ""
+            "description": "",
+            "placeholder": "",
+            "valueType": "string",
+            "localized": true
           },
           {
             "uuid": "b45372ad-6ed9-4f35-a70a-1dc5c9cdbd05",
+            "type": "textarea",
             "name": "summary",
             "label": "Summary",
-            "type": "textarea",
-            "description": "",
             "required": false,
-            "localized": true,
+            "description": "",
             "rows": 4,
             "resize": true,
-            "placeholder": ""
+            "placeholder": "",
+            "localized": true
           },
           {
             "uuid": "733efac0-2918-4288-9b88-68e31c6f7d3c",
+            "type": "input",
             "name": "category",
             "label": "Category",
-            "type": "input",
-            "description": "",
             "required": false,
-            "localized": true,
-            "valueType": "string",
             "pattern": "",
-            "placeholder": ""
+            "description": "",
+            "placeholder": "",
+            "valueType": "string",
+            "localized": true
           },
           {
             "uuid": "a13de715-1cd3-4d9a-b409-778ec7fddd32",
+            "type": "input",
             "name": "date",
             "label": "Date",
-            "type": "input",
-            "description": "",
             "required": false,
-            "localized": true,
-            "valueType": "string",
             "pattern": "",
-            "placeholder": ""
+            "description": "",
+            "placeholder": "",
+            "valueType": "string",
+            "localized": true
           },
           {
             "uuid": "51cad789-f373-4352-a754-a3f970769c12",
+            "type": "image",
             "name": "cover",
             "label": "Cover",
-            "type": "image",
-            "description": "",
             "required": false,
-            "accept": ["image/jpeg", "image/png", "image/webp"],
+            "accept": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ],
             "multiple": false,
+            "description": "",
             "rootFolder": "showcase",
             "escapeRootFolder": true,
-            "renditions": true,
-            "alt": true,
             "sizes": [],
             "breakpoints": [
               {
                 "name": "mobile",
                 "label": "Mobile"
               }
-            ]
+            ],
+            "renditions": true,
+            "alt": true,
+            "localized": false
           },
           {
             "uuid": "cae1f0eb-194a-490f-bbb9-3bd9f29faa78",
+            "type": "richtext",
             "name": "body",
             "label": "Body",
-            "type": "richtext",
-            "description": "",
             "required": false,
-            "localized": true,
+            "description": "",
             "rows": 12,
             "resize": true,
             "placeholder": "Write something worth reading.",
+            "localized": true,
             "standalone": true,
-            "controls": [],
             "toolbarOptions": {
               "bold": true,
               "italic": true,
@@ -116,15 +127,16 @@
               "blockquote": true,
               "hr": true,
               "link": true
-            }
+            },
+            "controls": []
           },
           {
             "uuid": "c21d2b81-cc85-467d-b284-ca172a0002ab",
+            "type": "link",
             "name": "back_link",
             "label": "Back link",
-            "type": "link",
-            "description": "",
             "required": false,
+            "description": "",
             "valueType": "any",
             "localized": true
           }

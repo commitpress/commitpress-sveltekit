@@ -9,13 +9,14 @@ const config = {
   kit: {
     csp: {
       directives: {
-        // Draft image requests start at the CMS and redirect to its isolated asset host.
-        // The preview document must permit both, including when embedded in the editor.
+        // Draft images redirect from the CMS to GitHub; SVGs use the isolated asset host.
+        // The preview document must permit the CMS and both redirect destinations.
         'img-src': [
           'self',
           'data:',
           'blob:',
           'https://cms.commitpress.com',
+          'https://raw.githubusercontent.com',
           'https://commitpress-assets.up.railway.app',
           ...(development ? /** @type {const} */ (['http://localhost:*', 'http://127.0.0.1:*']) : [])
         ]
